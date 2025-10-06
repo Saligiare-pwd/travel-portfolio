@@ -3,7 +3,7 @@ baseURL = "/"
 title = "Traveler’s Portfolio"
 languageCode = "en-us"
 theme = "PaperMod"
-paginate = 10
+pagerSize = 10
 
 [params]
   defaultTheme = "auto"
