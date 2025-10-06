@@ -1,12 +1,18 @@
-
 baseURL = "/"
 title = "Traveler’s Portfolio"
 languageCode = "en-us"
 theme = "PaperMod"
-pagerSize = 10
+
+# ✅ Hugo v0.128+ 的新寫法
+[pagination]
+  pagerSize = 10
+
+# ✅ 暫時關掉 JSON（避免 index.json 產生時出錯）
+[outputs]
+  home = ["HTML", "RSS"]   # ← 先移除 "JSON"
 
 [params]
-  env = "development"
+  env = "development"         # 先用 dev，主題會避開部分 JSON/GA 區塊
   defaultTheme = "auto"
   disableThemeToggle = false
   ShowBreadCrumbs = true
@@ -18,6 +24,7 @@ pagerSize = 10
   images = ["images/cover.jpg"]
   author = "Your Name"
   description = "Destination hubs, evergreen guides, itineraries, and tools."
+  disableSearch = true        # ← 先關掉站內搜尋（避免製作 search 的 JSON）
 
 [params.assets]
   disableHLJS = false
@@ -48,6 +55,3 @@ pagerSize = 10
     name = "About"
     url = "/about/"
     weight = 50
-
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
