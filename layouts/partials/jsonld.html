@@ -1,0 +1,34 @@
+{{- $isHome := .IsHome -}}
+{{- $img := "" -}}
+{{- with .Params.cover }}{{ with .image }}{{ $img = . }}{{ end }}{{ end -}}
+{{- $imgAbs := "" -}}
+{{- if $img }}
+  {{- $imgAbs = printf "%s%s" (site.BaseURL) (strings.TrimPrefix "/" $img) -}}
+{{- end -}}
+
+{{- $author := or .Params.author site.Params.author | default "Author" -}}
+{{- $desc := or .Params.description .Description .Summary .Title -}}
+
+{{- if $isHome -}}
+  {{- $data := dict
+    "@context" "https://schema.org"
+    "@type" "WebSite"
+    "name" site.Title
+    "url" site.BaseURL
+    "description" $desc
+  -}}
+  <script type="application/ld+json">{{ $data | jsonify }}</script>
+{{- else -}}
+  {{- $data := dict
+    "@context" "https://schema.org"
+    "@type" "BlogPosting"
+    "headline" .Title
+    "description" $desc
+    "datePublished" (.Date.Format "2006-01-02")
+    "dateModified" (.Lastmod.Format "2006-01-02")
+    "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+    "author" (slice (dict "@type" "Person" "name" $author))
+    "image" (cond (ne $imgAbs "") (slice $imgAbs) (slice))
+  -}}
+  <script type="application/ld+json">{{ $data | jsonify }}</script>
+{{- end -}}
