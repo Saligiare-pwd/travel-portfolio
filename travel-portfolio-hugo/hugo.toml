@@ -1,0 +1,52 @@
+
+baseURL = "/"
+title = "Traveler’s Portfolio"
+languageCode = "en-us"
+theme = "PaperMod"
+paginate = 10
+
+[params]
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  ShowShareButtons = true
+  ShowReadingTime = true
+  ShowCodeCopyButtons = true
+  comments = false
+  images = ["images/cover.jpg"]
+  author = "Your Name"
+  description = "Destination hubs, evergreen guides, itineraries, and tools."
+
+[params.assets]
+  disableHLJS = false
+
+[menu]
+  [[menu.main]]
+    identifier = "destinations"
+    name = "Destinations"
+    url = "/destinations/"
+    weight = 10
+  [[menu.main]]
+    identifier = "guides"
+    name = "Guides"
+    url = "/guides/"
+    weight = 20
+  [[menu.main]]
+    identifier = "itineraries"
+    name = "Itineraries"
+    url = "/itineraries/"
+    weight = 30
+  [[menu.main]]
+    identifier = "resources"
+    name = "Resources"
+    url = "/resources/"
+    weight = 40
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 50
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
