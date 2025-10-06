@@ -1,5 +1,5 @@
-baseURL = "/"
-title = "Traveler’s Portfolio"
+baseURL = "https://saligiare-pwd.github.io/travel-portfolio/"
+title = "Wing"
 languageCode = "en-us"
 theme = "PaperMod"
 
