@@ -9,7 +9,7 @@ theme = "PaperMod"
 
 # ✅ 暫時關掉 JSON（避免 index.json 產生時出錯）
 [outputs]
-  home = ["HTML", "RSS"]   # ← 先移除 "JSON"
+  home = ["HTML", "RSS", "JSON"]
 
 [params]
   env = "development"         # 先用 dev，主題會避開部分 JSON/GA 區塊
