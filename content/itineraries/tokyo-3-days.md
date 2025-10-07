@@ -9,7 +9,7 @@ city: "Tokyo"
 days: 3
 tags: ["itinerary"]
 cover:
-  image: "/images/tokyo/shibuya.jpg"
+  image: "images/tokyo/shibuya.jpg"
 summary: "A clean 3-day route with rainy-day alternatives and a kid-friendly option."
 ---
 
