@@ -6,7 +6,7 @@ country: "Germany"
 city: "Heidelberg"
 tags: ["guide", "Germany", "city-break"]
 cover:
-  image: "/images/heidelberg/old_bridge.jpeg"
+  image: "/images/heidelberg/old-bridge.jpeg"
 summary: "How to reach Heidelberg, where to stay, what to see, and how to enjoy its romantic river views."
 ---
 
