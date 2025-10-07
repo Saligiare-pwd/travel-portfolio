@@ -7,7 +7,7 @@ city: "Heidelberg"
 days: 3
 tags: ["itinerary", "Germany"]
 cover:
-  image: "/images/heidelberg/old-bridge.jpg"
+  image: "/images/heidelberg/old-bridge.jpeg"
 summary: "A compact three-day plan for Heidelberg’s highlights with scenic walks and café breaks."
 ---
 
