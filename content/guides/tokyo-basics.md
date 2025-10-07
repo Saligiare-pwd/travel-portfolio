@@ -1,6 +1,6 @@
 
 ---
-title: "Tokyo Basics: First-Timer’s City Guide"
+title: "Tokyo Basics"
 slug: "tokyo-basics"
 date: 2025-10-06
 updated: 2025-10-06
