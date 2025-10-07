@@ -8,7 +8,7 @@ country: "Japan"
 city: "Tokyo"
 tags: ["guide","first-timers","budget"]
 cover:
-  image: "/images/tokyo/shibuya.jpg"
+  image: "images/tokyo/shibuya.jpg"
 summary: "When to go, how to get in, where to stay, sample budgets, and common pitfalls."
 ---
 
