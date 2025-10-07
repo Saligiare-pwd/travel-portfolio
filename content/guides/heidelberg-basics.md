@@ -1,5 +1,5 @@
 ---
-title: "Heidelberg Basics: Castle, Old Town & Views"
+title: "Heidelberg Basics"
 slug: "heidelberg-basics"
 date: 2025-10-06
 country: "Germany"
@@ -11,19 +11,19 @@ summary: "How to reach Heidelberg, where to stay, what to see, and how to enjoy 
 ---
 
 ## Getting There
-Heidelberg is one hour south of Frankfurt by Deutsche Bahn (DB) trains. The nearest airports are **Frankfurt (FRA)** and **Stuttgart (STR)**.
+Heidelberg is one hour south of Frankfurt by Deutsche Bahn (DB) trains. The nearest airports are **Frankfurt (FRA)** and **Stuttgart (STR)**. The nearest ICE train station is **Mannheim**, 30 minutes north.
 
 ## Where to Stay
 - **Altstadt (Old Town)** for castle views  
-- **Bergheim** for budget travelers  
-- **Neuenheim** for quieter stays across the river
+- **Guest House Neuenheimerfeld** for researchers  
+- **Schwetzingen** for quieter stays on the outskirt
 
 ## Must-Sees
-1. Heidelberg Castle & Great Tun  
+1. Heidelberg Castle and its garden (free)  
 2. Alte Brücke & Neckar riverside  
 3. Philosophenweg trail for sunset  
-4. University Library & Student Prison
+4. University Library
+5. HITS
 
 ## Local Tips
-Try local beer at Kulturbrauerei or coffee at Yilliy Café near Kornmarkt.  
-The **Heidelberg Card** offers tram + castle combo tickets.
+**Deutschland Ticket** works for even traveling to KIT, Black Forest, and all other Heidelberg city. **Kaufland** offers great restroom and Grilledschweinhaxes.
