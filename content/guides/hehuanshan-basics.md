@@ -11,7 +11,7 @@ tags:
 - hehuanshan
 summary: 合歡山 行前重點與住宿交通建議。
 cover:
-  image: images/hehuanshan/image1.jpeg
+  image: images/hehuanshan/image.jpeg
 ---
 
 ## 關於 合歡山
