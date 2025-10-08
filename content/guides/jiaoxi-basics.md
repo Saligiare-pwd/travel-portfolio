@@ -11,7 +11,7 @@ tags:
 - jiaoxi
 summary: 礁溪 行前重點與住宿交通建議。
 cover:
-  image: images/jiaoxi/image1.jpeg
+  image: images/jiaoxi/image.jpg
 ---
 
 ## 關於 礁溪
