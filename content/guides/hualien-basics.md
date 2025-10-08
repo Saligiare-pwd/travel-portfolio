@@ -11,7 +11,7 @@ tags:
 - hualien
 summary: 花蓮 行前重點、交通、住宿與常見問題。
 cover:
-  image: /images/hualien/image1.jpeg
+  image: images/hualien/image1.jpeg
 ---
 
 ## 關於 花蓮
