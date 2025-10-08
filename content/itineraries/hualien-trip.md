@@ -12,7 +12,7 @@ tags:
 - taiwan
 summary: 花蓮 5 天行程總整理。
 cover:
-  image: images/hualien/image1.jpeg
+  image: images/hualien/image2.jpeg
 ---
 
 ### 第1天（搭車、抵達、放行李、逛街）
