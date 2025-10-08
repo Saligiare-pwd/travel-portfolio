@@ -11,7 +11,7 @@ tags:
 - taiwan
 summary: 礁溪 行程總整理。
 cover:
-  image: images/jiaoxi/image1.jpeg
+  image: images/jiaoxi/image1.jpg
 ---
 
 ### 第1天
@@ -24,6 +24,4 @@ cover:
 | 2023-04-15 18:00:00 | 覓食 | 湯圍溝公園 | 保鮮盒 |
 | 2023-03-27 21:00:00 | 賦歸 | 科技大樓 | 客運、火車 |
 
-![](images/jiaoxi/image1.jpeg)
-![](images/jiaoxi/image1.png)
-![](images/jiaoxi/image1.tif)
+![](images/jiaoxi/image1.jpg)
