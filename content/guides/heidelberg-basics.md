@@ -26,4 +26,7 @@ Heidelberg is one hour south of Frankfurt by Deutsche Bahn (DB) trains. The near
 5. HITS
 
 ## Local Tips
-**Deutschland Ticket** works for even traveling to KIT, Black Forest, and all other Heidelberg city. **Kaufland** offers great restroom and Grilledschweinhaxes.
+- **Deutschland Ticket** works for even traveling to KIT, Black Forest, and all other Heidelberg city. **Kaufland** offers great restroom and Grilledschweinhaxes.
+- To HITS, you there are three ways up, from castle, from steep slope, and from the bridge. Bus 30, 35, 36 all help to connect.
+- Kaufland: Tram 22
+  
