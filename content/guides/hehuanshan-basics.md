@@ -20,10 +20,11 @@ cover:
 ## 交通
 - 搭乘大眾運輸與計程車／租車靈活前往。
 - 建議避開連假與尖峰時段。
+- [台灣好行](https://www.taiwantrip.com.tw/Frontend/Route/Select_p?RouteID=R0067)
 
 ## 推薦住宿
-- 以市中心與主要交通節點為優先。
-- 山區與自然景點周邊有高人氣旅宿。
+- 國民賓館附近都方便
+- [國民賓館](http://hotel.chingjing.com.tw)
 
 ## 提醒
 - 查天氣與路況，山區需備保暖衣物。
