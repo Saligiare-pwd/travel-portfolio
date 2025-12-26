@@ -8,5 +8,5 @@ summary: "可以不斷重複、增加深度的週末小旅行。"
 臺灣深度旅行
 
 ### 📍 熱門城市
-* [花蓮](./E/hualien-trip.md)
-* [礁溪](./N/jiaoxi-trip.md)
+* [花蓮](travel-portfolio/destinations/taiwan/e/hualien-trip/)
+* [礁溪](travel-portfolio/destinations/taiwan/n/jiaoxi-trip/)
