@@ -44,19 +44,19 @@ theme = "PaperMod"
     # --- 下方按鈕 (對應您的需求) ---
     [[params.profileMode.buttons]]
       name = "🇩🇪 Germany"
-      url = "/destinations/germany/"
+      url = "./destinations/germany/"
 
     [[params.profileMode.buttons]]
       name = "🇯🇵 Japan"
-      url = "/destinations/japan/"
+      url = "./destinations/japan/"
 
     [[params.profileMode.buttons]]
       name = "🇹🇼 Taiwan"
-      url = "/destinations/taiwan/"
+      url = "./destinations/taiwan/"
 
     [[params.profileMode.buttons]]
       name = "✈️ Resources"
-      url = "/resources/"
+      url = "./resources/"
 
   # (選用) 首頁下方的社群連結，若不需要可刪除
   [[params.socialIcons]]
