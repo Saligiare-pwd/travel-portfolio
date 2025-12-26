@@ -12,7 +12,7 @@ theme = "PaperMod"
   home = ["HTML", "RSS", "JSON"]
 
 [params]
-  env = "development"         # 先用 dev，主題會避開部分 JSON/GA 區塊
+  env = "development"
   defaultTheme = "auto"
   disableThemeToggle = false
   ShowBreadCrumbs = true
@@ -21,14 +21,54 @@ theme = "PaperMod"
   ShowReadingTime = true
   ShowCodeCopyButtons = true
   comments = false
+  # 這是分享連結時顯示的預覽圖，目前設定為海德堡老橋
   images = ["images/heidelberg/old-bridge.jpeg"]
   author = "saligiare-pwd"
   description = "Destination hubs, evergreen guides, itineraries, and tools."
-  disableSearch = true        # ← 先關掉站內搜尋（避免製作 search 的 JSON）
+  disableSearch = true
+
+  # ==========================================
+  # 🚀 新增：Profile Mode (個人首頁模式)
+  # 這會取代原本的文章列表，顯示大頭貼與國家按鈕
+  # ==========================================
+  [params.profileMode]
+    enabled = true
+    title = "Wing's Travel Portfolio"
+    subtitle = "Explore the world by region."
+    # 這裡請確認圖片路徑正確，若無圖片可先註解掉
+    imageUrl = "https://saligiare-pwd.github.io/travel-portfolio/images/heidelberg/old-bridge.jpeg"
+    imageWidth = 150
+    imageHeight = 150
+    imageTitle = "Welcome"
+
+    # --- 下方按鈕 (對應您的需求) ---
+    [[params.profileMode.buttons]]
+      name = "🇩🇪 Germany"
+      url = "/destinations/germany/"
+
+    [[params.profileMode.buttons]]
+      name = "🇯🇵 Japan"
+      url = "/destinations/japan/"
+
+    [[params.profileMode.buttons]]
+      name = "🇹🇼 Taiwan"
+      url = "/destinations/taiwan/"
+
+    [[params.profileMode.buttons]]
+      name = "✈️ Resources"
+      url = "/resources/"
+
+  # (選用) 首頁下方的社群連結，若不需要可刪除
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/Saligiare-pwd"
 
 [params.assets]
   disableHLJS = false
 
+# ==========================================
+# 選單設定 (右上角導覽列)
+# ==========================================
 [menu]
   [[menu.main]]
     identifier = "destinations"
