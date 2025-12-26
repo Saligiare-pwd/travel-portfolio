@@ -2,7 +2,6 @@
 title: "德國簽證申請 (DAAD Sandwich Program)"
 date: 2025-02-14
 draft: false
-menu: "main"
 weight: 20
 summary: "DAAD 三明治計畫博士生簽證申請清單與注意事項 (2025更新)"
 ---
