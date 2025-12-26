@@ -1,7 +1,12 @@
 ---
 title: "Taiwan"
-summary: "All Taiwan hubs, guides and itineraries."
+date: 2025-12-26
+summary: "可以不斷重複、增加深度的週末小旅行。"
 ---
 
-- **Hualian** — Mountains, sees, foods.
-- **Nantou** — temples, seasons, and slow travel.
+## 臺灣北中南東伏地魔
+臺灣深度旅行
+
+### 📍 熱門城市
+* [花蓮](/destinations/Taiwan/E/hualien-trip)
+* [礁溪](/destinations/Taiwan/N/jiaoxi-trip)
