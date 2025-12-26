@@ -1,6 +1,6 @@
 ---
 title: "Heidelberg in 3 Days: Castle, River & Old Town"
-slug: "heidelberg-3-days"
+slug: "heidelberg-trip"
 date: 2025-10-06
 country: "Germany"
 city: "Heidelberg"
