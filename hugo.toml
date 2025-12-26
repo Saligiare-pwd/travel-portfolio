@@ -36,16 +36,6 @@ theme = "PaperMod"
     url = "/destinations/"
     weight = 10
   [[menu.main]]
-    identifier = "guides"
-    name = "Guides"
-    url = "/guides/"
-    weight = 20
-  [[menu.main]]
-    identifier = "itineraries"
-    name = "Itineraries"
-    url = "/itineraries/"
-    weight = 30
-  [[menu.main]]
     identifier = "resources"
     name = "Resources"
     url = "/resources/"
