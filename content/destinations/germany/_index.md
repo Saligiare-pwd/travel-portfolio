@@ -1,8 +1,15 @@
-
 ---
 title: "Germany"
-summary: "All Germany hubs, guides and itineraries."
+date: 2025-10-06
+summary: "DAAD 交換學者的德國生活紀錄、簽證攻略與週末小旅行。"
 ---
 
-- **Heidelberg** — klein-city starter hub: airports, transport, neighborhoods.
-- **Frankfurt** — Sexy Lady.
+## 🇩🇪 德國旅行精選
+這是我在德國進行 DAAD 三明治計畫期間的紀錄。
+
+### 📍 熱門城市
+* [海德堡 (Heidelberg)](/destinations/germany/heidelberg-trip)
+* [慕尼黑 (Munich)](/destinations/germany/munich)
+
+### 🎒 實用資訊
+* [簽證申請攻略](/resources/german-visa-daad/)
