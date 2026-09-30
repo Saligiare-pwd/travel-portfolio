@@ -8,39 +8,57 @@
 <section class="route-planner" aria-labelledby="planner-title">
   <div class="planner-intro">
     <div>
-      <p class="eyebrow">Interactive trail</p>
-      <h2 id="planner-title">Choose a route, then a stage</h2>
+      <p class="eyebrow">Interactive route map</p>
+      <h2 id="planner-title">See the journey accumulate</h2>
     </div>
-    <p>Each stop keeps the useful decisions together: where to sleep, what to eat, and how to reach or leave the trail. Distances are planning estimates, not navigation data.</p>
+    <p>Select a stop on the map. The travelled line, completed distance, stage photograph, lodging area, food plan, and transport exit all update together.</p>
   </div>
 
   <div class="route-tabs" role="tablist" aria-label="Pilgrimage route">
-    <button type="button" role="tab" aria-selected="true" data-route="rhine">Rhine Way · from Bonn</button>
-    <button type="button" role="tab" aria-selected="false" data-route="munich">Munich Way · toward the Alps</button>
+    <button type="button" role="tab" aria-selected="true" data-route="rhine">Rhine Way · Bonn to Koblenz</button>
+    <button type="button" role="tab" aria-selected="false" data-route="munich">Munich Way · toward Füssen</button>
   </div>
 
-  <div class="trail-shell">
-    <button class="trail-scroll trail-prev" type="button" aria-label="Scroll trail left">←</button>
-    <div id="trail-stops" class="trail-stops" role="tablist" aria-label="Route stages"></div>
-    <button class="trail-scroll trail-next" type="button" aria-label="Scroll trail right">→</button>
-  </div>
+  <div class="route-dashboard">
+    <section class="route-map-card" aria-labelledby="route-map-title">
+      <header>
+        <div><p class="eyebrow">Route progress</p><h3 id="route-map-title">Rhine Way</h3></div>
+        <strong id="progress-distance">0 of 84 km</strong>
+      </header>
+      <div class="distance-progress" aria-hidden="true"><span id="progress-fill"></span></div>
+      <p id="progress-label" class="progress-label">Starting point · Stage 1 of 5</p>
+      <div id="route-map" class="route-map" aria-label="Clickable route stages">
+        <svg viewBox="0 0 560 430" role="img" aria-label="Schematic route map">
+          <polyline id="route-line" points="" pathLength="100"></polyline>
+          <polyline id="route-line-progress" points="" pathLength="100"></polyline>
+        </svg>
+        <div id="route-markers"></div>
+        <span class="map-compass" aria-hidden="true">N ↑</span>
+      </div>
+      <p class="map-note">Schematic—not for navigation. Use the linked map and an offline GPX track while walking.</p>
+    </section>
 
-  <article id="stage-detail" class="stage-detail" aria-live="polite">
-    <figure><img id="stage-image" src="" alt=""><figcaption id="stage-caption"></figcaption></figure>
-    <div class="stage-copy">
-      <div class="stage-heading"><div><p id="stage-number" class="eyebrow"></p><h2 id="stage-name"></h2></div><strong id="stage-distance"></strong></div>
-      <p id="stage-note" class="stage-note"></p>
-      <div class="stage-facts">
-        <section><span aria-hidden="true">⌂</span><div><h3>Stay</h3><p id="stage-stay"></p></div></section>
-        <section><span aria-hidden="true">◇</span><div><h3>Eat</h3><p id="stage-eat"></p></div></section>
-        <section><span aria-hidden="true">↔</span><div><h3>Transport</h3><p id="stage-transport"></p></div></section>
+    <article id="stage-detail" class="stage-panel" aria-live="polite">
+      <figure class="stage-photo"><img id="stage-image" src="" alt=""><figcaption id="stage-caption"></figcaption></figure>
+      <div class="stage-copy">
+        <div class="stage-heading">
+          <div><p id="stage-number" class="eyebrow"></p><h2 id="stage-name"></h2></div>
+          <strong id="stage-distance"></strong>
+        </div>
+        <p id="stage-note" class="stage-note"></p>
+        <div class="stage-facts">
+          <section><span aria-hidden="true">⌂</span><div><h3>Stay</h3><p id="stage-stay"></p></div></section>
+          <section><span aria-hidden="true">◇</span><div><h3>Eat</h3><p id="stage-eat"></p></div></section>
+          <section><span aria-hidden="true">↔</span><div><h3>Transport</h3><p id="stage-transport"></p></div></section>
+        </div>
+        <div class="stage-actions">
+          <a id="stage-map" class="button button-primary" href="#" target="_blank" rel="noopener">Open stage map</a>
+          <button id="previous-stage" class="button button-quiet" type="button">← Previous</button>
+          <button id="next-stage" class="button button-quiet" type="button">Next →</button>
+        </div>
       </div>
-      <div class="stage-actions">
-        <a id="stage-map" class="button button-primary" href="#" target="_blank" rel="noopener">Open map</a>
-        <a id="stage-info" class="button button-quiet" href="#" target="_blank" rel="noopener">Visitor information</a>
-      </div>
-    </div>
-  </article>
+    </article>
+  </div>
 </section>
 
 <section class="planner-notes">
@@ -53,5 +71,5 @@
     </div>
   </div>
 </section>
-<script src="{{ "js/jakobsweg.js" | relURL }}?v=2" defer></script>
+<script src="{{ "js/jakobsweg.js" | relURL }}?v=3" defer></script>
 {{ end }}

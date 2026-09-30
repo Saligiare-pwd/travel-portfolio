@@ -3,6 +3,7 @@ title: "Kyoto Without the Rush"
 slug: "kyoto-slow-plan"
 date: 2026-09-30
 country: "Japan"
+area: "Japan"
 city: "Kyoto"
 days: 4
 bestFor: "Temples & neighbourhoods"
@@ -11,14 +12,16 @@ featured: true
 tags: ["itinerary", "Japan"]
 official: "https://kyoto.travel/en/"
 cover:
-  image: "images/kyoto/kiyomizudera.jpg"
-  alt: "Kiyomizu-dera temple in Kyoto"
+  image: "images/food/kyoto-matcha.jpg"
+  alt: "Matcha and wagashi served in Kyoto"
 summary: "Four days organised by area, with early landmark visits and quieter afternoons nearby."
 ---
 
 ## A calmer Kyoto strategy
 
 Do not cross the city repeatedly. Give each day one district, start the famous places early, and let the rest of the day narrow into lanes, gardens, and tea.
+
+{{< city-route title="Kyoto district orientation" points="Kyoto Station|Higashiyama|Gion|Northern temples|Arashiyama" times="20 min|15 min|30 min|45 min" modes="bus / taxi|walk|subway + walk|rail" note="Assumes Kyoto Station as the base, off-peak travel, and no bus queue. Treat each district as a separate day rather than following the whole line at once." >}}
 
 ## Day 1 — Higashiyama on foot
 

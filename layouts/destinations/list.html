@@ -1,0 +1,30 @@
+{{ define "main" }}
+{{ $allTrips := where site.RegularPages "Section" "destinations" }}
+<header class="page-hero compact places-hero">
+  <p class="eyebrow">Area → city guide</p>
+  <h1>Choose a place, not a folder</h1>
+  <p>Every card opens the complete city itinerary directly—route, transport assumptions, food notes, and practical planning in one page.</p>
+</header>
+
+<nav class="area-jump" aria-label="Jump to an area">
+  <a href="#germany">Germany</a>
+  <a href="#japan">Japan</a>
+  <a href="#taiwan">Taiwan</a>
+</nav>
+
+<div class="places-index">
+  {{ range slice "Germany" "Japan" "Taiwan" }}
+    {{ $area := . }}
+    {{ $trips := where $allTrips "Params.area" $area }}
+    {{ if $trips }}
+      <section id="{{ $area | anchorize }}" class="area-section">
+        <div class="area-heading">
+          <div><p class="eyebrow">{{ $area }}</p><h2>{{ if eq $area "Germany" }}Cities & landscapes{{ else if eq $area "Japan" }}Food & seasons{{ else }}Island journeys{{ end }}</h2></div>
+          <span>{{ len $trips }} city guides</span>
+        </div>
+        <div class="card-grid">{{ range $trips.ByTitle }}{{ partial "destination-card.html" . }}{{ end }}</div>
+      </section>
+    {{ end }}
+  {{ end }}
+</div>
+{{ end }}

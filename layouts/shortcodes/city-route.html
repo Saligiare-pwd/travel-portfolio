@@ -1,0 +1,23 @@
+{{- $points := split (.Get "points") "|" -}}
+{{- $times := split (.Get "times") "|" -}}
+{{- $modes := split (.Get "modes") "|" -}}
+<section class="city-route" aria-label="{{ .Get "title" }}">
+  <header>
+    <div><p class="eyebrow">Transport assumption</p><h3>{{ .Get "title" }}</h3></div>
+    <p>{{ .Get "note" }}</p>
+  </header>
+  <div class="city-route-track">
+    {{- range $i, $point := $points -}}
+      <div class="city-route-stop">
+        <span>{{ add $i 1 }}</span>
+        <strong>{{ $point }}</strong>
+      </div>
+      {{- if lt $i (sub (len $points) 1) -}}
+        <div class="city-route-leg">
+          <b>{{ index $times $i }}</b>
+          <small>{{ index $modes $i }}</small>
+        </div>
+      {{- end -}}
+    {{- end -}}
+  </div>
+</section>

@@ -21,6 +21,7 @@ title: "City: Short descriptive title"
 slug: "city-short-plan"
 date: 2026-09-30
 country: "Germany"
+area: "Germany"
 city: "City"
 days: 2
 bestFor: "Art & walks"
@@ -36,13 +37,19 @@ summary: "One sentence shown on the destination card."
 
 Set `featured: true` to show a trip on the homepage. Set it to `false` or remove it to keep the trip inside the destination library only.
 
+The **Places** page groups trips by the `area` field and links directly to each city guide. To add a transport schematic inside a guide, use:
+
+```text
+{{< city-route stops="Station|Museum|Old town" times="8 min|12 min" modes="tram|walk" note="Assumes daytime weekday service." >}}
+```
+
 ## Edit the Jakobswege planner
 
 - Page structure: `layouts/jakobsweg/list.html`
 - Route and stage information: `static/js/jakobsweg.js`
 - Route photographs: `static/images/jakobsweg/`
 
-Each stage has the same fields: place, distance, image, short note, stay, eat, transport, map, and official visitor information.
+Each stage has the same fields: place, distance, map position, image, short note, stay, eat, transport, and map link.
 
 ## Preview locally
 
@@ -58,7 +65,7 @@ Open `http://localhost:1313`. The GitHub workflow uses Hugo `0.149.0`.
 ## Publish
 
 ```bash
-git add .
+git add README.md hugo.toml content layouts static
 git commit -m "Update travel plans"
 git push origin main
 ```

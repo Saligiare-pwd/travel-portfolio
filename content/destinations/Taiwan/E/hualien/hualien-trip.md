@@ -4,6 +4,7 @@ slug: hualien-trip
 date: '2025-10-08'
 updated: '2025-10-08'
 country: 台灣
+area: Taiwan
 city: 花蓮
 days: 5
 tags:
@@ -12,8 +13,11 @@ tags:
 - taiwan
 summary: 花蓮 5 天行程總整理。
 cover:
-  image: images/hualien/image2.jpeg
+  image: images/food/taiwan-mochi.jpg
+  alt: 台灣麻糬與茶
 ---
+
+{{< city-route title="花蓮移動概念" points="花蓮車站|東大門夜市|七星潭|曼波海灘" times="10 分|15 分|20 分" modes="公車 / 計程車|公車 / 單車|公車 / 計程車" note="以花蓮車站為住宿與轉乘起點，時間為一般路況估算；海岸公車班距較長，出發前應再查時刻。" >}}
 
 ### 第1天（搭車、抵達、放行李、逛街）
 | 時間 | 活動 | 位置 | 附註 |

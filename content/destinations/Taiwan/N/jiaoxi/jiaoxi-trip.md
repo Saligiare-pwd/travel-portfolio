@@ -4,15 +4,20 @@ slug: jiaoxi-trip
 date: '2025-10-08'
 updated: '2025-10-08'
 country: 台灣
+area: Taiwan
 city: 礁溪
+days: 1
 tags:
 - itinerary
 - jiaoxi
 - taiwan
 summary: 礁溪 行程總整理。
 cover:
-  image: images/jiaoxi/image1.jpg
+  image: images/food/taiwan-scallion-pancake.jpg
+  alt: 台灣蔥油餅攤位
 ---
+
+{{< city-route title="礁溪一日移動概念" points="台北科技大樓|礁溪轉運站|湯圍溝公園|五峰旗瀑布" times="60 分|8 分|20 分" modes="客運|步行|公車 / 計程車" note="以平日非尖峰為假設；假日國道與礁溪市區容易塞車，五峰旗回程要先確認末班公車。" >}}
 
 ### 第1天
 | 時間 | 活動 | 位置 | 附註 |

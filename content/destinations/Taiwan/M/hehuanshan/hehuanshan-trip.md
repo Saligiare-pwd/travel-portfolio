@@ -4,7 +4,9 @@ slug: hehuanshan-trip
 date: '2025-10-08'
 updated: '2025-10-08'
 country: 台灣
+area: Taiwan
 city: 合歡山
+days: 3
 tags:
 - itinerary
 - hehuanshan
@@ -13,6 +15,8 @@ summary: 合歡山 行程總整理。
 cover:
   image: images/hehuanshan/image1.jpg
 ---
+
+{{< city-route title="合歡山轉乘概念" points="台中高鐵站|清境農場|松雪樓|合歡東峰" times="140 分|50 分|50 分" modes="客運|預約接駁|步行" note="山區時間受天候、道路管制與接駁預約影響很大；這是行程配置假設，不應取代當日公告。" >}}
 
 ### 第1天
 | 起點 | 目的 | 出發 | 抵達 |

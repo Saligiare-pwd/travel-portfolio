@@ -3,6 +3,7 @@ title: "Niigata: Sea, Rice & Sake"
 slug: "niigata-3-days"
 date: 2026-09-30
 country: "Japan"
+area: "Japan"
 city: "Niigata"
 days: 3
 bestFor: "Food & local culture"
@@ -11,14 +12,16 @@ featured: true
 tags: ["itinerary", "Japan"]
 official: "https://discover-niigata.com/"
 cover:
-  image: "images/niigata/niigata.jpeg"
-  alt: "Coastal view in Niigata"
+  image: "images/food/niigata-sake.jpg"
+  alt: "Regional sake at the Niigata Sake no Jin festival"
 summary: "A three-day city plan built around the Sea of Japan, market food, rice, and regional sake."
 ---
 
 ## Before you go
 
 Niigata rewards appetite more than speed. Base yourself near Niigata Station for transport, or around Bandai for easier access to the river and city centre.
+
+{{< city-route title="Niigata orientation" points="Niigata Station|Bandai Bridge|Pier Bandai|Toki Messe|Furumachi" times="15 min|12 min|15 min|20 min" modes="walk / bus|walk|walk|bus" note="Assumes Niigata Station as the base and ordinary city traffic. Add time for the coast or Yahiko, which are separate excursions." >}}
 
 ## Day 1 — Bandai and the Shinano River
 

@@ -3,6 +3,7 @@ title: "Karlsruhe: A Thoughtful Zoo Day"
 slug: "karlsruhe-zoo-day"
 date: 2026-09-30
 country: "Germany"
+area: "Germany"
 city: "Karlsruhe"
 days: 1
 bestFor: "Families & gardens"
@@ -17,6 +18,8 @@ summary: "A comfortable one-day plan for the zoo and Stadtgarten, with an option
 ---
 
 ## Morning — Animals while energy is fresh
+
+{{< city-route title="Karlsruhe orientation" points="Karlsruhe Hbf|Zoo entrance|Marktplatz|Palace" times="3 min|8 min|8 min" modes="walk|tram|walk" note="The zoo is directly beside the main station. Times assume no tram wait and a relaxed walking pace after the zoo." >}}
 
 - Enter close to opening and check the day's keeper-talk schedule first.
 - Choose three priority areas; do not zigzag through every enclosure.

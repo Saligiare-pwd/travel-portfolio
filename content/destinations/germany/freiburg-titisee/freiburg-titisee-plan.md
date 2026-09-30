@@ -3,6 +3,7 @@ title: "Freiburg & Titisee by Train"
 slug: "freiburg-titisee"
 date: 2026-09-30
 country: "Germany"
+area: "Germany"
 city: "Freiburg im Breisgau"
 days: 2
 bestFor: "Old town & nature"
@@ -17,6 +18,8 @@ summary: "One day among Freiburg's lanes and Bächle, then a rail day trip to La
 ---
 
 ## Day 1 — Freiburg at street level
+
+{{< city-route title="Freiburg–Titisee orientation" points="Freiburg Hbf|Münsterplatz|Schlossberg|Freiburg Hbf|Titisee" times="12 min|20 min|15 min|40 min" modes="walk / tram|walk|walk / tram|regional train" note="Assumes Freiburg Hbf as the transport base. The Titisee train time is approximate and should be checked for engineering work." >}}
 
 - Begin at Münsterplatz and the market, then look inside Freiburg Minster.
 - Follow the Bächle through the old lanes rather than a fixed sightseeing circuit.

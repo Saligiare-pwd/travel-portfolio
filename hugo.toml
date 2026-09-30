@@ -18,17 +18,17 @@ enableRobotsTXT = true
 [menu]
   [[menu.main]]
     identifier = "destinations"
-    name = "Destinations"
+    name = "Places"
     url = "/destinations/"
     weight = 10
   [[menu.main]]
     identifier = "jakobsweg"
-    name = "Jakobswege"
+    name = "Pilgrimage"
     url = "/jakobsweg/"
     weight = 20
   [[menu.main]]
     identifier = "resources"
-    name = "Travel kit"
+    name = "Planning notes"
     url = "/resources/"
     weight = 30
   [[menu.main]]

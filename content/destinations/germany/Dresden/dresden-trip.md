@@ -2,6 +2,11 @@
 title: "德勒斯登近郊：小瑞士國家公園 (Sächsische Schweiz)"
 date: 2024-03-21
 description: "探索易北河砂岩山脈的壯麗景觀，走過歷史悠久的巴斯泰橋。"
+summary: "從德勒斯登搭火車出發，串連 Rathen、巴斯泰橋、瑞典孔與 Amselsee 的一日健行。"
+country: "Germany"
+area: "Germany"
+city: "Dresden / Rathen"
+days: 1
 cover:
   image: "images/dresden/bastei.avif"
 tags: ["Dresden", "Hiking", "Nature"]
@@ -10,6 +15,8 @@ tags: ["Dresden", "Hiking", "Nature"]
 # 薩克森小瑞士：大自然的鬼斧神工
 
 如果你住在德勒斯登，絕對不能錯過這座位於德國與捷克邊境的國家公園。這裡以奇特的砂岩地貌聞名，更是 19 世紀浪漫主義畫家們（如 Caspar David Friedrich）的靈感泉源。
+
+{{< city-route title="德勒斯登—巴斯泰交通概念" points="Dresden Hbf|Kurort Rathen|渡輪碼頭|Basteibrücke|Amselsee" times="40 分|5 分|30 分|60 分" modes="S-Bahn S1|渡輪|上坡步行|峽谷步行" note="以 S1 正常運行與一般步速估算；渡輪候船、石階與潮濕路面會拉長時間。" >}}
 
 ## 📍 交通方式：如何從德勒斯登前往？
 
