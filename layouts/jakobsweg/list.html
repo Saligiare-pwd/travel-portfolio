@@ -27,15 +27,8 @@
       </header>
       <div class="distance-progress" aria-hidden="true"><span id="progress-fill"></span></div>
       <p id="progress-label" class="progress-label">Starting point · Stage 1 of 5</p>
-      <div id="route-map" class="route-map" aria-label="Clickable route stages">
-        <svg viewBox="0 0 560 430" role="img" aria-label="Schematic route map">
-          <polyline id="route-line" points="" pathLength="100"></polyline>
-          <polyline id="route-line-progress" points="" pathLength="100"></polyline>
-        </svg>
-        <div id="route-markers"></div>
-        <span class="map-compass" aria-hidden="true">N ↑</span>
-      </div>
-      <p class="map-note">Schematic—not for navigation. Use the linked map and an offline GPX track while walking.</p>
+      <div id="route-map" class="route-map" aria-label="Interactive OpenStreetMap route with clickable stages"></div>
+      <p class="map-note">OpenStreetMap orientation—not turn-by-turn navigation. Follow the official waymarks and keep an offline GPX track.</p>
     </section>
 
     <article id="stage-detail" class="stage-panel" aria-live="polite">
@@ -71,5 +64,5 @@
     </div>
   </div>
 </section>
-<script src="{{ "js/jakobsweg.js" | relURL }}?v=3" defer></script>
+<script src="{{ "js/jakobsweg.js" | relURL }}?v=4" defer></script>
 {{ end }}

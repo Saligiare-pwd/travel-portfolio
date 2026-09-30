@@ -22,6 +22,13 @@ The following images were resized for the website. Their original licences conti
 - **Niigata sake:** [DAI-nk, CC BY-SA 3.0](https://commons.wikimedia.org/wiki/File:Niigata_sake_no_jin_01.JPG)
 - **Taiwanese mochi:** [Yuriy kosygin, CC BY-SA 4.0](https://commons.wikimedia.org/wiki/File:Taiwanese_Mochi.jpg)
 - **Taiwanese scallion pancakes:** [Banzai Hiroaki, CC BY 2.0](https://commons.wikimedia.org/wiki/File:2009-03-21_Flaky_scallion_pancakes_vendor_in_Taipei.jpg)
+- **Jiaoxi / Yilan food table:** AI-generated editorial photograph created for this website; it does not depict a particular restaurant or serving.
+
+### New island and lake guides
+
+- **Enoshima viewed from Fujisawa:** [ジェイ.ケイ, CC BY-SA 4.0](https://commons.wikimedia.org/wiki/File:Enoshima_view_from_Iseyama.jpg)
+- **Mount Fuji from Lake Kawaguchi:** [Alpsdake, CC BY-SA 4.0](https://commons.wikimedia.org/wiki/File:Mount_Fuji_from_Lake_Kawaguchi_s2.jpg)
+- **Spotted unicornfish at Green Island, Taiwan:** [Divervincent, CC BY-SA 3.0](https://commons.wikimedia.org/wiki/File:Spotted_unicornfish_green_island.jpg)
 
 ### Jakobsweg stages
 

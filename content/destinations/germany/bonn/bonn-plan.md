@@ -8,7 +8,7 @@ city: "Bonn"
 days: 2
 bestFor: "Culture & riverside"
 pace: "Easy"
-featured: true
+featured: false
 tags: ["itinerary", "Germany"]
 official: "https://www.bonn.de/bonn-erleben/index.php?loc=en"
 cover:
@@ -17,9 +17,13 @@ cover:
 summary: "A compact weekend pairing Beethoven's city with the Museum Mile and a Rhine-side excursion."
 ---
 
-## Day 1 — Beethoven's Bonn
+## The shape of the trip
 
-{{< city-route title="Bonn orientation" points="Bonn Hbf|Beethoven-Haus|Rhine promenade|Museum Mile|Königswinter" times="10 min|8 min|12 min|25 min" modes="walk|walk|tram|tram / train" note="Assumes Bonn Hbf as the base. Add waiting time for trams and regional trains; Königswinter is the optional landscape extension." >}}
+Keep the centre, river and one larger excursion as separate parts of the weekend. This leaves enough time for Beethoven-Haus or a museum without turning Bonn into a checklist.
+
+{{< city-route title="Bonn orientation" points="Bonn Hbf|Beethoven-Haus|Rhine promenade|Museum Mile|Königswinter" coords="50.7320,7.0960|50.7379,7.1014|50.7390,7.1085|50.7150,7.1180|50.6740,7.1920" times="10 min|8 min|12 min|25 min" modes="walk|walk|tram|tram / train" note="Assumes Bonn Hbf as the base. Add waiting time for trams and regional trains; Königswinter is the optional landscape extension." >}}
+
+## Day 1 — Beethoven's Bonn
 
 - Start around Münsterplatz, Bonn Minster, and the lanes of the centre.
 - Visit Beethoven-Haus with enough time to listen rather than simply move through.

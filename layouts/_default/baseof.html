@@ -7,7 +7,9 @@
   <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
   <meta name="description" content="{{ .Description | default .Summary | default site.Params.description }}">
   <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ "vendor/leaflet/leaflet.css" | relURL }}">
   <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
+  <script src="{{ "vendor/leaflet/leaflet.js" | relURL }}" defer></script>
   {{ partial "jsonld.html" . }}
 </head>
 <body class="{{ if .IsHome }}home{{ end }}">

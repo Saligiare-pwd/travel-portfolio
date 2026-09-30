@@ -1,23 +1,21 @@
 {{- $points := split (.Get "points") "|" -}}
 {{- $times := split (.Get "times") "|" -}}
 {{- $modes := split (.Get "modes") "|" -}}
+{{- $coords := split (.Get "coords") "|" -}}
 <section class="city-route" aria-label="{{ .Get "title" }}">
   <header>
     <div><p class="eyebrow">Transport assumption</p><h3>{{ .Get "title" }}</h3></div>
     <p>{{ .Get "note" }}</p>
   </header>
-  <div class="city-route-track">
+  <div class="city-route-map" data-city-route-map aria-label="Interactive map of {{ .Get "title" }}"></div>
+  <ol class="city-route-stops">
     {{- range $i, $point := $points -}}
-      <div class="city-route-stop">
+      {{- $coord := split (index $coords $i) "," -}}
+      <li data-route-point data-lat="{{ index $coord 0 }}" data-lng="{{ index $coord 1 }}" data-name="{{ $point }}">
         <span>{{ add $i 1 }}</span>
-        <strong>{{ $point }}</strong>
-      </div>
-      {{- if lt $i (sub (len $points) 1) -}}
-        <div class="city-route-leg">
-          <b>{{ index $times $i }}</b>
-          <small>{{ index $modes $i }}</small>
-        </div>
-      {{- end -}}
+        <div><strong>{{ $point }}</strong>
+        {{- if lt $i (sub (len $points) 1) -}}<small>{{ index $modes $i }} · {{ index $times $i }} to next stop</small>{{- else -}}<small>Final stop</small>{{- end -}}</div>
+      </li>
     {{- end -}}
-  </div>
+  </ol>
 </section>

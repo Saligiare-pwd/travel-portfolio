@@ -28,7 +28,7 @@
   </div>
   <div class="card-grid">
     {{ $pages := where site.RegularPages "Section" "destinations" }}
-    {{ range first 8 (where $pages "Params.featured" true) }}{{ partial "destination-card.html" . }}{{ end }}
+    {{ range first 3 (where $pages "Params.featured" true) }}{{ partial "destination-card.html" . }}{{ end }}
   </div>
 </section>
 

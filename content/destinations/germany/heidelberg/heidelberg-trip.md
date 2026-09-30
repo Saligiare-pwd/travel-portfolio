@@ -21,7 +21,7 @@ summary: "A relaxed two-day loop linking the castle, Old Town, riverbank, and Ph
 
 Heidelberg is compact enough to explore without collecting a long checklist. Stay near the Altstadt or Bismarckplatz, walk one side of the Neckar each day, and leave space for the views.
 
-{{< city-route title="Heidelberg orientation" points="Heidelberg Hbf|Bismarckplatz|Altstadt|Castle|Philosophenweg" times="7 min|12 min|10 min|25 min" modes="tram|walk|funicular / walk|walk" note="Assumes an off-peak start at Heidelberg Hbf. Walking times are approximate and the castle climb is slower with luggage." >}}
+{{< city-route title="Heidelberg orientation" points="Heidelberg Hbf|Bismarckplatz|Altstadt|Castle|Philosophenweg" coords="49.4036,8.6753|49.4092,8.6933|49.4122,8.7100|49.4105,8.7158|49.4195,8.7005" times="7 min|12 min|10 min|25 min" modes="tram|walk|funicular / walk|walk" note="Assumes an off-peak start at Heidelberg Hbf. Walking times are approximate and the castle climb is slower with luggage." >}}
 
 ## Day 1 — Castle and Old Town
 

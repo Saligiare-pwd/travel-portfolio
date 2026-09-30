@@ -8,7 +8,7 @@ city: "Karlsruhe"
 days: 1
 bestFor: "Families & gardens"
 pace: "Gentle"
-featured: true
+featured: false
 tags: ["itinerary", "Germany", "zoo"]
 official: "https://www.karlsruhe-erleben.de/en/sehenswuerdigkeiten/zoo-karlsruhe"
 cover:
@@ -17,9 +17,13 @@ cover:
 summary: "A comfortable one-day plan for the zoo and Stadtgarten, with an optional walk to the palace."
 ---
 
-## Morning — Animals while energy is fresh
+## The shape of the trip
 
-{{< city-route title="Karlsruhe orientation" points="Karlsruhe Hbf|Zoo entrance|Marktplatz|Palace" times="3 min|8 min|8 min" modes="walk|tram|walk" note="The zoo is directly beside the main station. Times assume no tram wait and a relaxed walking pace after the zoo." >}}
+The zoo and Stadtgarten are the main day. The palace is an optional final walk, not a reason to hurry through the animals and gardens.
+
+{{< city-route title="Karlsruhe orientation" points="Karlsruhe Hbf|Zoo entrance|Marktplatz|Palace" coords="49.0135,8.4044|49.0108,8.4005|49.0093,8.4038|49.0140,8.4044" times="3 min|8 min|8 min" modes="walk|tram|walk" note="The zoo is directly beside the main station. Times assume no tram wait and a relaxed walking pace after the zoo." >}}
+
+## Morning — Animals while energy is fresh
 
 - Enter close to opening and check the day's keeper-talk schedule first.
 - Choose three priority areas; do not zigzag through every enclosure.
@@ -31,7 +35,7 @@ summary: "A comfortable one-day plan for the zoo and Stadtgarten, with an option
 - Finish the zoo areas you missed, then decide between a slow Stadtgarten exit or a tram to Karlsruhe Palace.
 - From the palace, the city's fan-shaped streets become easy to understand.
 
-## Practical notes
+## Stay, eat, move
 
 - **Stay:** Near Karlsruhe Hbf for the easiest zoo access; around Marktplatz for the city centre.
 - **Eat:** The zoo has on-site options; the streets north of the station add more choice.

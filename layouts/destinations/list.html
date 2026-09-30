@@ -17,12 +17,12 @@
     {{ $area := . }}
     {{ $trips := where $allTrips "Params.area" $area }}
     {{ if $trips }}
-      <section id="{{ $area | anchorize }}" class="area-section">
+      <section id="{{ $area | anchorize }}" class="area-section{{ if eq $area "Germany" }} area-section-scroll{{ end }}">
         <div class="area-heading">
-          <div><p class="eyebrow">{{ $area }}</p><h2>{{ if eq $area "Germany" }}Cities & landscapes{{ else if eq $area "Japan" }}Food & seasons{{ else }}Island journeys{{ end }}</h2></div>
-          <span>{{ len $trips }} city guides</span>
+          <div><p class="eyebrow">{{ $area }}</p><h2>{{ if eq $area "Germany" }}Germany{{ else if eq $area "Japan" }}Japan{{ else }}Taiwan{{ end }}</h2></div>
+          <div class="area-heading-actions"><span>{{ len $trips }} city guides</span>{{ if eq $area "Germany" }}<button type="button" data-rail-previous aria-label="Scroll Germany guides left">←</button><button type="button" data-rail-next aria-label="Scroll Germany guides right">→</button>{{ end }}</div>
         </div>
-        <div class="card-grid">{{ range $trips.ByTitle }}{{ partial "destination-card.html" . }}{{ end }}</div>
+        <div class="card-grid{{ if eq $area "Germany" }} card-rail{{ end }}"{{ if eq $area "Germany" }} data-card-rail{{ end }}>{{ range $trips.ByTitle }}{{ partial "destination-card.html" . }}{{ end }}</div>
       </section>
     {{ end }}
   {{ end }}

@@ -40,8 +40,10 @@ Set `featured: true` to show a trip on the homepage. Set it to `false` or remove
 The **Places** page groups trips by the `area` field and links directly to each city guide. To add a transport schematic inside a guide, use:
 
 ```text
-{{< city-route stops="Station|Museum|Old town" times="8 min|12 min" modes="tram|walk" note="Assumes daytime weekday service." >}}
+{{< city-route title="City orientation" points="Station|Museum|Old town" coords="49.40,8.67|49.41,8.69|49.42,8.71" times="8 min|12 min" modes="tram|walk" note="Assumes daytime weekday service." >}}
 ```
+
+The map uses locally stored Leaflet code and OpenStreetMap tiles. Coordinates must follow the same order as the place names; there is one travel time and mode between each pair of stops.
 
 ## Edit the Jakobswege planner
 

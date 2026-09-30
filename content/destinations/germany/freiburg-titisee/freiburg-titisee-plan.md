@@ -8,7 +8,7 @@ city: "Freiburg im Breisgau"
 days: 2
 bestFor: "Old town & nature"
 pace: "Easy"
-featured: true
+featured: false
 tags: ["itinerary", "Germany", "Black Forest"]
 official: "https://visit.freiburg.de/en"
 cover:
@@ -17,9 +17,13 @@ cover:
 summary: "One day among Freiburg's lanes and Bächle, then a rail day trip to Lake Titisee."
 ---
 
-## Day 1 — Freiburg at street level
+## The shape of the trip
 
-{{< city-route title="Freiburg–Titisee orientation" points="Freiburg Hbf|Münsterplatz|Schlossberg|Freiburg Hbf|Titisee" times="12 min|20 min|15 min|40 min" modes="walk / tram|walk|walk / tram|regional train" note="Assumes Freiburg Hbf as the transport base. The Titisee train time is approximate and should be checked for engineering work." >}}
+Use Freiburg as the base and keep Titisee as its own rail day. That prevents a late lake return from compressing the old town into a few hurried hours.
+
+{{< city-route title="Freiburg–Titisee orientation" points="Freiburg Hbf|Münsterplatz|Schlossberg|Freiburg Hbf|Titisee" coords="47.9977,7.8418|47.9956,7.8522|47.9950,7.8620|47.9977,7.8418|47.9028,8.1553" times="12 min|20 min|15 min|40 min" modes="walk / tram|walk|walk / tram|regional train" note="Assumes Freiburg Hbf as the transport base. The Titisee train time is approximate and should be checked for engineering work." >}}
+
+## Day 1 — Freiburg at street level
 
 - Begin at Münsterplatz and the market, then look inside Freiburg Minster.
 - Follow the Bächle through the old lanes rather than a fixed sightseeing circuit.

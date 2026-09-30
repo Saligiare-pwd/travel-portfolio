@@ -8,7 +8,7 @@ city: "Niigata"
 days: 3
 bestFor: "Food & local culture"
 pace: "Unhurried"
-featured: true
+featured: false
 tags: ["itinerary", "Japan"]
 official: "https://discover-niigata.com/"
 cover:
@@ -21,7 +21,7 @@ summary: "A three-day city plan built around the Sea of Japan, market food, rice
 
 Niigata rewards appetite more than speed. Base yourself near Niigata Station for transport, or around Bandai for easier access to the river and city centre.
 
-{{< city-route title="Niigata orientation" points="Niigata Station|Bandai Bridge|Pier Bandai|Toki Messe|Furumachi" times="15 min|12 min|15 min|20 min" modes="walk / bus|walk|walk|bus" note="Assumes Niigata Station as the base and ordinary city traffic. Add time for the coast or Yahiko, which are separate excursions." >}}
+{{< city-route title="Niigata orientation" points="Niigata Station|Bandai Bridge|Pier Bandai|Toki Messe|Furumachi" coords="37.9120,139.0610|37.9180,139.0490|37.9250,139.0490|37.9240,139.0510|37.9240,139.0440" times="15 min|12 min|15 min|20 min" modes="walk / bus|walk|walk|bus" note="Assumes Niigata Station as the base and ordinary city traffic. Add time for the coast or Yahiko, which are separate excursions." >}}
 
 ## Day 1 — Bandai and the Shinano River
 
@@ -42,7 +42,7 @@ Niigata rewards appetite more than speed. Base yourself near Niigata Station for
 - **Option A:** Take a gentle day trip to Yahiko Shrine and the village surroundings.
 - **Option B:** Stay in the city for museums, cafés, and a slower final lunch.
 
-## Practical notes
+## Stay, eat, move
 
 - **Stay:** Niigata Station for an early departure; Bandai for a more walkable evening.
 - **Eat:** Market sushi, *hegi soba*, rice crackers, and seasonal seafood.
