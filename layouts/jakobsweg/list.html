@@ -1,0 +1,57 @@
+{{ define "main" }}
+<header class="page-hero camino-hero">
+  <p class="eyebrow">Walk first, plan clearly</p>
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Params.summary }}</p>
+</header>
+
+<section class="route-planner" aria-labelledby="planner-title">
+  <div class="planner-intro">
+    <div>
+      <p class="eyebrow">Interactive trail</p>
+      <h2 id="planner-title">Choose a route, then a stage</h2>
+    </div>
+    <p>Each stop keeps the useful decisions together: where to sleep, what to eat, and how to reach or leave the trail. Distances are planning estimates, not navigation data.</p>
+  </div>
+
+  <div class="route-tabs" role="tablist" aria-label="Pilgrimage route">
+    <button type="button" role="tab" aria-selected="true" data-route="rhine">Rhine Way · from Bonn</button>
+    <button type="button" role="tab" aria-selected="false" data-route="munich">Munich Way · toward the Alps</button>
+  </div>
+
+  <div class="trail-shell">
+    <button class="trail-scroll trail-prev" type="button" aria-label="Scroll trail left">←</button>
+    <div id="trail-stops" class="trail-stops" role="tablist" aria-label="Route stages"></div>
+    <button class="trail-scroll trail-next" type="button" aria-label="Scroll trail right">→</button>
+  </div>
+
+  <article id="stage-detail" class="stage-detail" aria-live="polite">
+    <figure><img id="stage-image" src="" alt=""><figcaption id="stage-caption"></figcaption></figure>
+    <div class="stage-copy">
+      <div class="stage-heading"><div><p id="stage-number" class="eyebrow"></p><h2 id="stage-name"></h2></div><strong id="stage-distance"></strong></div>
+      <p id="stage-note" class="stage-note"></p>
+      <div class="stage-facts">
+        <section><span aria-hidden="true">⌂</span><div><h3>Stay</h3><p id="stage-stay"></p></div></section>
+        <section><span aria-hidden="true">◇</span><div><h3>Eat</h3><p id="stage-eat"></p></div></section>
+        <section><span aria-hidden="true">↔</span><div><h3>Transport</h3><p id="stage-transport"></p></div></section>
+      </div>
+      <div class="stage-actions">
+        <a id="stage-map" class="button button-primary" href="#" target="_blank" rel="noopener">Open map</a>
+        <a id="stage-info" class="button button-quiet" href="#" target="_blank" rel="noopener">Visitor information</a>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section class="planner-notes">
+  <div><p class="eyebrow">Before walking</p><h2>A route is not a reservation</h2></div>
+  <div>
+    <p>Accommodation, food service, trail surfaces, and public transport can change. Confirm every overnight stop directly, download an offline map, and use the official German Jakobswege network for route updates and GPX information.</p>
+    <div class="note-links">
+      <a class="text-link" href="https://jakobuswege.de/" target="_blank" rel="noopener">German Jakobswege network ↗</a>
+      <a class="text-link" href="https://int.bahn.de/en" target="_blank" rel="noopener">DB journey planner ↗</a>
+    </div>
+  </div>
+</section>
+<script src="{{ "js/jakobsweg.js" | relURL }}?v=2" defer></script>
+{{ end }}

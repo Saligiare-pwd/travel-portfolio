@@ -1,0 +1,27 @@
+{{ define "main" }}
+{{ $image := .Params.cover.image | default "images/heidelberg/old-bridge.jpeg" }}
+<article class="article-shell">
+  <header class="article-hero">
+    <div class="article-title">
+      <a class="back-link" href="{{ .Parent.RelPermalink }}">← Back to {{ .Parent.Title }}</a>
+      <p class="eyebrow">{{ .Params.country }}{{ with .Params.city }} · {{ . }}{{ end }}</p>
+      <h1>{{ .Title }}</h1>
+      <p class="article-summary">{{ .Summary }}</p>
+      <div class="trip-facts">
+        {{ with .Params.days }}<span><small>Length</small><strong>{{ . }} days</strong></span>{{ end }}
+        {{ with .Params.bestFor }}<span><small>Best for</small><strong>{{ . }}</strong></span>{{ end }}
+        {{ with .Params.pace }}<span><small>Pace</small><strong>{{ . }}</strong></span>{{ end }}
+      </div>
+    </div>
+    <figure><img src="{{ $image | relURL }}" alt="{{ .Params.cover.alt | default .Title }}"></figure>
+  </header>
+  <div class="article-layout">
+    <aside class="article-aside">
+      <p class="eyebrow">On this page</p>
+      <nav class="toc" aria-label="On this page">{{ .TableOfContents }}</nav>
+      {{ with .Params.official }}<a class="text-link" href="{{ . }}" target="_blank" rel="noopener">Official visitor information ↗</a>{{ end }}
+    </aside>
+    <div class="prose">{{ .Content }}</div>
+  </div>
+</article>
+{{ end }}

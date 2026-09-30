@@ -1,68 +1,70 @@
+# Wing's Travel Notes
 
-# Traveler’s Portfolio (Hugo + PaperMod)
+A Hugo travel notebook with destination plans and an interactive Jakobswege planner. GitHub Actions builds and publishes the site to GitHub Pages after every push to `main`.
 
-A travel blog skeleton designed for **global best-practice structure** (Destinations hub → Guides → Itineraries → Resources), ready to deploy on **GitHub Pages**. No local Hugo install required (GitHub Actions builds for you).
+## Add or update a trip
 
-## 🚀 One‑click flow (GitHub‑only)
-1. Create a new **public** repo on GitHub (e.g., `travel-portfolio`).
-2. Upload all files/folders from this package into the repo (root level).
-3. Go to **Settings → Pages** and set:
-   - **Source:** GitHub Actions
-4. Push to `main`. The included workflow will:
-   - install Hugo
-   - clone the PaperMod theme
-   - build the site
-   - publish to GitHub Pages
+Trips live inside a country and city folder:
 
-> First publish can take ~1–2 minutes. After it’s live, your site appears at `https://<your-username>.github.io/<repo>/` (or at your custom domain if configured).
-
-## 🧱 Content structure
-```
-content/
-  destinations/
-    japan/_index.md
-    japan/tokyo/_index.md
-  guides/
-    tokyo-basics.md
-  itineraries/
-    tokyo-3-days.md
-  resources/
-    tools.md
-  about.md
-static/images/
+```text
+content/destinations/
+  germany/heidelberg/heidelberg-trip.md
+  japan/kyoto/kyoto-plan.md
+  Taiwan/E/hualien/hualien-trip.md
 ```
 
-## ✍️ Writing new posts
-- Duplicate an existing `.md` file and edit frontmatter + body.
-- Recommended frontmatter fields:
+Copy the closest existing trip, then update its front matter and body. Keep images inside a matching folder under `static/images/`.
+
 ```yaml
-title: "Tokyo in 3 Days"
-slug: "tokyo-3-days"
-date: 2025-10-06
-updated: 2025-10-06
-country: "Japan"
-city: "Tokyo"
-days: 3
-tags: ["itinerary"]
+---
+title: "City: Short descriptive title"
+slug: "city-short-plan"
+date: 2026-09-30
+country: "Germany"
+city: "City"
+days: 2
+bestFor: "Art & walks"
+pace: "Easy"
+featured: true
+official: "https://official-tourism.example/"
 cover:
-  image: "/images/tokyo/shibuya.jpg"
-summary: "A clean 3-day route..."
+  image: "images/city/cover.jpg"
+  alt: "A useful description of the photograph"
+summary: "One sentence shown on the destination card."
+---
 ```
 
-## 🛠 Optional (local preview)
-If you want local preview:
+Set `featured: true` to show a trip on the homepage. Set it to `false` or remove it to keep the trip inside the destination library only.
+
+## Edit the Jakobswege planner
+
+- Page structure: `layouts/jakobsweg/list.html`
+- Route and stage information: `static/js/jakobsweg.js`
+- Route photographs: `static/images/jakobsweg/`
+
+Each stage has the same fields: place, distance, image, short note, stay, eat, transport, map, and official visitor information.
+
+## Preview locally
+
+Install Hugo once, then run:
+
 ```bash
 brew install hugo
 hugo server -D
 ```
-Open http://localhost:1313
 
-## 🔎 SEO tips
-- Use one main keyword per page + 3–5 long-tail variants
-- Add internal links between guides ↔ itineraries ↔ resources
-- Add `updated` when you refresh content
-- Always include `cover.image` and image `alt` text
+Open `http://localhost:1313`. The GitHub workflow uses Hugo `0.149.0`.
 
----
+## Publish
 
-Happy travels!
+```bash
+git add .
+git commit -m "Update travel plans"
+git push origin main
+```
+
+GitHub Pages deploys automatically. If a deployment fails, open the repository's **Actions** tab and select the newest “Deploy Hugo site to GitHub Pages” run.
+
+## Photo credits
+
+Add the creator, licence, and original source link to `content/resources/photo-credits.md` whenever you add a photograph that is not your own.

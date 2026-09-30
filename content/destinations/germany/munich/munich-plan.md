@@ -1,0 +1,43 @@
+---
+title: "Munich: Art, Parks & Old Town"
+slug: "munich-three-days"
+date: 2026-09-30
+country: "Germany"
+city: "Munich"
+days: 3
+bestFor: "Museums & city walks"
+pace: "Balanced"
+featured: true
+tags: ["itinerary", "Germany"]
+official: "https://www.muenchen.travel/en"
+cover:
+  image: "images/munich/munich.jpg"
+  alt: "Munich Old Town and Frauenkirche"
+summary: "A three-day plan with one historic centre, one art quarter, and one generous green day."
+---
+
+## Day 1 — Old Munich
+
+- Begin at Marienplatz before the centre fills.
+- Walk via Viktualienmarkt, St Peter's, and the courtyards of the Residenz.
+- Pause in the Hofgarten, then continue toward the Isar for the evening.
+
+## Day 2 — The Kunstareal
+
+- Choose one major museum rather than attempting all three Pinakotheken.
+- Have lunch around Maxvorstadt and add Lenbachhaus only if your attention still feels fresh.
+- End in Schwabing or the southern edge of the Englischer Garten.
+
+## Day 3 — The green route
+
+- Walk through the Englischer Garten in the morning.
+- Follow the Isar south for a low-pressure afternoon, or choose Nymphenburg Palace in poor weather.
+- Finish in a neighbourhood restaurant away from Marienplatz.
+
+## Stay, eat, move
+
+- **Stay:** Around Hauptbahnhof for rail convenience; Maxvorstadt or Haidhausen for a calmer evening.
+- **Eat:** Market breakfast, one beer garden meal, and a modern Bavarian dinner.
+- **Move:** Use the S-Bahn/U-Bahn for long jumps; the centre itself is best walked.
+
+> If you want the city to become the beginning rather than the destination, continue with the Munich route in the Jakobswege planner.

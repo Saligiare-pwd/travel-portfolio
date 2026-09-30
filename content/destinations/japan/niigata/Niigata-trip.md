@@ -1,27 +1,48 @@
 ---
-title: "Niigata in 3 Days: Snow, Rice, and Fishes"
+title: "Niigata: Sea, Rice & Sake"
 slug: "niigata-3-days"
-date: 2025-12-08
+date: 2026-09-30
 country: "Japan"
 city: "Niigata"
 days: 3
+bestFor: "Food & local culture"
+pace: "Unhurried"
+featured: true
 tags: ["itinerary", "Japan"]
+official: "https://discover-niigata.com/"
 cover:
   image: "images/niigata/niigata.jpeg"
-summary: "A compact three-day plan for Niigata's food and lifestyle."
+  alt: "Coastal view in Niigata"
+summary: "A three-day city plan built around the Sea of Japan, market food, rice, and regional sake."
 ---
 
-### Day 1 — Old Town & Castle
-- Morning: MarktPlatz → Castle via funicular  
-- Afternoon: Castle museum, Great Tun, gardens  
-- Evening: Dinner at Altstadt with Neckar view
+## Before you go
 
-### Day 2 — Across the River
-- Morning: Alte Brücke → Philosophenweg trail  
-- Afternoon: Neuenheim cafés  
-- Evening: Neckar sunset cruise
+Niigata rewards appetite more than speed. Base yourself near Niigata Station for transport, or around Bandai for easier access to the river and city centre.
 
-### Day 3 — University & Museums
-- Morning: Student Prison & Library  
-- Afternoon: Kurpfälzisches Museum  
-- Evening: Beer garden at Kulturbrauerei
+## Day 1 — Bandai and the Shinano River
+
+- **Morning:** Arrive, leave your bags, and begin around Bandai Bridge.
+- **Lunch:** Explore Pier Bandai for seafood, local produce, and a first taste of Niigata rice.
+- **Afternoon:** Walk the riverfront toward Toki Messe and the observation deck.
+- **Evening:** Try a small izakaya and compare a few local dishes rather than ordering everything at once.
+
+## Day 2 — Old Niigata and the coast
+
+- **Morning:** Wander Furumachi and the former geisha district.
+- **Afternoon:** Continue toward Hakusan Shrine and the Sea of Japan coast; use a bus if the weather turns.
+- **Evening:** Choose a restaurant specialising in *nodo-guro* or seasonal sashimi.
+
+## Day 3 — Sake and one side trip
+
+- **Morning:** Use the sake tasting facilities near the station as an introduction, not a race.
+- **Option A:** Take a gentle day trip to Yahiko Shrine and the village surroundings.
+- **Option B:** Stay in the city for museums, cafés, and a slower final lunch.
+
+## Practical notes
+
+- **Stay:** Niigata Station for an early departure; Bandai for a more walkable evening.
+- **Eat:** Market sushi, *hegi soba*, rice crackers, and seasonal seafood.
+- **Move:** Use buses for the coast and Furumachi; keep an IC card plus a little cash.
+
+> Snow, ferry, and mountain conditions are seasonal. Confirm transport shortly before travelling.

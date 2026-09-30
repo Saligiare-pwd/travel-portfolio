@@ -1,15 +1,6 @@
 ---
 title: "Germany"
 date: 2025-10-06
-summary: "DAAD 交換學者的德國生活紀錄、簽證攻略與週末小旅行。"
+summary: "Old towns, museum days, woodland escapes, and practical rail-based itineraries."
+kicker: "Cities, forests & footpaths"
 ---
-
-## 🇩🇪 德國旅行精選
-這是我在德國進行 DAAD 三明治計畫期間的紀錄。
-
-### 📍 熱門城市
-* [海德堡 (Heidelberg)](./heidelberg/heidelberg-trip)
-* [慕尼黑 (Munich)](./munich/munich-trip/)
-
-### 🎒 實用資訊
-* [簽證申請攻略](/resources/germany-visa/)

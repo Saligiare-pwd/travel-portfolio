@@ -1,0 +1,25 @@
+{{ define "main" }}
+<header class="page-hero compact">
+  <p class="eyebrow">{{ if eq .Section "destinations" }}Destination library{{ else }}Wing's travel notebook{{ end }}</p>
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+</header>
+<section class="section-wrap list-wrap">
+  {{ with .Content }}<div class="prose section-intro">{{ . }}</div>{{ end }}
+  {{ $regular := .RegularPages }}
+  {{ if $regular }}
+    <div class="card-grid">{{ range $regular.ByTitle }}{{ partial "destination-card.html" . }}{{ end }}</div>
+  {{ else }}
+    <div class="country-grid">
+      {{ range .Sections.ByTitle }}
+        <a class="country-card" href="{{ .RelPermalink }}">
+          <span>{{ with .Params.kicker }}{{ . }}{{ else }}Explore{{ end }}</span>
+          <h2>{{ .Title }}</h2>
+          <p>{{ .Summary }}</p>
+          <strong>{{ len .RegularPagesRecursive }} plans →</strong>
+        </a>
+      {{ end }}
+    </div>
+  {{ end }}
+</section>
+{{ end }}

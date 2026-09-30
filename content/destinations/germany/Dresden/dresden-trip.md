@@ -3,7 +3,7 @@ title: "德勒斯登近郊：小瑞士國家公園 (Sächsische Schweiz)"
 date: 2024-03-21
 description: "探索易北河砂岩山脈的壯麗景觀，走過歷史悠久的巴斯泰橋。"
 cover:
-  image: "images/dresden/Basteibrücke.jpeg"
+  image: "images/dresden/bastei.avif"
 tags: ["Dresden", "Hiking", "Nature"]
 ---
 

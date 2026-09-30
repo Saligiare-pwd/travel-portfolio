@@ -1,0 +1,15 @@
+{{ $image := .Params.cover.image | default "images/heidelberg/old-bridge.jpeg" }}
+<article class="destination-card">
+  <a class="card-image" href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}">
+    <img src="{{ $image | relURL }}" alt="{{ .Params.cover.alt | default .Title }}" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="card-meta">
+      <span>{{ .Params.country | default "Travel notes" }}</span>
+      {{ with .Params.days }}<span>{{ . }} {{ if eq . 1 }}day{{ else }}days{{ end }}</span>{{ end }}
+    </div>
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <p>{{ .Summary }}</p>
+    <a class="text-link" href="{{ .RelPermalink }}">Open the plan <span aria-hidden="true">→</span></a>
+  </div>
+</article>

@@ -1,13 +1,6 @@
 ---
 title: "Taiwan"
 date: 2025-12-26
-summary: "可以不斷重複、增加深度的週末小旅行。"
+summary: "Personal journeys through landscapes, food markets, and quiet corners of home."
+kicker: "Mountains, coast & hot springs"
 ---
-
-## 臺灣伏地魔
-深度探索臺灣各地的生活：交通、住宿、節慶活動與各地細緻文化差異。
-
-### 📍 熱門城市
-* [花蓮](./e/hualien/)
-* [礁溪](./n/jiaoxi/)
-* [合歡山](./m/hehuanshan/)

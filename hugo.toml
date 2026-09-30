@@ -1,74 +1,20 @@
 baseURL = "https://saligiare-pwd.github.io/travel-portfolio/"
-title = "Wing"
+title = "Wing's Travel Notes"
 languageCode = "en-us"
 theme = "PaperMod"
+enableRobotsTXT = true
 
-# ✅ Hugo v0.128+ 的新寫法
 [pagination]
-  pagerSize = 10
+  pagerSize = 12
 
-# ✅ 暫時關掉 JSON（避免 index.json 產生時出錯）
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
 [params]
-  env = "development"
-  defaultTheme = "auto"
-  disableThemeToggle = false
-  ShowBreadCrumbs = true
-  ShowPostNavLinks = true
-  ShowShareButtons = true
-  ShowReadingTime = true
-  ShowCodeCopyButtons = true
-  comments = false
-  # 這是分享連結時顯示的預覽圖，目前設定為海德堡老橋
-  images = ["images/heidelberg/old-bridge.jpeg"]
-  author = "saligiare-pwd"
-  description = "Destination hubs, evergreen guides, itineraries, and tools."
-  disableSearch = true
+  author = "Wing Chen"
+  description = "Slow itineraries, city walks, and practical travel notes from Europe and Asia."
+  images = ["images/freiburg-titisee/titisee.jpg"]
 
-  # ==========================================
-  # 🚀 新增：Profile Mode (個人首頁模式)
-  # 這會取代原本的文章列表，顯示大頭貼與國家按鈕
-  # ==========================================
-  [params.profileMode]
-    enabled = true
-    title = "Wing's Travel Portfolio"
-    subtitle = "Explore the world by region."
-    # 這裡請確認圖片路徑正確，若無圖片可先註解掉
-    imageUrl = "https://saligiare-pwd.github.io/travel-portfolio/images/heidelberg/old-bridge.jpeg"
-    imageWidth = 150
-    imageHeight = 150
-    imageTitle = "Welcome"
-
-    # --- 下方按鈕 (對應您的需求) ---
-    [[params.profileMode.buttons]]
-      name = "🇩🇪 Germany"
-      url = "./destinations/germany/"
-
-    [[params.profileMode.buttons]]
-      name = "🇯🇵 Japan"
-      url = "./destinations/japan/"
-
-    [[params.profileMode.buttons]]
-      name = "🇹🇼 Taiwan"
-      url = "./destinations/taiwan/"
-
-    [[params.profileMode.buttons]]
-      name = "✈️ Resources"
-      url = "./resources/"
-
-  # (選用) 首頁下方的社群連結，若不需要可刪除
-  [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/Saligiare-pwd"
-
-[params.assets]
-  disableHLJS = false
-
-# ==========================================
-# 選單設定 (右上角導覽列)
-# ==========================================
 [menu]
   [[menu.main]]
     identifier = "destinations"
@@ -76,12 +22,17 @@ theme = "PaperMod"
     url = "/destinations/"
     weight = 10
   [[menu.main]]
+    identifier = "jakobsweg"
+    name = "Jakobswege"
+    url = "/jakobsweg/"
+    weight = 20
+  [[menu.main]]
     identifier = "resources"
-    name = "Resources"
+    name = "Travel kit"
     url = "/resources/"
-    weight = 40
+    weight = 30
   [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 50
+    weight = 40
