@@ -59,9 +59,23 @@
   <div>
     <p>Accommodation, food service, trail surfaces, and public transport can change. Confirm every overnight stop directly, download an offline map, and use the official German Jakobswege network for route updates and GPX information.</p>
     <div class="note-links">
+      <a class="text-link" href="#packing-planner">Build a packing checklist ↓</a>
       <a class="text-link" href="https://jakobuswege.de/" target="_blank" rel="noopener">German Jakobswege network ↗</a>
       <a class="text-link" href="https://int.bahn.de/en" target="_blank" rel="noopener">DB journey planner ↗</a>
     </div>
+  </div>
+</section>
+
+<section id="packing-planner" class="packing-planner" aria-labelledby="packing-title">
+  <div class="packing-intro"><p class="eyebrow">Interactive preparation</p><h2 id="packing-title">Pack for the journey you chose</h2><p>Set the trip length and season. The checklist estimates carried weight and reduces clothing when laundry is available.</p></div>
+  <div class="packing-controls">
+    <label>Days <input id="packing-days" type="range" min="1" max="21" value="5"><output id="packing-days-output" for="packing-days">5 days</output></label>
+    <label>Season <select id="packing-season"><option value="spring">Spring</option><option value="summer">Summer</option><option value="autumn">Autumn</option><option value="winter">Winter</option></select></label>
+    <label class="packing-check"><input id="packing-laundry" type="checkbox" checked> Laundry every 3–4 days</label>
+  </div>
+  <div class="packing-result">
+    <div><p class="eyebrow">Suggested list</p><div id="packing-list" class="packing-list"></div></div>
+    <aside><span>Estimated packed weight</span><strong id="packing-weight">0 kg</strong><p>Planning estimate only; excludes worn clothing, food, and water. Weigh the finished bag before departure.</p><button id="packing-reset" class="button button-quiet" type="button">Reset checks</button></aside>
   </div>
 </section>
 <script src="{{ "js/jakobsweg.js" | relURL }}?v=4" defer></script>

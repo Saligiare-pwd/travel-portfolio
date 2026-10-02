@@ -104,3 +104,71 @@ routeButtons.forEach(button => button.addEventListener("click", () => {
 previousButton?.addEventListener("click", () => showStop(activeStop - 1));
 nextButton?.addEventListener("click", () => showStop(activeStop + 1));
 if (mapElement && window.L) renderRoute(activeRoute);
+
+const packingDays = document.querySelector('#packing-days');
+const packingSeason = document.querySelector('#packing-season');
+const packingLaundry = document.querySelector('#packing-laundry');
+const packingList = document.querySelector('#packing-list');
+const packingWeight = document.querySelector('#packing-weight');
+const packingDaysOutput = document.querySelector('#packing-days-output');
+
+function packingItems(days, season, laundry) {
+  const clothingDays = laundry ? Math.min(days, 4) : Math.min(days, 8);
+  const items = [
+    ['Backpack and rain cover', '1 set', 1050],
+    ['Phone, cable and power bank', '1 set', 520],
+    ['Documents, wallet and pilgrim credential', '1 set', 180],
+    ['Water bottle', '1 bottle', 180],
+    ['Compact first-aid and personal medicine', '1 kit', 240],
+    ['Toiletries and quick-dry towel', '1 set', 430],
+    ['Headlamp', '1', 110],
+    ['Rain shell', '1', 330],
+    ['Walking socks', `${clothingDays} pairs`, clothingDays * 58],
+    ['Underwear', `${clothingDays} sets`, clothingDays * 55],
+    ['Quick-dry tops', `${Math.max(2, Math.ceil(clothingDays / 2))}`, Math.max(2, Math.ceil(clothingDays / 2)) * 155],
+    ['Walking trousers / shorts', `${days > 4 ? 2 : 1}`, (days > 4 ? 2 : 1) * 330],
+    ['Light sleep / evening layer', '1 set', 360]
+  ];
+  const seasonal = {
+    spring: [['Light fleece', '1', 360], ['Packable umbrella', '1', 230]],
+    summer: [['Sun hat and sunscreen', '1 set', 210], ['Extra hydration capacity', '1', 120]],
+    autumn: [['Warm mid-layer', '1', 480], ['Light gloves and beanie', '1 set', 150]],
+    winter: [['Insulated jacket', '1', 720], ['Thermal base layer', '1 set', 430], ['Warm gloves and beanie', '1 set', 220]]
+  };
+  return items.concat(seasonal[season] || seasonal.spring);
+}
+
+function updatePackingWeight() {
+  if (!packingWeight || !packingList) return;
+  const grams = [...packingList.querySelectorAll('input:checked')].reduce((sum, input) => sum + Number(input.dataset.grams || 0), 0);
+  packingWeight.textContent = `${(grams / 1000).toFixed(1)} kg`;
+}
+
+function renderPackingList() {
+  if (!packingDays || !packingSeason || !packingLaundry || !packingList) return;
+  const days = Number(packingDays.value);
+  packingDaysOutput.textContent = `${days} ${days === 1 ? 'day' : 'days'}`;
+  packingList.replaceChildren();
+  packingItems(days, packingSeason.value, packingLaundry.checked).forEach(([name, quantity, grams]) => {
+    const label = document.createElement('label');
+    const checkbox = document.createElement('input');
+    const copy = document.createElement('span');
+    const detail = document.createElement('small');
+    checkbox.type = 'checkbox';
+    checkbox.checked = true;
+    checkbox.dataset.grams = String(grams);
+    detail.textContent = `${quantity} · about ${(grams / 1000).toFixed(2)} kg`;
+    copy.textContent = name;
+    copy.append(detail);
+    label.append(checkbox, copy);
+    packingList.append(label);
+    checkbox.addEventListener('change', updatePackingWeight);
+  });
+  updatePackingWeight();
+}
+
+packingDays?.addEventListener('input', renderPackingList);
+packingSeason?.addEventListener('change', renderPackingList);
+packingLaundry?.addEventListener('change', renderPackingList);
+document.querySelector('#packing-reset')?.addEventListener('click', renderPackingList);
+renderPackingList();

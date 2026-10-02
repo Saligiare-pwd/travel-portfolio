@@ -1,6 +1,6 @@
 baseURL = "https://saligiare-pwd.github.io/travel-portfolio/"
 title = "Wing's Travel Notes"
-languageCode = "en-us"
+locale = "en-US"
 theme = "PaperMod"
 enableRobotsTXT = true
 

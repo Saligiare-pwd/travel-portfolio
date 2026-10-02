@@ -36,7 +36,7 @@ if (window.L) {
     const map = L.map(mapElement, { scrollWheelZoom: false, tap: false });
     addOpenStreetMapTiles(map);
     L.polyline(points.map(point => point.latLng), { color: '#b9694f', weight: 4, opacity: .78 }).addTo(map);
-    points.forEach((point) => {
+    const markers = points.map((point) => {
       const marker = L.circleMarker(point.latLng, {
         radius: 10,
         color: '#fffdf8',
@@ -46,7 +46,79 @@ if (window.L) {
       }).addTo(map);
       marker.bindTooltip(`${point.index + 1}. ${point.name}`, { permanent: false, direction: 'top' });
       marker.bindPopup(`<strong>${point.index + 1}. ${point.name}</strong><br>${point.detail}`);
+      marker.on('click', () => activatePoint(point.index, false));
+      return marker;
     });
+
+    const pointButtons = [...route.querySelectorAll('[data-route-point]')];
+    const activeName = route.querySelector('[data-route-active-name]');
+    const activeDetail = route.querySelector('[data-route-active-detail]');
+    function activatePoint(index, moveMap = true) {
+      const point = points[index];
+      if (!point) return;
+      pointButtons.forEach((button, buttonIndex) => button.classList.toggle('active', buttonIndex === index));
+      markers.forEach((marker, markerIndex) => marker.setStyle({
+        radius: markerIndex === index ? 13 : 10,
+        fillColor: markerIndex === index ? '#b9694f' : '#334738'
+      }));
+      if (activeName) activeName.textContent = point.name;
+      if (activeDetail) activeDetail.textContent = point.detail;
+      markers[index].openPopup();
+      if (moveMap) map.panTo(point.latLng, { animate: true });
+    }
+    pointButtons.forEach((button, index) => button.addEventListener('click', () => activatePoint(index)));
     map.fitBounds(points.map(point => point.latLng), { padding: [28, 28], maxZoom: 13 });
+    activatePoint(0, false);
   });
+
+  const atlasMapElement = document.querySelector('#atlas-map');
+  const atlasButtons = [...document.querySelectorAll('[data-atlas-place]')];
+  if (atlasMapElement && atlasButtons.length) {
+    const atlasPlaces = atlasButtons.map((button, index) => ({
+      index,
+      button,
+      name: button.dataset.name,
+      country: button.dataset.country,
+      days: button.dataset.days,
+      latLng: [Number(button.dataset.lat), Number(button.dataset.lng)],
+      image: button.dataset.image,
+      url: button.dataset.url,
+      summary: button.dataset.summary
+    }));
+    const atlasMap = L.map(atlasMapElement, { scrollWheelZoom: false, tap: false, minZoom: 2 });
+    addOpenStreetMapTiles(atlasMap);
+    const atlasMarkers = atlasPlaces.map(place => {
+      const icon = L.divIcon({ className: '', html: `<span class="atlas-marker">${place.index + 1}</span>`, iconSize: [32, 32], iconAnchor: [16, 16] });
+      const marker = L.marker(place.latLng, { icon }).addTo(atlasMap);
+      marker.bindTooltip(place.name, { direction: 'top', offset: [0, -12] });
+      return marker;
+    });
+    const atlasImage = document.querySelector('#atlas-image');
+    const atlasCountry = document.querySelector('#atlas-country');
+    const atlasDays = document.querySelector('#atlas-days');
+    const atlasName = document.querySelector('#atlas-name');
+    const atlasSummary = document.querySelector('#atlas-summary');
+    const atlasLink = document.querySelector('#atlas-link');
+    function selectAtlasPlace(index, moveMap = true) {
+      const place = atlasPlaces[index];
+      if (!place) return;
+      atlasButtons.forEach((button, buttonIndex) => button.classList.toggle('active', buttonIndex === index));
+      atlasMarkers.forEach((marker, markerIndex) => {
+        const element = marker.getElement()?.querySelector('.atlas-marker');
+        element?.classList.toggle('active', markerIndex === index);
+      });
+      atlasImage.src = place.image;
+      atlasImage.alt = place.name;
+      atlasCountry.textContent = place.country;
+      atlasDays.textContent = place.days;
+      atlasName.textContent = place.name;
+      atlasSummary.textContent = place.summary;
+      atlasLink.href = place.url;
+      if (moveMap) atlasMap.flyTo(place.latLng, Math.max(atlasMap.getZoom(), 5), { duration: .7 });
+    }
+    atlasButtons.forEach((button, index) => button.addEventListener('click', () => selectAtlasPlace(index)));
+    atlasMarkers.forEach((marker, index) => marker.on('click', () => selectAtlasPlace(index)));
+    atlasMap.fitBounds(atlasPlaces.map(place => place.latLng), { padding: [30, 30], maxZoom: 4 });
+    selectAtlasPlace(0, false);
+  }
 }
