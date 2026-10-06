@@ -5,6 +5,7 @@ date: 2025-10-08
 updated: 2026-09-30
 country: "台灣"
 area: "Taiwan"
+travelType: "food"
 city: "礁溪"
 days: 1
 bestFor: "溫泉、散步與宜蘭小吃"

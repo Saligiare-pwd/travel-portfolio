@@ -4,6 +4,7 @@ slug: "munich-three-days"
 date: 2026-09-30
 country: "Germany"
 area: "Germany"
+travelType: "city"
 city: "Munich"
 days: 3
 bestFor: "Museums & city walks"

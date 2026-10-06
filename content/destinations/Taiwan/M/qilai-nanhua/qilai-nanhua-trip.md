@@ -4,6 +4,7 @@ slug: "qilai-nanhua-trip"
 date: 2026-10-02
 country: "台灣"
 area: "Taiwan"
+travelType: "nature"
 city: "奇萊南華"
 days: 3
 bestFor: "高山草原、日出與山屋"

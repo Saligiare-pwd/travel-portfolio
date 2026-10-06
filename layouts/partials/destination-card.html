@@ -1,11 +1,13 @@
 {{ $image := .Params.cover.image | default "images/heidelberg/old-bridge.jpeg" }}
 {{ $label := cond (eq .Section "destinations") "View city guide" "Open guide" }}
-<article class="destination-card">
+{{ $travelType := .Params.travelType | default "sightseeing" }}
+<article class="destination-card journey-type-{{ $travelType }}">
   <a class="card-image" href="{{ .RelPermalink }}" aria-label="{{ $label }}: {{ .Title }}">
     <img src="{{ $image | relURL }}" alt="{{ .Params.cover.alt | default .Title }}" loading="lazy">
   </a>
   <div class="card-body">
     <div class="card-meta">
+      <span class="journey-type-badge">{{ $travelType | humanize }}</span>
       <span>{{ .Params.country | default "Travel notes" }}</span>
       {{ with .Params.days }}<span>{{ . }} {{ if eq . 1 }}day{{ else }}days{{ end }}</span>{{ end }}
     </div>

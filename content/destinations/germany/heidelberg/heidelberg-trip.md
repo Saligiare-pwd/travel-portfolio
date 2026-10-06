@@ -4,6 +4,7 @@ slug: "heidelberg-trip"
 date: 2026-09-30
 country: "Germany"
 area: "Germany"
+travelType: "sightseeing"
 city: "Heidelberg"
 days: 2
 bestFor: "History & long walks"

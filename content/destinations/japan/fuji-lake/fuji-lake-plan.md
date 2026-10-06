@@ -4,6 +4,7 @@ slug: "fuji-kawaguchiko-loop"
 date: 2026-09-30
 country: "日本"
 area: "Japan"
+travelType: "nature"
 city: "河口湖"
 days: 1
 bestFor: "自行車、湖景與富士山"

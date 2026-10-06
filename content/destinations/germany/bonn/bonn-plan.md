@@ -4,6 +4,7 @@ slug: "bonn-weekend"
 date: 2026-09-30
 country: "Germany"
 area: "Germany"
+travelType: "culture"
 city: "Bonn"
 days: 2
 bestFor: "Culture & riverside"

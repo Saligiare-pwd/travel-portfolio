@@ -5,6 +5,7 @@ date: 2025-10-08
 updated: 2026-09-30
 country: "台灣"
 area: "Taiwan"
+travelType: "nature"
 city: "花蓮"
 days: 4
 bestFor: "海岸、日出與單車"

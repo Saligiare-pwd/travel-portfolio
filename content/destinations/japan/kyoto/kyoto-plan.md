@@ -4,6 +4,7 @@ slug: "kyoto-slow-plan"
 date: 2026-09-30
 country: "Japan"
 area: "Japan"
+travelType: "culture"
 city: "Kyoto"
 days: 4
 bestFor: "Temples & neighbourhoods"

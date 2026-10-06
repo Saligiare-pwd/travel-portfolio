@@ -4,6 +4,7 @@ slug: "niigata-3-days"
 date: 2026-09-30
 country: "Japan"
 area: "Japan"
+travelType: "food"
 city: "Niigata"
 days: 3
 bestFor: "Food & local culture"

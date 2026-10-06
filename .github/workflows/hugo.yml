@@ -21,7 +21,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.149.0'
+          hugo-version: '0.167.0'
           extended: true
 
       - name: Fetch PaperMod theme
@@ -31,7 +31,7 @@ jobs:
           git clone --depth=1 https://github.com/adityatelange/hugo-PaperMod themes/PaperMod
 
       - name: Build
-        run: hugo
+        run: hugo --gc --minify --cleanDestinationDir
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

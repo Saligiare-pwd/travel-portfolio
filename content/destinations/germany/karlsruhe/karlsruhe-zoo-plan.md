@@ -4,6 +4,7 @@ slug: "karlsruhe-zoo-day"
 date: 2026-09-30
 country: "Germany"
 area: "Germany"
+travelType: "nature"
 city: "Karlsruhe"
 days: 1
 bestFor: "Families & gardens"

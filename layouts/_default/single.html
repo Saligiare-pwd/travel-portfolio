@@ -1,10 +1,11 @@
 {{ define "main" }}
 {{ $image := .Params.cover.image | default "images/heidelberg/old-bridge.jpeg" }}
-<article class="article-shell">
+{{ $travelType := .Params.travelType | default "sightseeing" }}
+<article class="article-shell{{ if eq .Section "destinations" }} journey-type-{{ $travelType }}{{ end }}">
   <header class="article-hero">
     <div class="article-title">
       <a class="back-link" href="{{ .Parent.RelPermalink }}">← Back to {{ .Parent.Title }}</a>
-      <p class="eyebrow">{{ .Params.country }}{{ with .Params.city }} · {{ . }}{{ end }}</p>
+      <p class="eyebrow">{{ if eq .Section "destinations" }}<span class="journey-type-badge">{{ $travelType | humanize }}</span> {{ end }}{{ .Params.country }}{{ with .Params.city }} · {{ . }}{{ end }}</p>
       <h1>{{ .Title }}</h1>
       <p class="article-summary">{{ .Summary }}</p>
       <div class="trip-facts">

@@ -4,6 +4,7 @@ slug: "enoshima-day-trip"
 date: 2026-09-30
 country: "日本"
 area: "Japan"
+travelType: "sightseeing"
 city: "江之島"
 days: 1
 bestFor: "海景、散步與小吃"

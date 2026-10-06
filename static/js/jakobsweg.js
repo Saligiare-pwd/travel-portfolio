@@ -111,31 +111,109 @@ const packingLaundry = document.querySelector('#packing-laundry');
 const packingList = document.querySelector('#packing-list');
 const packingWeight = document.querySelector('#packing-weight');
 const packingDaysOutput = document.querySelector('#packing-days-output');
+const packingCustomForm = document.querySelector('#packing-custom-form');
+const packingPresetButtons = [...document.querySelectorAll('[data-packing-preset]')];
+
+const PACKING_STORAGE_KEY = 'travel-planner-packing-v1';
+const categoryLabels = {
+  essentials: 'Essentials',
+  health: 'Health & pills',
+  electronics: '3C / electronics',
+  clothing: 'Clothing',
+  toiletries: 'Toiletries',
+  food: 'Food & snacks',
+  other: 'Other'
+};
+const packingPresetItems = {
+  health: [
+    { id: 'prescription-pills', name: 'Prescription pills', quantity: 'for trip + 2 days', grams: 90, category: 'health' },
+    { id: 'pain-allergy-pills', name: 'Pain and allergy medicine', quantity: '1 small set', grams: 55, category: 'health' },
+    { id: 'blister-care', name: 'Blister care and tape', quantity: '1 kit', grams: 75, category: 'health' }
+  ],
+  electronics: [
+    { id: 'travel-adapter', name: 'Travel adapter', quantity: '1', grams: 120, category: 'electronics' },
+    { id: 'camera', name: 'Camera and spare battery', quantity: '1 set', grams: 580, category: 'electronics' },
+    { id: 'earbuds', name: 'Earbuds / headphones', quantity: '1', grams: 80, category: 'electronics' }
+  ],
+  comfort: [
+    { id: 'earplugs-mask', name: 'Earplugs and sleep mask', quantity: '1 set', grams: 45, category: 'other' },
+    { id: 'day-bag', name: 'Foldable day bag', quantity: '1', grams: 180, category: 'other' },
+    { id: 'notebook', name: 'Notebook and pen', quantity: '1 set', grams: 210, category: 'other' }
+  ],
+  snacks: [
+    { id: 'trail-snacks', name: 'Trail snacks', quantity: '1 day', grams: 350, category: 'food' },
+    { id: 'emergency-meal', name: 'Emergency meal', quantity: '1', grams: 300, category: 'food' },
+    { id: 'electrolytes', name: 'Electrolyte tablets', quantity: '1 tube', grams: 85, category: 'food' }
+  ]
+};
+
+function loadPackingState() {
+  try {
+    const stored = JSON.parse(localStorage.getItem(PACKING_STORAGE_KEY) || '{}');
+    return {
+      presets: Array.isArray(stored.presets) ? stored.presets.filter(key => packingPresetItems[key]) : [],
+      custom: Array.isArray(stored.custom) ? stored.custom.filter(item => item && item.name).map(item => ({
+        ...item,
+        category: categoryLabels[item.category] ? item.category : 'other',
+        grams: Math.max(0, Math.min(20000, Number(item.grams) || 0)),
+        custom: true
+      })) : []
+    };
+  } catch (_) {
+    return { presets: [], custom: [] };
+  }
+}
+
+const packingState = loadPackingState();
+const activePackingPresets = new Set(packingState.presets);
+let customPackingItems = packingState.custom;
+
+function savePackingState() {
+  try {
+    localStorage.setItem(PACKING_STORAGE_KEY, JSON.stringify({ presets: [...activePackingPresets], custom: customPackingItems }));
+  } catch (_) {
+    // The planner remains usable when private browsing blocks local storage.
+  }
+}
 
 function packingItems(days, season, laundry) {
   const clothingDays = laundry ? Math.min(days, 4) : Math.min(days, 8);
   const items = [
-    ['Backpack and rain cover', '1 set', 1050],
-    ['Phone, cable and power bank', '1 set', 520],
-    ['Documents, wallet and pilgrim credential', '1 set', 180],
-    ['Water bottle', '1 bottle', 180],
-    ['Compact first-aid and personal medicine', '1 kit', 240],
-    ['Toiletries and quick-dry towel', '1 set', 430],
-    ['Headlamp', '1', 110],
-    ['Rain shell', '1', 330],
-    ['Walking socks', `${clothingDays} pairs`, clothingDays * 58],
-    ['Underwear', `${clothingDays} sets`, clothingDays * 55],
-    ['Quick-dry tops', `${Math.max(2, Math.ceil(clothingDays / 2))}`, Math.max(2, Math.ceil(clothingDays / 2)) * 155],
-    ['Walking trousers / shorts', `${days > 4 ? 2 : 1}`, (days > 4 ? 2 : 1) * 330],
-    ['Light sleep / evening layer', '1 set', 360]
+    { id: 'backpack', name: 'Backpack and rain cover', quantity: '1 set', grams: 1050, category: 'essentials' },
+    { id: 'phone', name: 'Phone, cable and power bank', quantity: '1 set', grams: 520, category: 'electronics' },
+    { id: 'documents', name: 'Documents, wallet and pilgrim credential', quantity: '1 set', grams: 180, category: 'essentials' },
+    { id: 'water-bottle', name: 'Water bottle', quantity: '1 bottle', grams: 180, category: 'essentials' },
+    { id: 'first-aid', name: 'Compact first-aid kit', quantity: '1 kit', grams: 170, category: 'health' },
+    { id: 'toiletries', name: 'Toiletries and quick-dry towel', quantity: '1 set', grams: 430, category: 'toiletries' },
+    { id: 'headlamp', name: 'Headlamp', quantity: '1', grams: 110, category: 'essentials' },
+    { id: 'rain-shell', name: 'Rain shell', quantity: '1', grams: 330, category: 'clothing' },
+    { id: 'socks', name: 'Walking socks', quantity: `${clothingDays} pairs`, grams: clothingDays * 58, category: 'clothing' },
+    { id: 'underwear', name: 'Underwear', quantity: `${clothingDays} sets`, grams: clothingDays * 55, category: 'clothing' },
+    { id: 'tops', name: 'Quick-dry tops', quantity: `${Math.max(2, Math.ceil(clothingDays / 2))}`, grams: Math.max(2, Math.ceil(clothingDays / 2)) * 155, category: 'clothing' },
+    { id: 'trousers', name: 'Walking trousers / shorts', quantity: `${days > 4 ? 2 : 1}`, grams: (days > 4 ? 2 : 1) * 330, category: 'clothing' },
+    { id: 'evening-layer', name: 'Light sleep / evening layer', quantity: '1 set', grams: 360, category: 'clothing' }
   ];
   const seasonal = {
-    spring: [['Light fleece', '1', 360], ['Packable umbrella', '1', 230]],
-    summer: [['Sun hat and sunscreen', '1 set', 210], ['Extra hydration capacity', '1', 120]],
-    autumn: [['Warm mid-layer', '1', 480], ['Light gloves and beanie', '1 set', 150]],
-    winter: [['Insulated jacket', '1', 720], ['Thermal base layer', '1 set', 430], ['Warm gloves and beanie', '1 set', 220]]
+    spring: [
+      { id: 'light-fleece', name: 'Light fleece', quantity: '1', grams: 360, category: 'clothing' },
+      { id: 'umbrella', name: 'Packable umbrella', quantity: '1', grams: 230, category: 'essentials' }
+    ],
+    summer: [
+      { id: 'sun-kit', name: 'Sun hat and sunscreen', quantity: '1 set', grams: 210, category: 'toiletries' },
+      { id: 'hydration', name: 'Extra hydration capacity', quantity: '1', grams: 120, category: 'essentials' }
+    ],
+    autumn: [
+      { id: 'warm-layer', name: 'Warm mid-layer', quantity: '1', grams: 480, category: 'clothing' },
+      { id: 'light-warm-set', name: 'Light gloves and beanie', quantity: '1 set', grams: 150, category: 'clothing' }
+    ],
+    winter: [
+      { id: 'insulated-jacket', name: 'Insulated jacket', quantity: '1', grams: 720, category: 'clothing' },
+      { id: 'thermal-layer', name: 'Thermal base layer', quantity: '1 set', grams: 430, category: 'clothing' },
+      { id: 'warm-set', name: 'Warm gloves and beanie', quantity: '1 set', grams: 220, category: 'clothing' }
+    ]
   };
-  return items.concat(seasonal[season] || seasonal.spring);
+  const presetItems = [...activePackingPresets].flatMap(key => packingPresetItems[key] || []);
+  return items.concat(seasonal[season] || seasonal.spring, presetItems, customPackingItems);
 }
 
 function updatePackingWeight() {
@@ -149,26 +227,105 @@ function renderPackingList() {
   const days = Number(packingDays.value);
   packingDaysOutput.textContent = `${days} ${days === 1 ? 'day' : 'days'}`;
   packingList.replaceChildren();
-  packingItems(days, packingSeason.value, packingLaundry.checked).forEach(([name, quantity, grams]) => {
-    const label = document.createElement('label');
-    const checkbox = document.createElement('input');
-    const copy = document.createElement('span');
-    const detail = document.createElement('small');
-    checkbox.type = 'checkbox';
-    checkbox.checked = true;
-    checkbox.dataset.grams = String(grams);
-    detail.textContent = `${quantity} · about ${(grams / 1000).toFixed(2)} kg`;
-    copy.textContent = name;
-    copy.append(detail);
-    label.append(checkbox, copy);
-    packingList.append(label);
-    checkbox.addEventListener('change', updatePackingWeight);
+  const groupedItems = packingItems(days, packingSeason.value, packingLaundry.checked).reduce((groups, item) => {
+    const category = item.category || 'other';
+    if (!groups.has(category)) groups.set(category, []);
+    groups.get(category).push(item);
+    return groups;
+  }, new Map());
+
+  groupedItems.forEach((items, category) => {
+    const section = document.createElement('section');
+    const heading = document.createElement('h3');
+    const grid = document.createElement('div');
+    section.className = `packing-category packing-category-${category}`;
+    heading.textContent = categoryLabels[category] || categoryLabels.other;
+    grid.className = 'packing-category-grid';
+
+    items.forEach(item => {
+      const row = document.createElement('div');
+      const label = document.createElement('label');
+      const checkbox = document.createElement('input');
+      const copy = document.createElement('span');
+      const detail = document.createElement('small');
+      checkbox.type = 'checkbox';
+      checkbox.checked = true;
+      checkbox.dataset.grams = String(item.grams || 0);
+      detail.textContent = `${item.quantity || '1'} · about ${(Number(item.grams || 0) / 1000).toFixed(2)} kg`;
+      copy.textContent = item.name;
+      copy.append(detail);
+      label.append(checkbox, copy);
+      row.className = 'packing-item';
+      row.append(label);
+      if (item.custom) {
+        const remove = document.createElement('button');
+        remove.type = 'button';
+        remove.className = 'packing-item-remove';
+        remove.textContent = 'Remove';
+        remove.setAttribute('aria-label', `Remove ${item.name}`);
+        remove.addEventListener('click', () => {
+          customPackingItems = customPackingItems.filter(customItem => customItem.id !== item.id);
+          savePackingState();
+          renderPackingList();
+        });
+        row.append(remove);
+      }
+      grid.append(row);
+      checkbox.addEventListener('change', updatePackingWeight);
+    });
+
+    section.append(heading, grid);
+    packingList.append(section);
   });
   updatePackingWeight();
 }
+
+function updatePresetButtons() {
+  packingPresetButtons.forEach(button => {
+    const active = activePackingPresets.has(button.dataset.packingPreset);
+    const label = button.dataset.label || button.textContent.replace(/^[＋✓]\s*/, '');
+    button.dataset.label = label;
+    button.setAttribute('aria-pressed', String(active));
+    button.textContent = `${active ? '✓' : '＋'} ${label}`;
+  });
+}
+
+packingPresetButtons.forEach(button => button.addEventListener('click', () => {
+  const preset = button.dataset.packingPreset;
+  if (activePackingPresets.has(preset)) activePackingPresets.delete(preset);
+  else activePackingPresets.add(preset);
+  savePackingState();
+  updatePresetButtons();
+  renderPackingList();
+}));
+
+packingCustomForm?.addEventListener('submit', event => {
+  event.preventDefault();
+  const nameInput = document.querySelector('#packing-custom-name');
+  const categoryInput = document.querySelector('#packing-custom-category');
+  const quantityInput = document.querySelector('#packing-custom-quantity');
+  const weightInput = document.querySelector('#packing-custom-weight');
+  const name = nameInput.value.trim();
+  if (!name) return;
+  customPackingItems.push({
+    id: `custom-${Date.now()}`,
+    name,
+    category: categoryInput.value,
+    quantity: quantityInput.value.trim() || '1',
+    grams: Math.max(0, Math.min(20000, Number(weightInput.value) || 0)),
+    custom: true
+  });
+  savePackingState();
+  packingCustomForm.reset();
+  quantityInput.value = '1';
+  weightInput.value = '100';
+  renderPackingList();
+  nameInput.focus();
+});
 
 packingDays?.addEventListener('input', renderPackingList);
 packingSeason?.addEventListener('change', renderPackingList);
 packingLaundry?.addEventListener('change', renderPackingList);
 document.querySelector('#packing-reset')?.addEventListener('click', renderPackingList);
+updatePresetButtons();
 renderPackingList();

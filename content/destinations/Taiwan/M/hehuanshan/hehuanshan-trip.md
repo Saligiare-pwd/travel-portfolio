@@ -5,6 +5,7 @@ date: 2025-10-08
 updated: 2026-09-30
 country: "台灣"
 area: "Taiwan"
+travelType: "nature"
 city: "合歡山"
 days: 3
 bestFor: "高山景觀與短程步道"

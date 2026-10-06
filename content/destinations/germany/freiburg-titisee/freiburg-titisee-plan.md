@@ -4,6 +4,7 @@ slug: "freiburg-titisee"
 date: 2026-09-30
 country: "Germany"
 area: "Germany"
+travelType: "nature"
 city: "Freiburg im Breisgau"
 days: 2
 bestFor: "Old town & nature"

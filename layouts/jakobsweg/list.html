@@ -73,10 +73,34 @@
     <label>Season <select id="packing-season"><option value="spring">Spring</option><option value="summer">Summer</option><option value="autumn">Autumn</option><option value="winter">Winter</option></select></label>
     <label class="packing-check"><input id="packing-laundry" type="checkbox" checked> Laundry every 3–4 days</label>
   </div>
+  <div class="packing-additions">
+    <section class="packing-presets" aria-labelledby="packing-presets-title">
+      <p class="eyebrow">Prepared add-ons</p>
+      <h3 id="packing-presets-title">Add a useful group</h3>
+      <p>Choose only what fits this trip. Press a group again to remove it.</p>
+      <div class="packing-preset-buttons">
+        <button type="button" data-packing-preset="health" aria-pressed="false">＋ Health &amp; pills</button>
+        <button type="button" data-packing-preset="electronics" aria-pressed="false">＋ 3C / electronics</button>
+        <button type="button" data-packing-preset="comfort" aria-pressed="false">＋ Comfort</button>
+        <button type="button" data-packing-preset="snacks" aria-pressed="false">＋ Food &amp; snacks</button>
+      </div>
+    </section>
+    <form id="packing-custom-form" class="packing-custom-form">
+      <p class="eyebrow">Your own list</p>
+      <h3>Add a custom item</h3>
+      <div class="packing-custom-fields">
+        <label>Item name <input id="packing-custom-name" type="text" maxlength="60" placeholder="e.g. sketchbook" required></label>
+        <label>Category <select id="packing-custom-category"><option value="essentials">Essentials</option><option value="health">Health</option><option value="electronics">3C / electronics</option><option value="clothing">Clothing</option><option value="toiletries">Toiletries</option><option value="food">Food</option><option value="other">Other</option></select></label>
+        <label>Quantity <input id="packing-custom-quantity" type="text" maxlength="24" value="1"></label>
+        <label>Weight (g) <input id="packing-custom-weight" type="number" min="0" max="20000" step="10" value="100"></label>
+      </div>
+      <button class="button button-primary" type="submit">Add to checklist</button>
+    </form>
+  </div>
   <div class="packing-result">
     <div><p class="eyebrow">Suggested list</p><div id="packing-list" class="packing-list"></div></div>
     <aside><span>Estimated packed weight</span><strong id="packing-weight">0 kg</strong><p>Planning estimate only; excludes worn clothing, food, and water. Weigh the finished bag before departure.</p><button id="packing-reset" class="button button-quiet" type="button">Reset checks</button></aside>
   </div>
 </section>
-<script src="{{ "js/jakobsweg.js" | relURL }}?v=4" defer></script>
+<script src="{{ "js/jakobsweg.js" | relURL }}?v=5" defer></script>
 {{ end }}

@@ -5,6 +5,7 @@ description: "探索易北河砂岩山脈的壯麗景觀，走過歷史悠久的
 summary: "從德勒斯登搭火車出發，串連 Rathen、巴斯泰橋、瑞典孔與 Amselsee 的一日健行。"
 country: "Germany"
 area: "Germany"
+travelType: "nature"
 city: "Dresden / Rathen"
 days: 1
 bestFor: "砂岩健行與風景"

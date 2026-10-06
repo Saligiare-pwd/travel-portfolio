@@ -4,6 +4,7 @@ slug: "green-island-diving"
 date: 2026-09-30
 country: "台灣"
 area: "Taiwan"
+travelType: "nature"
 city: "綠島"
 days: 3
 bestFor: "潛水、珊瑚礁與海島"
