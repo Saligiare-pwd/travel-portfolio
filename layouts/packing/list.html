@@ -11,7 +11,7 @@
     <div><p class="eyebrow">Choose a journey</p><h2 id="packing-trip-title">Start with a place</h2></div>
     <label>Travel guide
       <select id="packing-trip-select">
-        <option value="general" data-name="General journey" data-country="Flexible plan" data-days="Choose your own length" data-summary="A reusable list without a fixed destination." data-image="{{ "images/identity/confined-shell-shock-breakout.png" | relURL }}" data-url="{{ "destinations/" | relURL }}">General journey</option>
+        <option value="general" data-name="General journey" data-country="Flexible plan" data-days="Choose your own length" data-summary="A reusable list without a fixed destination." data-image="{{ "images/freiburg-titisee/titisee.jpg" | relURL }}" data-url="{{ "destinations/" | relURL }}">General journey</option>
         {{ range hugo.Data.atlas }}
           <option value="{{ .name | anchorize }}" data-name="{{ .name }}" data-country="{{ .country }}" data-days="{{ .days }}" data-summary="{{ .summary }}" data-image="{{ .image | relURL }}" data-url="{{ .url | relURL }}" data-lat="{{ .lat }}" data-lng="{{ .lng }}">{{ .name }} · {{ .country }}</option>
         {{ end }}
@@ -21,7 +21,7 @@
   <div class="packing-trip-dashboard">
     <div id="packing-trip-map" class="packing-trip-map" aria-label="Map of the selected journey"></div>
     <article class="packing-trip-card" aria-live="polite">
-      <figure><img id="packing-trip-image" src="{{ "images/identity/confined-shell-shock-breakout.png" | relURL }}" alt="Confined-shell shock breakout"></figure>
+      <figure><img id="packing-trip-image" src="{{ "images/freiburg-titisee/titisee.jpg" | relURL }}" alt="Lake Titisee in the Black Forest"></figure>
       <div>
         <p id="packing-trip-meta" class="eyebrow">Flexible plan</p>
         <h2 id="packing-trip-name">General journey</h2>
@@ -79,5 +79,5 @@
     </aside>
   </div>
 </section>
-<script src="{{ "js/packing.js" | relURL }}?v=1" defer></script>
+<script src="{{ "js/packing.js" | relURL }}?v=2" defer></script>
 {{ end }}

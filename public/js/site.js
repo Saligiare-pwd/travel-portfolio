@@ -10,7 +10,7 @@ if (navButton && nav) {
 }
 
 document.querySelectorAll('[data-card-rail]').forEach((rail) => {
-  const section = rail.closest('.area-section');
+  const section = rail.closest('section');
   section?.querySelector('[data-rail-previous]')?.addEventListener('click', () => rail.scrollBy({ left: -rail.clientWidth * 0.82, behavior: 'smooth' }));
   section?.querySelector('[data-rail-next]')?.addEventListener('click', () => rail.scrollBy({ left: rail.clientWidth * 0.82, behavior: 'smooth' }));
 });
@@ -57,12 +57,20 @@ if (window.L) {
     const activeIndex = route.querySelector('[data-route-active-index]');
     const previousPoint = route.querySelector('[data-route-previous]');
     const nextPoint = route.querySelector('[data-route-next]');
+    const stageRail = route.querySelector('[data-route-stages]');
+    const earlierStops = route.querySelector('[data-route-scroll="previous"]');
+    const laterStops = route.querySelector('[data-route-scroll="next"]');
     let selectedPointIndex = 0;
     function activatePoint(index, moveMap = true) {
       const point = points[index];
       if (!point) return;
       selectedPointIndex = index;
-      pointButtons.forEach((button, buttonIndex) => button.classList.toggle('active', buttonIndex === index));
+      pointButtons.forEach((button, buttonIndex) => {
+        const active = buttonIndex === index;
+        button.classList.toggle('active', active);
+        if (active) button.setAttribute('aria-current', 'step');
+        else button.removeAttribute('aria-current');
+      });
       markers.forEach((marker, markerIndex) => marker.setStyle({
         radius: markerIndex === index ? 13 : 10,
         fillColor: markerIndex === index ? '#b9694f' : '#334738'
@@ -76,12 +84,21 @@ if (window.L) {
       if (activeIndex) activeIndex.textContent = `Stop ${index + 1}`;
       if (previousPoint) previousPoint.disabled = index === 0;
       if (nextPoint) nextPoint.disabled = index === points.length - 1;
+      if (stageRail) {
+        const activeButton = pointButtons[index];
+        stageRail.scrollTo({
+          left: activeButton.offsetLeft - (stageRail.clientWidth - activeButton.offsetWidth) / 2,
+          behavior: moveMap ? 'smooth' : 'auto'
+        });
+      }
       markers[index].openPopup();
       if (moveMap) map.panTo(point.latLng, { animate: true });
     }
     pointButtons.forEach((button, index) => button.addEventListener('click', () => activatePoint(index)));
     previousPoint?.addEventListener('click', () => activatePoint(selectedPointIndex - 1));
     nextPoint?.addEventListener('click', () => activatePoint(selectedPointIndex + 1));
+    earlierStops?.addEventListener('click', () => stageRail?.scrollBy({ left: -stageRail.clientWidth * .8, behavior: 'smooth' }));
+    laterStops?.addEventListener('click', () => stageRail?.scrollBy({ left: stageRail.clientWidth * .8, behavior: 'smooth' }));
     map.fitBounds(points.map(point => point.latLng), { padding: [28, 28], maxZoom: 13 });
     activatePoint(0, false);
   });

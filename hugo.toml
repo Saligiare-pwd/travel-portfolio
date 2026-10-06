@@ -13,7 +13,7 @@ enableRobotsTXT = true
 [params]
   author = "Wing Chen"
   description = "Slow itineraries, city walks, and practical travel notes from Europe and Asia."
-  images = ["images/identity/confined-shell-shock-breakout.png"]
+  images = ["images/freiburg-titisee/titisee.jpg"]
 
 [menu]
   [[menu.main]]

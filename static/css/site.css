@@ -188,7 +188,18 @@ button, input, select { font: inherit; }
 .city-route > header { display: grid; grid-template-columns: .85fr 1.15fr; align-items: end; gap: 2rem; padding-bottom: 1.3rem; border-bottom: 1px solid var(--line); }
 .city-route h3 { margin: 0; font-family: var(--serif); font-size: 1.65rem; }
 .city-route header > p { margin: 0; color: var(--muted); font-size: .8rem; }
-.city-route-body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 1fr); gap: 1rem; margin-top: 1.3rem; }
+.city-route-stage-shell { margin-top: 1rem; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: .45rem; }
+.city-route-stage-scroll { width: 40px; aspect-ratio: 1; border: 1px solid var(--line); border-radius: 50%; color: var(--ink); background: var(--paper); cursor: pointer; }
+.city-route-stage-scroll:hover { color: var(--cream); border-color: var(--moss-dark); background: var(--moss-dark); }
+.city-route-stages { position: relative; padding: .8rem .3rem 1rem; display: flex; gap: .55rem; overflow-x: auto; scroll-snap-type: x proximity; scrollbar-width: thin; scrollbar-color: var(--terracotta) var(--paper-deep); }
+.city-route-stages::before { content: ""; position: absolute; top: 2rem; right: 2rem; left: 2rem; height: 1px; background: var(--line); }
+.city-route-stages button { position: relative; z-index: 1; flex: 0 0 150px; padding: 0 .3rem; display: grid; justify-items: center; gap: .15rem; border: 0; color: var(--muted); background: transparent; cursor: pointer; scroll-snap-align: center; }
+.city-route-stages button span { width: 40px; aspect-ratio: 1; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%; color: var(--ink); background: var(--paper); font-family: var(--serif); }
+.city-route-stages button strong { max-width: 100%; margin-top: .3rem; overflow: hidden; color: var(--ink); font-size: .73rem; text-overflow: ellipsis; white-space: nowrap; }
+.city-route-stages button small { max-width: 100%; overflow: hidden; font-size: .62rem; text-overflow: ellipsis; white-space: nowrap; }
+.city-route-stages button:hover span, .city-route-stages button.active span { color: var(--cream); border-color: var(--terracotta); background: var(--terracotta); box-shadow: 0 0 0 5px var(--cream); }
+.city-route-stages button.active strong { color: var(--terracotta); }
+.city-route-body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 1fr); gap: 1rem; margin-top: .75rem; }
 .city-route-map-wrap { min-width: 0; }
 .city-route-map { height: 100%; min-height: 500px; border-radius: 1rem; background: var(--paper-deep); }
 .city-route-detail { min-width: 0; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 1rem; overflow: hidden; background: var(--paper); }
@@ -200,10 +211,6 @@ button, input, select { font: inherit; }
 .city-route-actions { margin-top: 1.1rem; display: flex; gap: .55rem; }
 .city-route-actions .button { min-height: 40px; padding: .5rem .8rem; }
 .city-route-actions button:disabled { opacity: .35; cursor: not-allowed; transform: none; }
-.city-route-points { margin-top: auto; padding: .9rem 1.5rem 1.35rem; display: flex; flex-wrap: wrap; gap: .5rem; border-top: 1px solid var(--line); }
-.city-route-points button { width: 36px; aspect-ratio: 1; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%; color: var(--ink); background: var(--cream); cursor: pointer; }
-.city-route-points button:hover, .city-route-points button.active { color: var(--cream); border-color: var(--terracotta); background: var(--terracotta); }
-.city-route-points button > span { font-family: var(--serif); }
 .leaflet-container { font-family: var(--sans); }
 .leaflet-popup-content { line-height: 1.45; }
 
@@ -277,7 +284,6 @@ button, input, select { font: inherit; }
 .packing-trip-card { min-width: 0; display: flex; flex-direction: column; border-left: 1px solid var(--line); }
 .packing-trip-card figure { margin: 0; }
 .packing-trip-card figure img { width: 100%; height: 260px; object-fit: cover; }
-.packing-trip-card figure img[src*="confined-shell"] { padding: 1rem; object-fit: contain; background: #111722; }
 .packing-trip-card > div { padding: 1.5rem; }
 .packing-trip-card h2 { margin: .2rem 0 .55rem; font-family: var(--serif); font-size: 2.35rem; font-weight: 500; line-height: 1; }
 .packing-trip-card p:not(.eyebrow) { color: var(--muted); }
@@ -296,13 +302,14 @@ button, input, select { font: inherit; }
 .packing-presets, .packing-custom-form { padding: 1.35rem; border: 1px solid var(--line); border-radius: 1rem; background: rgba(255,253,248,.62); }
 .packing-additions h3 { margin: .2rem 0 .4rem; font-family: var(--serif); font-size: 1.5rem; font-weight: 500; }
 .packing-additions p:not(.eyebrow) { margin: 0 0 1rem; color: var(--muted); font-size: .78rem; }
-.packing-preset-buttons { display: flex; flex-wrap: wrap; gap: .55rem; }
-.packing-preset-buttons button { padding: .6rem .8rem; border: 1px solid var(--line); border-radius: 100px; color: var(--ink); background: var(--paper); cursor: pointer; font-weight: 700; }
+.packing-preset-buttons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .55rem; }
+.packing-preset-buttons button { min-height: 46px; padding: .65rem .8rem; border: 1px solid var(--line); border-radius: .7rem; color: var(--ink); background: var(--paper); cursor: pointer; font: 700 .75rem/1.25 var(--sans); text-align: left; }
 .packing-preset-buttons button[class*="journey-type-"] { color: var(--journey-accent); border-color: var(--journey-accent); background: var(--journey-soft); }
 .packing-preset-buttons button[aria-pressed="true"] { color: var(--cream); border-color: var(--journey-accent, var(--moss-dark)); background: var(--journey-accent, var(--moss-dark)); }
-.packing-custom-fields { margin: .9rem 0 1rem; display: grid; grid-template-columns: 1.5fr 1fr .7fr .7fr; gap: .65rem; }
-.packing-custom-fields label { display: grid; gap: .35rem; color: var(--muted); font-size: .7rem; font-weight: 750; }
-.packing-custom-fields input, .packing-custom-fields select { width: 100%; min-height: 42px; padding: .55rem .65rem; border: 1px solid var(--line); border-radius: .6rem; color: var(--ink); background: var(--cream); }
+.packing-custom-fields { margin: .9rem 0 1rem; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; }
+.packing-custom-fields label { min-width: 0; display: grid; gap: .35rem; color: var(--muted); font-size: .72rem; font-weight: 750; }
+.packing-custom-fields input, .packing-custom-fields select { box-sizing: border-box; width: 100%; min-width: 0; min-height: 44px; padding: .6rem .7rem; border: 1px solid var(--line); border-radius: .6rem; color: var(--ink); background: var(--cream); font: 500 .82rem/1.2 var(--sans); }
+.packing-custom-form > .button { min-height: 44px; padding-inline: 1.2rem; font-size: .76rem; }
 .packing-result { display: grid; grid-template-columns: 1fr 260px; gap: 2rem; }
 .packing-list { display: grid; gap: 1.15rem; }
 .packing-category h3 { margin: 0 0 .5rem; padding-left: .65rem; border-left: 3px solid var(--terracotta); font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; }
@@ -382,6 +389,9 @@ button, input, select { font: inherit; }
   .area-heading { align-items: start; flex-direction: column; }
   .area-heading-actions { width: 100%; }
   .city-route { padding: 1.2rem; }
+  .city-route-stage-scroll { display: none; }
+  .city-route-stage-shell { display: block; }
+  .city-route-stages button { flex-basis: 132px; }
   .city-route-map { height: 330px; min-height: 330px; }
   .city-route-actions .button { flex: 1; }
   .packing-trip { width: min(100% - 28px, 1180px); }
