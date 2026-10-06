@@ -1,0 +1,83 @@
+{{ define "main" }}
+{{ $firstPlace := index hugo.Data.atlas 0 }}
+<header class="page-hero compact packing-page-hero">
+  <p class="eyebrow">Travel preparation</p>
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Params.summary }}</p>
+</header>
+
+<section class="packing-trip" aria-labelledby="packing-trip-title">
+  <div class="packing-trip-heading">
+    <div><p class="eyebrow">Choose a journey</p><h2 id="packing-trip-title">Start with a place</h2></div>
+    <label>Travel guide
+      <select id="packing-trip-select">
+        <option value="general" data-name="General journey" data-country="Flexible plan" data-days="Choose your own length" data-summary="A reusable list without a fixed destination." data-image="{{ "images/identity/confined-shell-shock-breakout.png" | relURL }}" data-url="{{ "destinations/" | relURL }}">General journey</option>
+        {{ range hugo.Data.atlas }}
+          <option value="{{ .name | anchorize }}" data-name="{{ .name }}" data-country="{{ .country }}" data-days="{{ .days }}" data-summary="{{ .summary }}" data-image="{{ .image | relURL }}" data-url="{{ .url | relURL }}" data-lat="{{ .lat }}" data-lng="{{ .lng }}">{{ .name }} · {{ .country }}</option>
+        {{ end }}
+      </select>
+    </label>
+  </div>
+  <div class="packing-trip-dashboard">
+    <div id="packing-trip-map" class="packing-trip-map" aria-label="Map of the selected journey"></div>
+    <article class="packing-trip-card" aria-live="polite">
+      <figure><img id="packing-trip-image" src="{{ "images/identity/confined-shell-shock-breakout.png" | relURL }}" alt="Confined-shell shock breakout"></figure>
+      <div>
+        <p id="packing-trip-meta" class="eyebrow">Flexible plan</p>
+        <h2 id="packing-trip-name">General journey</h2>
+        <p id="packing-trip-summary">A reusable list without a fixed destination.</p>
+        <div class="packing-trip-actions">
+          <a id="packing-trip-guide" class="text-link" href="{{ "destinations/" | relURL }}">Open guide →</a>
+          <a id="packing-trip-osm" class="text-link" href="https://www.openstreetmap.org/" target="_blank" rel="noopener">Open map ↗</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="packing-planner" class="packing-planner packing-page" aria-labelledby="packing-title">
+  <div class="packing-intro"><p class="eyebrow">Checklist</p><h2 id="packing-title">Pack for your journey</h2><p>Adjust the trip, add what matters, then export the result.</p></div>
+  <div class="packing-controls">
+    <label>Days <input id="packing-days" type="range" min="1" max="21" value="5"><output id="packing-days-output" for="packing-days">5 days</output></label>
+    <label>Season <select id="packing-season"><option value="spring">Spring</option><option value="summer">Summer</option><option value="autumn">Autumn</option><option value="winter">Winter</option></select></label>
+    <label class="packing-check"><input id="packing-laundry" type="checkbox" checked> Laundry every 3–4 days</label>
+  </div>
+  <div class="packing-additions">
+    <section class="packing-presets" aria-labelledby="packing-presets-title">
+      <p class="eyebrow">Quick add</p>
+      <h3 id="packing-presets-title">Prepared groups</h3>
+      <div class="packing-preset-buttons">
+        <button type="button" class="journey-type-nature" data-packing-preset="health" aria-pressed="false">＋ Health &amp; pills</button>
+        <button type="button" class="journey-type-city" data-packing-preset="electronics" aria-pressed="false">＋ 3C / electronics</button>
+        <button type="button" class="journey-type-culture" data-packing-preset="comfort" aria-pressed="false">＋ Comfort</button>
+        <button type="button" class="journey-type-food" data-packing-preset="snacks" aria-pressed="false">＋ Food &amp; snacks</button>
+      </div>
+    </section>
+    <form id="packing-custom-form" class="packing-custom-form">
+      <p class="eyebrow">Custom item</p>
+      <h3>Add your own</h3>
+      <div class="packing-custom-fields">
+        <label>Item <input id="packing-custom-name" type="text" maxlength="60" placeholder="e.g. sketchbook" required></label>
+        <label>Category <select id="packing-custom-category"><option value="essentials">Essentials</option><option value="health">Health</option><option value="electronics">3C / electronics</option><option value="clothing">Clothing</option><option value="toiletries">Toiletries</option><option value="food">Food</option><option value="other">Other</option></select></label>
+        <label>Quantity <input id="packing-custom-quantity" type="text" maxlength="24" value="1"></label>
+        <label>Weight (g) <input id="packing-custom-weight" type="number" min="0" max="20000" step="10" value="100"></label>
+      </div>
+      <button class="button button-primary" type="submit">Add item</button>
+    </form>
+  </div>
+  <div class="packing-result">
+    <div><p class="eyebrow">Your list</p><div id="packing-list" class="packing-list"></div></div>
+    <aside class="packing-summary">
+      <span>Estimated packed weight</span>
+      <strong id="packing-weight">0 kg</strong>
+      <p>Excludes worn clothing, food, and water.</p>
+      <div class="packing-export-actions">
+        <button id="packing-download-csv" class="button button-primary" type="button">Download for Excel</button>
+        <button id="packing-print-pdf" class="button button-quiet" type="button">Print / save PDF</button>
+        <button id="packing-reset" class="button button-quiet" type="button">Reset checks</button>
+      </div>
+    </aside>
+  </div>
+</section>
+<script src="{{ "js/packing.js" | relURL }}?v=1" defer></script>
+{{ end }}

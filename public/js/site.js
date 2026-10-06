@@ -53,9 +53,15 @@ if (window.L) {
     const pointButtons = [...route.querySelectorAll('[data-route-point]')];
     const activeName = route.querySelector('[data-route-active-name]');
     const activeDetail = route.querySelector('[data-route-active-detail]');
+    const activeImage = route.querySelector('[data-route-active-image]');
+    const activeIndex = route.querySelector('[data-route-active-index]');
+    const previousPoint = route.querySelector('[data-route-previous]');
+    const nextPoint = route.querySelector('[data-route-next]');
+    let selectedPointIndex = 0;
     function activatePoint(index, moveMap = true) {
       const point = points[index];
       if (!point) return;
+      selectedPointIndex = index;
       pointButtons.forEach((button, buttonIndex) => button.classList.toggle('active', buttonIndex === index));
       markers.forEach((marker, markerIndex) => marker.setStyle({
         radius: markerIndex === index ? 13 : 10,
@@ -63,10 +69,19 @@ if (window.L) {
       }));
       if (activeName) activeName.textContent = point.name;
       if (activeDetail) activeDetail.textContent = point.detail;
+      if (activeImage) {
+        activeImage.src = pointButtons[index].dataset.image;
+        activeImage.alt = point.name;
+      }
+      if (activeIndex) activeIndex.textContent = `Stop ${index + 1}`;
+      if (previousPoint) previousPoint.disabled = index === 0;
+      if (nextPoint) nextPoint.disabled = index === points.length - 1;
       markers[index].openPopup();
       if (moveMap) map.panTo(point.latLng, { animate: true });
     }
     pointButtons.forEach((button, index) => button.addEventListener('click', () => activatePoint(index)));
+    previousPoint?.addEventListener('click', () => activatePoint(selectedPointIndex - 1));
+    nextPoint?.addEventListener('click', () => activatePoint(selectedPointIndex + 1));
     map.fitBounds(points.map(point => point.latLng), { padding: [28, 28], maxZoom: 13 });
     activatePoint(0, false);
   });

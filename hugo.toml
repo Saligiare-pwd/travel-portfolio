@@ -13,7 +13,7 @@ enableRobotsTXT = true
 [params]
   author = "Wing Chen"
   description = "Slow itineraries, city walks, and practical travel notes from Europe and Asia."
-  images = ["images/freiburg-titisee/titisee.jpg"]
+  images = ["images/identity/confined-shell-shock-breakout.png"]
 
 [menu]
   [[menu.main]]
@@ -30,9 +30,14 @@ enableRobotsTXT = true
     identifier = "resources"
     name = "Planning notes"
     url = "/resources/"
+    weight = 40
+  [[menu.main]]
+    identifier = "packing"
+    name = "Packing"
+    url = "/packing/"
     weight = 30
   [[menu.main]]
     identifier = "about"
     name = "About"
-    url = "/about/"
-    weight = 40
+    url = "https://saligiare-pwd.github.io/wingchen/index.html"
+    weight = 50

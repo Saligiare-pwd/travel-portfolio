@@ -22,7 +22,7 @@ summary: "Four days organised by area, with early landmark visits and quieter af
 
 Do not cross the city repeatedly. Give each day one district, start the famous places early, and let the rest of the day narrow into lanes, gardens, and tea.
 
-{{< city-route title="Kyoto district orientation" points="Kyoto Station|Higashiyama|Gion|Northern temples|Arashiyama" coords="34.9858,135.7588|34.9949,135.7850|35.0037,135.7785|35.0270,135.7982|35.0094,135.6668" times="20 min|15 min|30 min|45 min" modes="bus / taxi|walk|subway + walk|rail" note="Assumes Kyoto Station as the base, off-peak travel, and no bus queue. Treat each district as a separate day rather than following the whole line at once." >}}
+{{< city-route title="Kyoto district orientation" points="Kyoto Station|Higashiyama|Gion|Northern temples|Arashiyama" coords="34.9858,135.7588|34.9949,135.7850|35.0037,135.7785|35.0270,135.7982|35.0094,135.6668" times="20 min|15 min|30 min|45 min" modes="bus / taxi|walk|subway + walk|rail" images="images/food/kyoto-matcha.jpg|images/kyoto/kiyomizudera.jpg|images/food/kyoto-matcha.jpg|images/kyoto/kiyomizudera.jpg|images/food/kyoto-matcha.jpg" note="Assumes Kyoto Station as the base, off-peak travel, and no bus queue. Treat each district as a separate day rather than following the whole line at once." >}}
 
 ## Day 1 — Higashiyama on foot
 

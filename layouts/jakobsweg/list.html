@@ -1,6 +1,6 @@
 {{ define "main" }}
 <header class="page-hero camino-hero">
-  <p class="eyebrow">Walk first, plan clearly</p>
+  <p class="eyebrow">Pilgrimage planner</p>
   <h1>{{ .Title }}</h1>
   <p>{{ .Params.summary }}</p>
 </header>
@@ -8,10 +8,10 @@
 <section class="route-planner" aria-labelledby="planner-title">
   <div class="planner-intro">
     <div>
-      <p class="eyebrow">Interactive route map</p>
+      <p class="eyebrow">Route map</p>
       <h2 id="planner-title">See the journey accumulate</h2>
     </div>
-    <p>Select a stop on the map. The travelled line, completed distance, stage photograph, lodging area, food plan, and transport exit all update together.</p>
+    <p>Select a stop to see distance, lodging, food, and transport.</p>
   </div>
 
   <div class="route-tabs" role="tablist" aria-label="Pilgrimage route">
@@ -28,7 +28,7 @@
       <div class="distance-progress" aria-hidden="true"><span id="progress-fill"></span></div>
       <p id="progress-label" class="progress-label">Starting point · Stage 1 of 5</p>
       <div id="route-map" class="route-map" aria-label="Interactive OpenStreetMap route with clickable stages"></div>
-      <p class="map-note">OpenStreetMap orientation—not turn-by-turn navigation. Follow the official waymarks and keep an offline GPX track.</p>
+      <p class="map-note">For orientation only. Keep an offline route and follow official waymarks.</p>
     </section>
 
     <article id="stage-detail" class="stage-panel" aria-live="polite">
@@ -55,52 +55,15 @@
 </section>
 
 <section class="planner-notes">
-  <div><p class="eyebrow">Before walking</p><h2>A route is not a reservation</h2></div>
+  <div><p class="eyebrow">Before walking</p><h2>Confirm before you go</h2></div>
   <div>
-    <p>Accommodation, food service, trail surfaces, and public transport can change. Confirm every overnight stop directly, download an offline map, and use the official German Jakobswege network for route updates and GPX information.</p>
+    <p>Check accommodation, transport, weather, and the official route before departure.</p>
     <div class="note-links">
-      <a class="text-link" href="#packing-planner">Build a packing checklist ↓</a>
+      <a class="text-link" href="{{ "packing/" | relURL }}">Build a packing checklist →</a>
       <a class="text-link" href="https://jakobuswege.de/" target="_blank" rel="noopener">German Jakobswege network ↗</a>
       <a class="text-link" href="https://int.bahn.de/en" target="_blank" rel="noopener">DB journey planner ↗</a>
     </div>
   </div>
 </section>
-
-<section id="packing-planner" class="packing-planner" aria-labelledby="packing-title">
-  <div class="packing-intro"><p class="eyebrow">Interactive preparation</p><h2 id="packing-title">Pack for the journey you chose</h2><p>Set the trip length and season. The checklist estimates carried weight and reduces clothing when laundry is available.</p></div>
-  <div class="packing-controls">
-    <label>Days <input id="packing-days" type="range" min="1" max="21" value="5"><output id="packing-days-output" for="packing-days">5 days</output></label>
-    <label>Season <select id="packing-season"><option value="spring">Spring</option><option value="summer">Summer</option><option value="autumn">Autumn</option><option value="winter">Winter</option></select></label>
-    <label class="packing-check"><input id="packing-laundry" type="checkbox" checked> Laundry every 3–4 days</label>
-  </div>
-  <div class="packing-additions">
-    <section class="packing-presets" aria-labelledby="packing-presets-title">
-      <p class="eyebrow">Prepared add-ons</p>
-      <h3 id="packing-presets-title">Add a useful group</h3>
-      <p>Choose only what fits this trip. Press a group again to remove it.</p>
-      <div class="packing-preset-buttons">
-        <button type="button" data-packing-preset="health" aria-pressed="false">＋ Health &amp; pills</button>
-        <button type="button" data-packing-preset="electronics" aria-pressed="false">＋ 3C / electronics</button>
-        <button type="button" data-packing-preset="comfort" aria-pressed="false">＋ Comfort</button>
-        <button type="button" data-packing-preset="snacks" aria-pressed="false">＋ Food &amp; snacks</button>
-      </div>
-    </section>
-    <form id="packing-custom-form" class="packing-custom-form">
-      <p class="eyebrow">Your own list</p>
-      <h3>Add a custom item</h3>
-      <div class="packing-custom-fields">
-        <label>Item name <input id="packing-custom-name" type="text" maxlength="60" placeholder="e.g. sketchbook" required></label>
-        <label>Category <select id="packing-custom-category"><option value="essentials">Essentials</option><option value="health">Health</option><option value="electronics">3C / electronics</option><option value="clothing">Clothing</option><option value="toiletries">Toiletries</option><option value="food">Food</option><option value="other">Other</option></select></label>
-        <label>Quantity <input id="packing-custom-quantity" type="text" maxlength="24" value="1"></label>
-        <label>Weight (g) <input id="packing-custom-weight" type="number" min="0" max="20000" step="10" value="100"></label>
-      </div>
-      <button class="button button-primary" type="submit">Add to checklist</button>
-    </form>
-  </div>
-  <div class="packing-result">
-    <div><p class="eyebrow">Suggested list</p><div id="packing-list" class="packing-list"></div></div>
-    <aside><span>Estimated packed weight</span><strong id="packing-weight">0 kg</strong><p>Planning estimate only; excludes worn clothing, food, and water. Weigh the finished bag before departure.</p><button id="packing-reset" class="button button-quiet" type="button">Reset checks</button></aside>
-  </div>
-</section>
-<script src="{{ "js/jakobsweg.js" | relURL }}?v=5" defer></script>
+<script src="{{ "js/jakobsweg.js" | relURL }}?v=6" defer></script>
 {{ end }}

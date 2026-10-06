@@ -2,25 +2,39 @@
 {{- $times := split (.Get "times") "|" -}}
 {{- $modes := split (.Get "modes") "|" -}}
 {{- $coords := split (.Get "coords") "|" -}}
+{{- $images := split (.Get "images" | default "") "|" -}}
+{{- $fallbackImage := .Page.Params.cover.image | default "images/identity/confined-shell-shock-breakout.png" -}}
 <section class="city-route" aria-label="{{ .Get "title" }}">
   <header>
-    <div><p class="eyebrow">Transport assumption</p><h3>{{ .Get "title" }}</h3></div>
+    <div><p class="eyebrow">Route</p><h3>{{ .Get "title" }}</h3></div>
     <p>{{ .Get "note" }}</p>
   </header>
   <div class="city-route-body">
     <div class="city-route-map-wrap">
       <div class="city-route-map" data-city-route-map aria-label="Interactive map of {{ .Get "title" }}"></div>
-      <p class="city-route-active"><span>Selected stop</span><strong data-route-active-name>{{ index $points 0 }}</strong><small data-route-active-detail>{{ index $modes 0 }} · {{ index $times 0 }} to next stop</small></p>
     </div>
-    <ol class="city-route-stops">
+    <article class="city-route-detail" aria-live="polite">
+      <figure><img data-route-active-image src="{{ $fallbackImage | relURL }}" alt="{{ index $points 0 }}"></figure>
+      <div class="city-route-detail-copy">
+        <p class="eyebrow"><span data-route-active-index>Stop 1</span> of {{ len $points }}</p>
+        <h4 data-route-active-name>{{ index $points 0 }}</h4>
+        <p data-route-active-detail>{{ index $modes 0 }} · {{ index $times 0 }} to next stop</p>
+        <div class="city-route-actions">
+          <button type="button" class="button button-quiet" data-route-previous>← Previous</button>
+          <button type="button" class="button button-quiet" data-route-next>Next →</button>
+        </div>
+      </div>
+      <div class="city-route-points" aria-label="Choose a route stop">
       {{- range $i, $point := $points -}}
         {{- $coord := split (index $coords $i) "," -}}
-        <li><button type="button" data-route-point data-lat="{{ index $coord 0 }}" data-lng="{{ index $coord 1 }}" data-name="{{ $point }}"{{ if eq $i 0 }} class="active"{{ end }}>
+        {{- $pointImage := $fallbackImage -}}
+        {{- if and (lt $i (len $images)) (ne (index $images $i) "") -}}{{- $pointImage = index $images $i -}}{{- end -}}
+        <button type="button" data-route-point data-lat="{{ index $coord 0 }}" data-lng="{{ index $coord 1 }}" data-name="{{ $point }}" data-image="{{ $pointImage | relURL }}"{{ if eq $i 0 }} class="active"{{ end }} aria-label="Stop {{ add $i 1 }}: {{ $point }}">
           <span>{{ add $i 1 }}</span>
-          <div><strong>{{ $point }}</strong>
-          {{- if lt $i (sub (len $points) 1) -}}<small>{{ index $modes $i }} · {{ index $times $i }} to next stop</small>{{- else -}}<small>Final stop</small>{{- end -}}</div>
-        </button></li>
+          {{- if lt $i (sub (len $points) 1) -}}<small class="sr-only">{{ index $modes $i }} · {{ index $times $i }} to next stop</small>{{- else -}}<small class="sr-only">Final stop</small>{{- end -}}
+        </button>
       {{- end -}}
-    </ol>
+      </div>
+    </article>
   </div>
 </section>
