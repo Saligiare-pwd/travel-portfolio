@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Visa on Wing&#39;s Travel Notes</title>
+		<link>http://localhost:1313/travel-portfolio/tags/visa/</link>
+		<description>Recent content in Visa on Wing&#39;s Travel Notes</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 14 Feb 2025 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/travel-portfolio/tags/visa/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>德國簽證申請攻略 (DAAD Sandwich Program)</title>
+				<link>http://localhost:1313/travel-portfolio/resources/germany-visa/</link>
+				<pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/travel-portfolio/resources/germany-visa/</guid>
+				<description>DAAD 三明治計畫博士生簽證申請清單、文件準備與注意事項 (2025更新)</description>
+			</item>
+	</channel>
+</rss>
