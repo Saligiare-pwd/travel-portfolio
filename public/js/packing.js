@@ -6,7 +6,8 @@ const packingWeight = document.querySelector('#packing-weight');
 const packingDaysOutput = document.querySelector('#packing-days-output');
 const packingCustomForm = document.querySelector('#packing-custom-form');
 const packingPresetButtons = [...document.querySelectorAll('[data-packing-preset]')];
-const packingTripSelect = document.querySelector('#packing-trip-select');
+const packingTripButtons = [...document.querySelectorAll('[data-packing-trip]')];
+const packingDestinationRail = document.querySelector('[data-packing-destinations]');
 
 const PACKING_STORAGE_KEY = 'travel-planner-packing-v1';
 const categoryLabels = {
@@ -40,6 +41,76 @@ const packingPresetItems = {
     { id: 'electrolytes', name: 'Electrolyte tablets', quantity: '1 tube', grams: 85, category: 'food' }
   ]
 };
+
+const destinationPackingProfiles = {
+  Heidelberg: { note: 'Cobblestones, the castle climb, and changeable Neckar weather.', items: [
+    { id: 'heidelberg-grip-shoes', name: 'Grippy walking shoes', quantity: '1 pair', grams: 0, category: 'clothing' },
+    { id: 'heidelberg-light-layer', name: 'Light layer for castle viewpoints', quantity: '1', grams: 280, category: 'clothing' }
+  ]},
+  Bonn: { note: 'A light city setup for museums, the Rhine promenade, and a possible hill excursion.', items: [
+    { id: 'bonn-day-bag', name: 'Compact museum day bag', quantity: '1', grams: 180, category: 'other' },
+    { id: 'bonn-river-layer', name: 'Wind layer for the Rhine', quantity: '1', grams: 260, category: 'clothing' }
+  ]},
+  Munich: { note: 'Comfortable city walking with room for parks, museums, and cool evenings.', items: [
+    { id: 'munich-bottle', name: 'Refillable day bottle', quantity: '1', grams: 180, category: 'essentials' },
+    { id: 'munich-evening-layer', name: 'Light evening layer', quantity: '1', grams: 300, category: 'clothing' }
+  ]},
+  Karlsruhe: { note: 'A mostly outdoor zoo day: prepare for sun, showers, and long periods on foot.', items: [
+    { id: 'karlsruhe-sun-kit', name: 'Sun hat and sunscreen', quantity: '1 set', grams: 210, category: 'toiletries' },
+    { id: 'karlsruhe-binoculars', name: 'Compact binoculars', quantity: '1', grams: 280, category: 'other' }
+  ]},
+  'Freiburg & Titisee': { note: 'Town walking, lake weather, and a cooler Black Forest train ride.', items: [
+    { id: 'titisee-lake-towel', name: 'Compact lake towel', quantity: '1', grams: 180, category: 'other' },
+    { id: 'titisee-warm-layer', name: 'Warm forest layer', quantity: '1', grams: 420, category: 'clothing' }
+  ]},
+  'Dresden & Saxon Switzerland': { note: 'Stone steps and exposed viewpoints need a small hiking setup.', items: [
+    { id: 'dresden-hiking-shoes', name: 'Hiking shoes with grip', quantity: '1 pair', grams: 0, category: 'clothing' },
+    { id: 'dresden-trail-map', name: 'Offline trail map', quantity: '1 download', grams: 0, category: 'essentials' }
+  ]},
+  Kyoto: { note: 'Temple visits reward light luggage, easy footwear, and a few small everyday items.', items: [
+    { id: 'kyoto-hand-towel', name: 'Small hand towel', quantity: '1', grams: 60, category: 'toiletries' },
+    { id: 'kyoto-coin-purse', name: 'Coin purse and IC card', quantity: '1 set', grams: 80, category: 'essentials' },
+    { id: 'kyoto-temple-socks', name: 'Clean socks for temple interiors', quantity: '1 spare pair', grams: 55, category: 'clothing' }
+  ]},
+  Niigata: { note: 'River and coastal wind, market shopping, and cool evenings shape this list.', items: [
+    { id: 'niigata-wind-layer', name: 'Wind-resistant layer', quantity: '1', grams: 300, category: 'clothing' },
+    { id: 'niigata-market-bag', name: 'Reusable market bag', quantity: '1', grams: 70, category: 'other' }
+  ]},
+  Enoshima: { note: 'Sea wind, stairs, and wet rock make footwear and sun protection important.', items: [
+    { id: 'enoshima-grip-shoes', name: 'Non-slip walking shoes', quantity: '1 pair', grams: 0, category: 'clothing' },
+    { id: 'enoshima-sun-wind', name: 'Sun and wind protection', quantity: '1 set', grams: 240, category: 'clothing' }
+  ]},
+  'Lake Kawaguchi': { note: 'A bicycle day needs weather protection and a small repair margin.', items: [
+    { id: 'fuji-cycling-gloves', name: 'Cycling gloves', quantity: '1 pair', grams: 70, category: 'clothing' },
+    { id: 'fuji-repair-kit', name: 'Compact bicycle repair kit', quantity: '1', grams: 240, category: 'essentials' }
+  ]},
+  Hualien: { note: 'Coastal sun, sudden rain, and optional cycling call for flexible protection.', items: [
+    { id: 'hualien-sun-kit', name: 'Coastal sun protection', quantity: '1 set', grams: 210, category: 'toiletries' },
+    { id: 'hualien-dry-pouch', name: 'Water-resistant phone pouch', quantity: '1', grams: 80, category: 'electronics' }
+  ]},
+  Jiaoxi: { note: 'Hot springs and waterfall paths are easier with quick-dry, compact items.', items: [
+    { id: 'jiaoxi-towel', name: 'Quick-dry hot-spring towel', quantity: '1', grams: 150, category: 'toiletries' },
+    { id: 'jiaoxi-sandals', name: 'Light sandals', quantity: '1 pair', grams: 260, category: 'clothing' }
+  ]},
+  'Green Island': { note: 'Sea conditions dominate: keep valuables dry and follow the dive operator’s equipment list.', items: [
+    { id: 'green-island-dry-bag', name: 'Roll-top dry bag', quantity: '1', grams: 320, category: 'essentials' },
+    { id: 'green-island-reef-sun', name: 'Reef-conscious sun protection', quantity: '1 set', grams: 220, category: 'toiletries' },
+    { id: 'green-island-seasick', name: 'Motion-sickness medicine', quantity: 'as advised', grams: 25, category: 'health' }
+  ]},
+  Hehuanshan: { note: 'High altitude means cold, UV, and weather changes even on a short itinerary.', items: [
+    { id: 'hehuan-headlamp', name: 'Headlamp and spare battery', quantity: '1 set', grams: 130, category: 'electronics' },
+    { id: 'hehuan-insulation', name: 'Mountain insulation layer', quantity: '1', grams: 600, category: 'clothing' },
+    { id: 'hehuan-altitude-kit', name: 'Altitude health essentials', quantity: '1 set', grams: 90, category: 'health' }
+  ]},
+  'Qilai Nanhua': { note: 'A permitted hut hike needs safety equipment beyond an ordinary sightseeing list.', items: [
+    { id: 'qilai-headlamp', name: 'Headlamp and spare battery', quantity: '1 set', grams: 130, category: 'electronics' },
+    { id: 'qilai-permits', name: 'Permit and route copies', quantity: '1 set', grams: 35, category: 'essentials' },
+    { id: 'qilai-poles', name: 'Trekking poles', quantity: '1 pair', grams: 480, category: 'essentials' },
+    { id: 'qilai-warm-layer', name: 'Mountain insulation layer', quantity: '1', grams: 650, category: 'clothing' }
+  ]}
+};
+
+let activePackingTripName = 'General journey';
 
 function loadPackingState() {
   try {
@@ -106,7 +177,8 @@ function packingItems(days, season, laundry) {
     ]
   };
   const presetItems = [...activePackingPresets].flatMap(key => packingPresetItems[key] || []);
-  return items.concat(seasonal[season] || seasonal.spring, presetItems, customPackingItems);
+  const destinationItems = destinationPackingProfiles[activePackingTripName]?.items || [];
+  return items.concat(seasonal[season] || seasonal.spring, destinationItems, presetItems, customPackingItems);
 }
 
 function updatePackingWeight() {
@@ -222,10 +294,10 @@ packingCustomForm.addEventListener('submit', event => {
 });
 
 let packingMap;
-let packingMarker;
+let packingMarkers = [];
 
 function selectedTrip() {
-  const option = packingTripSelect.options[packingTripSelect.selectedIndex];
+  const option = packingTripButtons.find(button => button.classList.contains('active')) || packingTripButtons[0];
   return {
     name: option.dataset.name,
     country: option.dataset.country,
@@ -238,34 +310,41 @@ function selectedTrip() {
   };
 }
 
-function updateSelectedTrip() {
+function updateSelectedTrip(button = packingTripButtons[0], moveMap = true) {
+  packingTripButtons.forEach(item => {
+    const active = item === button;
+    item.classList.toggle('active', active);
+    if (active) item.setAttribute('aria-current', 'true');
+    else item.removeAttribute('aria-current');
+  });
+  activePackingTripName = button.dataset.name;
   const trip = selectedTrip();
   document.querySelector('#packing-trip-image').src = trip.image;
   document.querySelector('#packing-trip-image').alt = trip.name;
   document.querySelector('#packing-trip-meta').textContent = `${trip.country} · ${trip.days}`;
   document.querySelector('#packing-trip-name').textContent = trip.name;
   document.querySelector('#packing-trip-summary').textContent = trip.summary;
+  const profile = destinationPackingProfiles[trip.name];
+  document.querySelector('#packing-trip-advice').innerHTML = `<strong>Suggested extras:</strong> ${profile?.note || 'Start with the core list, then add only what this journey needs.'}`;
   document.querySelector('#packing-trip-guide').href = trip.url;
   const hasLocation = Number.isFinite(trip.lat) && Number.isFinite(trip.lng);
   const mapUrl = hasLocation ? `https://www.openstreetmap.org/?mlat=${trip.lat}&mlon=${trip.lng}#map=10/${trip.lat}/${trip.lng}` : 'https://www.openstreetmap.org/';
   document.querySelector('#packing-trip-osm').href = mapUrl;
+  packingMarkers.forEach(({ marker, button: markerButton }) => {
+    marker.getElement()?.querySelector('.atlas-marker')?.classList.toggle('active', markerButton === button);
+  });
   if (hasLocation && packingMap) {
-    if (!packingMarker) packingMarker = L.marker([trip.lat, trip.lng]).addTo(packingMap);
-    else packingMarker.setLatLng([trip.lat, trip.lng]);
-    packingMarker.bindTooltip(trip.name, { permanent: false, direction: 'top' });
-    packingMap.flyTo([trip.lat, trip.lng], 7, { duration: .65 });
+    packingMap.flyTo([trip.lat, trip.lng], 7, { duration: moveMap ? .65 : 0 });
   } else if (packingMap) {
-    if (packingMarker) {
-      packingMarker.remove();
-      packingMarker = null;
-    }
-    packingMap.setView([25, 20], 2);
+    const bounds = packingMarkers.map(item => item.latLng);
+    if (bounds.length) packingMap.fitBounds(bounds, { padding: [35, 35], maxZoom: 3 });
   }
   const suggestedDays = Number.parseInt(trip.days, 10);
-  if (Number.isFinite(suggestedDays) && packingTripSelect.value !== 'general') {
+  if (Number.isFinite(suggestedDays) && trip.name !== 'General journey') {
     packingDays.value = String(Math.min(21, Math.max(1, suggestedDays)));
-    renderPackingList();
   }
+  renderPackingList();
+  packingDestinationRail?.scrollTo({ left: button.offsetLeft - (packingDestinationRail.clientWidth - button.offsetWidth) / 2, behavior: moveMap ? 'smooth' : 'auto' });
 }
 
 if (window.L) {
@@ -274,6 +353,15 @@ if (window.L) {
     maxZoom: 19,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(packingMap);
+  packingMarkers = packingTripButtons.slice(1).map((button, index) => {
+    const latLng = [Number(button.dataset.lat), Number(button.dataset.lng)];
+    const icon = L.divIcon({ className: '', html: `<span class="atlas-marker">${index + 1}</span>`, iconSize: [32, 32], iconAnchor: [16, 16] });
+    const marker = L.marker(latLng, { icon }).addTo(packingMap);
+    marker.bindTooltip(button.dataset.name, { direction: 'top', offset: [0, -12] });
+    marker.on('click', () => updateSelectedTrip(button));
+    return { marker, button, latLng };
+  });
+  packingMap.fitBounds(packingMarkers.map(item => item.latLng), { padding: [35, 35], maxZoom: 3 });
 }
 
 function csvCell(value) {
@@ -319,8 +407,10 @@ document.querySelector('#packing-print-pdf').addEventListener('click', () => win
 packingDays.addEventListener('input', renderPackingList);
 packingSeason.addEventListener('change', renderPackingList);
 packingLaundry.addEventListener('change', renderPackingList);
-packingTripSelect.addEventListener('change', updateSelectedTrip);
+packingTripButtons.forEach(button => button.addEventListener('click', () => updateSelectedTrip(button)));
+document.querySelector('[data-packing-scroll="previous"]')?.addEventListener('click', () => packingDestinationRail?.scrollBy({ left: -packingDestinationRail.clientWidth * .8, behavior: 'smooth' }));
+document.querySelector('[data-packing-scroll="next"]')?.addEventListener('click', () => packingDestinationRail?.scrollBy({ left: packingDestinationRail.clientWidth * .8, behavior: 'smooth' }));
 document.querySelector('#packing-reset').addEventListener('click', () => renderPackingList(true));
 updatePresetButtons();
 renderPackingList();
-updateSelectedTrip();
+updateSelectedTrip(packingTripButtons[0], false);

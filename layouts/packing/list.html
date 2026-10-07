@@ -9,14 +9,17 @@
 <section class="packing-trip" aria-labelledby="packing-trip-title">
   <div class="packing-trip-heading">
     <div><p class="eyebrow">Choose a journey</p><h2 id="packing-trip-title">Start with a place</h2></div>
-    <label>Travel guide
-      <select id="packing-trip-select">
-        <option value="general" data-name="General journey" data-country="Flexible plan" data-days="Choose your own length" data-summary="A reusable list without a fixed destination." data-image="{{ "images/freiburg-titisee/titisee.jpg" | relURL }}" data-url="{{ "destinations/" | relURL }}">General journey</option>
-        {{ range hugo.Data.atlas }}
-          <option value="{{ .name | anchorize }}" data-name="{{ .name }}" data-country="{{ .country }}" data-days="{{ .days }}" data-summary="{{ .summary }}" data-image="{{ .image | relURL }}" data-url="{{ .url | relURL }}" data-lat="{{ .lat }}" data-lng="{{ .lng }}">{{ .name }} · {{ .country }}</option>
-        {{ end }}
-      </select>
-    </label>
+    <p>Choose from the map or destination cards. The checklist adapts to the selected trip.</p>
+  </div>
+  <div class="packing-destination-shell">
+    <button type="button" class="packing-destination-scroll" data-packing-scroll="previous" aria-label="Show earlier destinations">←</button>
+    <div class="packing-destination-rail" data-packing-destinations aria-label="Choose a journey">
+      <button type="button" class="active" aria-current="true" data-packing-trip data-name="General journey" data-country="Flexible plan" data-days="Choose your own length" data-summary="A reusable list without a fixed destination." data-image="{{ "images/freiburg-titisee/titisee.jpg" | relURL }}" data-url="{{ "destinations/" | relURL }}"><span>⌁</span><strong>Flexible</strong><small>Any place</small></button>
+      {{ range $index, $place := hugo.Data.atlas }}
+        <button type="button" data-packing-trip data-name="{{ .name }}" data-country="{{ .country }}" data-days="{{ .days }}" data-summary="{{ .summary }}" data-image="{{ .image | relURL }}" data-url="{{ .url | relURL }}" data-lat="{{ .lat }}" data-lng="{{ .lng }}"><span>{{ add $index 1 }}</span><strong>{{ .name }}</strong><small>{{ .country }} · {{ .days }}</small></button>
+      {{ end }}
+    </div>
+    <button type="button" class="packing-destination-scroll" data-packing-scroll="next" aria-label="Show later destinations">→</button>
   </div>
   <div class="packing-trip-dashboard">
     <div id="packing-trip-map" class="packing-trip-map" aria-label="Map of the selected journey"></div>
@@ -26,6 +29,7 @@
         <p id="packing-trip-meta" class="eyebrow">Flexible plan</p>
         <h2 id="packing-trip-name">General journey</h2>
         <p id="packing-trip-summary">A reusable list without a fixed destination.</p>
+        <p id="packing-trip-advice" class="packing-trip-advice"><strong>Suggested extras:</strong> Start with the core list, then add only what this journey needs.</p>
         <div class="packing-trip-actions">
           <a id="packing-trip-guide" class="text-link" href="{{ "destinations/" | relURL }}">Open guide →</a>
           <a id="packing-trip-osm" class="text-link" href="https://www.openstreetmap.org/" target="_blank" rel="noopener">Open map ↗</a>
@@ -79,5 +83,5 @@
     </aside>
   </div>
 </section>
-<script src="{{ "js/packing.js" | relURL }}?v=2" defer></script>
+<script src="{{ "js/packing.js" | relURL }}?v=3" defer></script>
 {{ end }}

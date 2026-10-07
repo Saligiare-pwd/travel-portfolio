@@ -9,6 +9,10 @@ summary: "Sources and licences for photographs added to this travel portfolio."
 The following images were resized for the website. Their original licences continue to apply.
 
 - **Kyoto — Kiyomizu-dera:** [Martin Falbisoner, CC BY-SA 4.0](https://commons.wikimedia.org/wiki/File:Kiyomizu-dera,_Kyoto,_November_2016_-01.jpg)
+- **Kyoto Station:** [Rsa, CC BY-SA 3.0](https://commons.wikimedia.org/wiki/File:Kyoto_subway_Kyoto_Station.JPG)
+- **Kyoto — Gion:** [Rainer Haeßner, CC BY-SA 3.0](https://commons.wikimedia.org/wiki/File:20111023_Gion2.jpg)
+- **Kyoto — Kinkaku-ji:** [Stéphane Gallay, CC BY 2.0](https://commons.wikimedia.org/wiki/File:Kyoto_Golden_Pavillion_6_(2402445221).jpg)
+- **Kyoto — Arashiyama Bamboo Grove:** [Mitchwandrew, CC BY 4.0](https://commons.wikimedia.org/wiki/File:Arashiyama_Bamboo_Grove.jpg)
 - **Bonn — Beethoven monument:** [RAWdz Ivan, CC BY 4.0](https://commons.wikimedia.org/wiki/File:Statue_of_Ludwig_van_Beethoven_in_Bonn.jpg)
 - **Munich — Marienplatz:** [Jebulon, CC0](https://commons.wikimedia.org/wiki/File:Overview_Marienplatz_Rathaus_Munich.jpg)
 - **Karlsruhe Zoo — snowy owl:** [H. Zell, CC BY-SA 3.0](https://commons.wikimedia.org/wiki/File:Bubo_scandiacus_-_Karlsruhe_Zoo_01.jpg)
@@ -30,6 +34,11 @@ The following images were resized for the website. Their original licences conti
 ### New island and lake guides
 
 - **Enoshima viewed from Fujisawa:** [ジェイ.ケイ, CC BY-SA 4.0](https://commons.wikimedia.org/wiki/File:Enoshima_view_from_Iseyama.jpg)
+- **Katase-Enoshima Station:** [KENPEI, CC BY-SA 4.0](https://commons.wikimedia.org/wiki/File:Katase-Enoshima_Station.jpg)
+- **Enoshima Shrine:** [Guilhem Vellut, CC BY 2.0](https://commons.wikimedia.org/wiki/File:Enoshima_Shrine_(13897750571).jpg)
+- **Enoshima Sea Candle:** [Qurren, CC BY-SA 3.0](https://commons.wikimedia.org/wiki/File:Enoshima_Sea_Candle_1.jpg)
+- **Chigogafuchi:** [Daderot, CC0](https://commons.wikimedia.org/wiki/File:Chigogafuchi_-_Enoshima,_Japan_-_DSC07893.jpg)
+- **Enoshima Station:** [姫神, CC BY-SA 3.0](https://commons.wikimedia.org/wiki/File:Enoshima_station_concourse.JPG)
 - **Mount Fuji from Lake Kawaguchi:** [Alpsdake, CC BY-SA 4.0](https://commons.wikimedia.org/wiki/File:Mount_Fuji_from_Lake_Kawaguchi_s2.jpg)
 - **Spotted unicornfish at Green Island, Taiwan:** [Divervincent, CC BY-SA 3.0](https://commons.wikimedia.org/wiki/File:Spotted_unicornfish_green_island.jpg)
 

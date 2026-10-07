@@ -22,7 +22,7 @@ summary: "從東京出發的一日海岸散步，沿著神社、展望台與岩�
 
 江之島適合把景點排成一條單向步行線，不必在島上來回。早上從片瀨江之島站過橋，午後走到稚兒之淵，再依體力決定步行回程或搭船。
 
-{{< city-route title="江之島一日路線" points="片瀨江之島站|江島神社|Sea Candle|稚兒之淵|江之島站" coords="35.3092,139.4821|35.3008,139.4809|35.2997,139.4777|35.2992,139.4740|35.3118,139.4873" times="15 分|20 分|20 分|35 分" modes="步行|階梯 / Escar|步行|步行 / 渡船" note="步行時間不含排隊與停留；岩岸、洞窟和渡船會因風浪或天候停止開放。" >}}
+{{< city-route title="江之島一日路線" points="片瀨江之島站|江島神社|Sea Candle|稚兒之淵|江之島站" coords="35.3092,139.4821|35.3008,139.4809|35.2997,139.4777|35.2992,139.4740|35.3118,139.4873" times="15 分|20 分|20 分|35 分" modes="步行|階梯 / Escar|步行|步行 / 渡船" images="images/enoshima/katase-enoshima-station.jpg|images/enoshima/enoshima-shrine.jpg|images/enoshima/sea-candle.jpg|images/enoshima/chigogafuchi.jpg|images/enoshima/enoshima-station.jpg" note="步行時間不含排隊與停留；岩岸、洞窟和渡船會因風浪或天候停止開放。" >}}
 
 ## 上午 — 過橋與參拜
 

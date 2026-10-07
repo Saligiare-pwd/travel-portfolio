@@ -1,1 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cycling on Wing's Travel Notes</title><link>https://saligiare-pwd.github.io/travel-portfolio/tags/cycling/</link><description>Recent content in Cycling on Wing's Travel Notes</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://saligiare-pwd.github.io/travel-portfolio/tags/cycling/index.xml" rel="self" type="application/rss+xml"/><item><title>富士山環湖：河口湖慢騎</title><link>https://saligiare-pwd.github.io/travel-portfolio/destinations/japan/fuji-lake/fuji-kawaguchiko-loop/</link><pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate><guid>https://saligiare-pwd.github.io/travel-portfolio/destinations/japan/fuji-lake/fuji-kawaguchiko-loop/</guid><description>以河口湖站為起點，沿湖北岸展望點完成一圈可以隨時縮短的自行車行程。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Cycling on Wing&#39;s Travel Notes</title>
+		<link>http://localhost:1313/travel-portfolio/tags/cycling/</link>
+		<description>Recent content in Cycling on Wing&#39;s Travel Notes</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/travel-portfolio/tags/cycling/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>富士山環湖：河口湖慢騎</title>
+				<link>http://localhost:1313/travel-portfolio/destinations/japan/fuji-lake/fuji-kawaguchiko-loop/</link>
+				<pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/travel-portfolio/destinations/japan/fuji-lake/fuji-kawaguchiko-loop/</guid>
+				<description>以河口湖站為起點，沿湖北岸展望點完成一圈可以隨時縮短的自行車行程。</description>
+			</item>
+	</channel>
+</rss>

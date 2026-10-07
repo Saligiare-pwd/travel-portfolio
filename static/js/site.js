@@ -84,6 +84,8 @@ if (window.L) {
       if (activeIndex) activeIndex.textContent = `Stop ${index + 1}`;
       if (previousPoint) previousPoint.disabled = index === 0;
       if (nextPoint) nextPoint.disabled = index === points.length - 1;
+      if (earlierStops) earlierStops.disabled = index === 0;
+      if (laterStops) laterStops.disabled = index === points.length - 1;
       if (stageRail) {
         const activeButton = pointButtons[index];
         stageRail.scrollTo({
@@ -97,8 +99,8 @@ if (window.L) {
     pointButtons.forEach((button, index) => button.addEventListener('click', () => activatePoint(index)));
     previousPoint?.addEventListener('click', () => activatePoint(selectedPointIndex - 1));
     nextPoint?.addEventListener('click', () => activatePoint(selectedPointIndex + 1));
-    earlierStops?.addEventListener('click', () => stageRail?.scrollBy({ left: -stageRail.clientWidth * .8, behavior: 'smooth' }));
-    laterStops?.addEventListener('click', () => stageRail?.scrollBy({ left: stageRail.clientWidth * .8, behavior: 'smooth' }));
+    earlierStops?.addEventListener('click', () => activatePoint(selectedPointIndex - 1));
+    laterStops?.addEventListener('click', () => activatePoint(selectedPointIndex + 1));
     map.fitBounds(points.map(point => point.latLng), { padding: [28, 28], maxZoom: 13 });
     activatePoint(0, false);
   });

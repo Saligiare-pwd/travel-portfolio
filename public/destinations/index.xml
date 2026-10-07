@@ -1,1 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Places on Wing's Travel Notes</title><link>https://saligiare-pwd.github.io/travel-portfolio/destinations/</link><description>Recent content in Places on Wing's Travel Notes</description><generator>Hugo</generator><language>en-US</language><lastBuildDate/><atom:link href="https://saligiare-pwd.github.io/travel-portfolio/destinations/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Places on Wing&#39;s Travel Notes</title>
+		<link>http://localhost:1313/travel-portfolio/destinations/</link>
+		<description>Recent content in Places on Wing&#39;s Travel Notes</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+		
+			<lastBuildDate></lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/travel-portfolio/destinations/index.xml" rel="self" type="application/rss+xml" />
+	</channel>
+</rss>
