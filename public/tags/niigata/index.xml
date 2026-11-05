@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Niigata on Wing&#39;s Travel Notes</title>
-		<link>http://localhost:1313/travel-portfolio/tags/niigata/</link>
+		<link>https://saligiare-pwd.github.io/travel-portfolio/tags/niigata/</link>
 		<description>Recent content in Niigata on Wing&#39;s Travel Notes</description>
 		<generator>Hugo</generator>
 		<language>en-US</language>
@@ -12,6 +12,6 @@
 		
 			<lastBuildDate></lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/travel-portfolio/tags/niigata/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://saligiare-pwd.github.io/travel-portfolio/tags/niigata/index.xml" rel="self" type="application/rss+xml" />
 	</channel>
 </rss>

@@ -149,6 +149,15 @@ button, input, select { font: inherit; }
 .trip-facts small { color: var(--muted); font-size: .65rem; letter-spacing: .12em; text-transform: uppercase; }
 .trip-facts strong { font-size: .88rem; }
 .article-layout { display: grid; grid-template-columns: 220px minmax(0, 900px); justify-content: center; gap: clamp(2rem, 4vw, 4rem); padding-top: 4rem; }
+.language-switch { width: fit-content; margin: 0 0 2rem; padding: .35rem; display: flex; align-items: center; gap: .3rem; border: 1px solid var(--line); border-radius: 999px; background: var(--paper-deep); }
+.language-switch span { padding: 0 .65rem; color: var(--muted); font-size: .68rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.language-switch button { min-height: 38px; padding: .45rem .85rem; border: 0; border-radius: 999px; color: var(--ink); background: transparent; font: inherit; font-size: .78rem; font-weight: 800; cursor: pointer; }
+.language-switch button:hover, .language-switch button.active { color: var(--cream); background: var(--moss-dark); }
+[data-lang-content][hidden] { display: none !important; }
+.taiwan-recommendation { margin: -1rem 0 1.35rem; padding: 1.25rem 1.35rem; border: 1px solid var(--line); border-radius: 1.1rem; background: var(--cream); }
+.taiwan-recommendation .language-switch { margin-bottom: 1rem; }
+.taiwan-recommendation h3 { margin: 0 0 .35rem; font-family: var(--serif); font-size: clamp(1.35rem, 3vw, 2rem); }
+.taiwan-recommendation p { max-width: 900px; margin: 0; color: var(--muted); }
 .article-aside { align-self: start; position: sticky; top: 2rem; }
 .toc ul { margin: 0 0 1.5rem; padding: 0; list-style: none; }
 .toc li { margin: .55rem 0; }

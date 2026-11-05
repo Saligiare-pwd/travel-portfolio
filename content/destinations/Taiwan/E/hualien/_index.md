@@ -1,34 +1,17 @@
 ---
-title: 花蓮 Basics
+title: Hualien
 slug: hualien-basics
 date: '2025-10-08'
 updated: '2025-10-08'
-country: 台灣
-city: 花蓮
+country: Taiwan
+city: Hualien
 tags:
 - guide
 - basics
 - hualien
-summary: 花蓮 行前重點、交通、住宿與常見問題。
+summary: An east-coast base for sunrise, food, cycling, and weather-aware excursions.
 cover:
   image: images/hualien/image.jpeg
 ---
 
-## 關於 花蓮
-快速認識 花蓮：交通、住宿與行前重點。
-
-## 何時前往
-- 旺季：春秋舒適；夏季活動多、人潮也多。
-- 淡季：平日價格更好，請留意天氣與交通公告。
-
-## 交通
-- 搭配大眾運輸與計程車／租車。
-- 下載離線地圖與常用站點位置。
-
-## 推薦住宿區域
-- 以主要車站與鬧區周邊為優先，步行與轉乘都方便。
-- 喜歡安靜者可選擇次要商圈或自然景觀區。
-
-## 小提醒
-- 提前查天氣與路況，山區或海邊行程請準備備案。
-- 將此 Basics 與行程頁面一起收藏，方便隨時查看。
+Hualien Station is the easiest base without a car. Check weather, rail, road, and trail notices again before every outer excursion.

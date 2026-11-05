@@ -1,52 +1,45 @@
 ---
-title: "奇萊南華：天池山莊三日行程"
+title: "Qilai Nanhua: three days via Tianchi Lodge"
 slug: "qilai-nanhua-trip"
 date: 2026-10-02
-country: "台灣"
+updated: 2026-11-05
+country: "Taiwan"
 area: "Taiwan"
 travelType: "nature"
-city: "奇萊南華"
+city: "Qilai Nanhua"
 days: 3
-bestFor: "高山草原、日出與山屋"
-pace: "長距離、保守折返"
+bestFor: "Alpine grassland, sunrise, and a mountain hut"
+pace: "Long distance, conservative turnarounds"
 featured: false
 tags: ["itinerary", "Taiwan", "hiking"]
-official: "https://recreation.forest.gov.tw/Trail/RT?tr_id=064&typ=3"
+official: "https://recreation.forest.gov.tw/EN/Trail/RT?tr_id=064"
 cover:
   image: "images/hehuanshan/image.jpg"
-  alt: "台灣中央山脈的高山稜線"
-summary: "從屯原登山口進出，以天池山莊為基地安排奇萊南峰與南華山，並把許可、床位、天候和撤退時間放在攻頂之前。"
+  alt: "A high ridge in Taiwan's Central Mountain Range"
+summary: "Base the route at Tianchi Lodge, putting permits, beds, weather, and turnaround times ahead of reaching both summits."
 ---
 
-## 行程輪廓
+## Before treating this as an itinerary
 
-奇萊南華不是一般觀光步道。路程長、海拔高，且步道、道路與山屋狀態可能因豪雨、颱風或地震改變。這份三日配置刻意保留緩衝；出發前仍須重新確認官方開放資訊、申請要求、山屋床位和隊伍能力。
+Qilai Nanhua is a long, high-altitude mountain route—not a casual sightseeing trail. Rain, typhoons, earthquakes, and landslides can change access. Confirm permits, hut allocation, trail status, transport, and team ability again before departure.
 
-{{< city-route title="奇萊南華三日路線" points="埔里|屯原登山口|雲海保線所|天池山莊|奇萊南峰|南華山" coords="23.9664,120.9694|24.0618,121.1813|24.0549,121.2215|24.0410,121.2804|24.0374,121.2946|24.0426,121.2857" times="90 分|150 分|210 分|180 分|90 分" modes="預約接駁|步行|步行|步行|步行" note="時間只是保守配置參考，不含休息、拍照與天候延誤。登山口接駁、官方里程和開放狀態必須在出發前重新確認。" >}}
+{{< city-route title="Three-day route" points="Puli|Tunyuan trailhead|Yunhai maintenance station|Tianchi Lodge|Qilai South Peak|Nanhua Mountain" coords="23.9664,120.9694|24.0618,121.1813|24.0549,121.2215|24.0410,121.2804|24.0374,121.2946|24.0426,121.2857" times="90 min|150 min|210 min|180 min|90 min" modes="Reserved transfer|Walk|Walk|Walk|Walk" note="Times are conservative planning references before rests, photographs, or weather delays. Verify official distance, access, and pickup arrangements." >}}
 
-## 第一天 — 屯原到天池山莊
+## Day 1 — Tunyuan to Tianchi Lodge
 
-- 前一晚住埔里或霧社，清晨以預約接駁前往當日開放的屯原入口。
-- 沿能高越嶺道經雲海保線所前往天池山莊；隊伍應設定最晚抵達與折返時間。
-- 抵達後完成床位、飲水、裝備和隔日天候確認，不追加攻頂。
+- Stay in Puli or Wushe the night before and use a pre-arranged transfer.
+- Walk via Yunhai, with agreed arrival and turnaround limits.
+- At the lodge, confirm water, beds, equipment, and weather; do not add a summit.
 
-## 第二天 — 奇萊南峰與南華山
+## Day 2 — Peaks only when conditions allow
 
-- 天未亮前是否出發，應由風勢、能見度、路況和隊員狀態共同決定。
-- 先完成其中一座，再決定是否前往第二座；任何不適或天候惡化都直接折返山莊。
-- 下午回到天池山莊休息，整理第三天長距離下山所需的水與行動糧。
+- Wind, visibility, trail conditions, and every hiker's health determine whether to leave before dawn.
+- Complete one summit first, then make a fresh decision about the second.
+- Return early enough to rest and prepare for the long descent.
 
-## 第三天 — 原路下山
+## Day 3 — Descend the same route
 
-- 從天池山莊原路返回屯原，不把接駁時間壓在理想步速上。
-- 與司機約定清楚的集合方式，並預留落石、泥濘、休息和隊伍分散的緩衝。
-- 回埔里後再銜接長途交通，避免同日安排不能更改的緊迫班次。
+- Build pickup time around a slow team, mud, rockfall, and breaks—not an ideal pace.
+- Return to Puli before making a long onward connection.
 
-## 申請、住宿與裝備
-
-- **申請：** 依最新官方公告辦理步道、山屋或相關許可；不要沿用舊網誌的規定。
-- **住宿：** 天池山莊床位須事先確認。沒有核准床位或合法營位，就不應把臨時迫降當作備案。
-- **裝備：** 攜帶離線地圖、頭燈、保暖層、雨具、緊急糧、個人藥品與能應付低溫的睡眠系統。
-- **隊伍：** 事前共享撤退條件、緊急聯絡和接駁資訊；不可把攻頂當作必完成目標。
-
-> 官方資料顯示能高越嶺道西段屬地質敏感、具有崩塌落石風險的高山路線。出發前查看台灣山林悠遊網、天池山莊與道路公告；若路線封閉或警報發布，行程即取消。
+> Carry an offline map, headlamp, insulation, rain protection, emergency food, personal medicine, and an adequate sleep system. If the route is closed, the trip is cancelled.

@@ -1,4 +1,4 @@
 ---
-title: "綠島潛水"
-summary: "以潛水、安全與環島恢復日為核心的三日安排。"
+title: "Green Island"
+summary: "A three-day plan built around diving safety, sea conditions, and recovery time."
 ---

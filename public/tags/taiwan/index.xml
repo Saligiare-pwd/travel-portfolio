@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Taiwan on Wing&#39;s Travel Notes</title>
-		<link>http://localhost:1313/travel-portfolio/tags/taiwan/</link>
+		<link>https://saligiare-pwd.github.io/travel-portfolio/tags/taiwan/</link>
 		<description>Recent content in Taiwan on Wing&#39;s Travel Notes</description>
 		<generator>Hugo</generator>
 		<language>en-US</language>
@@ -10,43 +10,78 @@
 		
 		
 		
-			<lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/travel-portfolio/tags/taiwan/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://saligiare-pwd.github.io/travel-portfolio/tags/taiwan/index.xml" rel="self" type="application/rss+xml" />
 			<item>
-				<title>奇萊南華：天池山莊三日行程</title>
-				<link>http://localhost:1313/travel-portfolio/destinations/taiwan/m/qilai-nanhua/qilai-nanhua-trip/</link>
+				<title>Qixingshan: Taipei&#39;s volcanic summit</title>
+				<link>https://saligiare-pwd.github.io/travel-portfolio/destinations/taiwan/n/qixingshan/qixingshan-hike/</link>
+				<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+				<guid>https://saligiare-pwd.github.io/travel-portfolio/destinations/taiwan/n/qixingshan/qixingshan-hike/</guid>
+				<description>Cross Qixingshan from Xiaoyoukeng to Lengshuikeng, with fumaroles, two summits, and public transport at both ends.</description>
+			</item>
+			<item>
+				<title>Tainan: two days of history and food</title>
+				<link>https://saligiare-pwd.github.io/travel-portfolio/destinations/taiwan/s/tainan/tainan-two-days/</link>
+				<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+				<guid>https://saligiare-pwd.github.io/travel-portfolio/destinations/taiwan/s/tainan/tainan-two-days/</guid>
+				<description>Walk the old centre on day one, then give Anping its own afternoon and sunset rather than commuting back and forth.</description>
+			</item>
+			<item>
+				<title>Taipingshan: two days in the cloud forest</title>
+				<link>https://saligiare-pwd.github.io/travel-portfolio/destinations/taiwan/n/taipingshan/taipingshan-forest/</link>
+				<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+				<guid>https://saligiare-pwd.github.io/travel-portfolio/destinations/taiwan/n/taipingshan/taipingshan-forest/</guid>
+				<description>Stay overnight to give Taipingshan Villa, a heritage trail, Cuifeng Lake, and Jiuzhize room to breathe.</description>
+			</item>
+			<item>
+				<title>Wulai: waterfall, Atayal food, and hot springs</title>
+				<link>https://saligiare-pwd.github.io/travel-portfolio/destinations/taiwan/n/wulai/wulai-day-trip/</link>
+				<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+				<guid>https://saligiare-pwd.github.io/travel-portfolio/destinations/taiwan/n/wulai/wulai-day-trip/</guid>
+				<description>A simple Taipei day trip pairing Wulai Old Street and Atayal flavours with the waterfall and a private hot-spring finish.</description>
+			</item>
+			<item>
+				<title>Xiaoliuqiu: three low-carbon island days</title>
+				<link>https://saligiare-pwd.github.io/travel-portfolio/destinations/taiwan/s/xiaoliuqiu/xiaoliuqiu-three-days/</link>
+				<pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+				<guid>https://saligiare-pwd.github.io/travel-portfolio/destinations/taiwan/s/xiaoliuqiu/xiaoliuqiu-three-days/</guid>
+				<description>Base near Baisha Harbor, use the island shuttle, and let a licensed guide lead snorkeling, diving, or intertidal visits.</description>
+			</item>
+			<item>
+				<title>Qilai Nanhua: three days via Tianchi Lodge</title>
+				<link>https://saligiare-pwd.github.io/travel-portfolio/destinations/taiwan/m/qilai-nanhua/qilai-nanhua-trip/</link>
 				<pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/travel-portfolio/destinations/taiwan/m/qilai-nanhua/qilai-nanhua-trip/</guid>
-				<description>從屯原登山口進出，以天池山莊為基地安排奇萊南峰與南華山，並把許可、床位、天候和撤退時間放在攻頂之前。</description>
+				<guid>https://saligiare-pwd.github.io/travel-portfolio/destinations/taiwan/m/qilai-nanhua/qilai-nanhua-trip/</guid>
+				<description>Base the route at Tianchi Lodge, putting permits, beds, weather, and turnaround times ahead of reaching both summits.</description>
 			</item>
 			<item>
-				<title>綠島潛水：三天海島節奏</title>
-				<link>http://localhost:1313/travel-portfolio/destinations/taiwan/e/green-island/green-island-diving/</link>
+				<title>Green Island: three days paced around the sea</title>
+				<link>https://saligiare-pwd.github.io/travel-portfolio/destinations/taiwan/e/green-island/green-island-diving/</link>
 				<pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/travel-portfolio/destinations/taiwan/e/green-island/green-island-diving/</guid>
-				<description>把抵達、岸潛與環島分開安排，讓潛水安全與海況決定每天的順序。</description>
+				<guid>https://saligiare-pwd.github.io/travel-portfolio/destinations/taiwan/e/green-island/green-island-diving/</guid>
+				<description>Keep arrival, diving, and the island loop on separate days so that safety and sea conditions set the schedule.</description>
 			</item>
 			<item>
-				<title>合歡山：清境轉乘與高山步道</title>
-				<link>http://localhost:1313/travel-portfolio/destinations/taiwan/m/hehuanshan-basics/hehuanshan-trip/</link>
+				<title>Hehuanshan: high mountains via Cingjing</title>
+				<link>https://saligiare-pwd.github.io/travel-portfolio/destinations/taiwan/m/hehuanshan-basics/hehuanshan-trip/</link>
 				<pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/travel-portfolio/destinations/taiwan/m/hehuanshan-basics/hehuanshan-trip/</guid>
-				<description>從台中經清境進入合歡山，以接駁、天候與高度適應為核心的三日安排。</description>
+				<guid>https://saligiare-pwd.github.io/travel-portfolio/destinations/taiwan/m/hehuanshan-basics/hehuanshan-trip/</guid>
+				<description>Travel from Taichung through Cingjing, then let altitude, weather, and the booked shuttle determine the mountain day.</description>
 			</item>
 			<item>
-				<title>礁溪：溫泉、瀑布與宜蘭味</title>
-				<link>http://localhost:1313/travel-portfolio/destinations/taiwan/n/jiaoxi-basics/jiaoxi-trip/</link>
+				<title>Hualien: coast, sunrise, and slow days</title>
+				<link>https://saligiare-pwd.github.io/travel-portfolio/destinations/taiwan/e/hualien-basics/hualien-trip/</link>
 				<pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/travel-portfolio/destinations/taiwan/n/jiaoxi-basics/jiaoxi-trip/</guid>
-				<description>從台北搭客運到礁溪，串連湯圍溝、五峰旗與糕渣、烤鴨、三星蔥料理。</description>
+				<guid>https://saligiare-pwd.github.io/travel-portfolio/destinations/taiwan/e/hualien-basics/hualien-trip/</guid>
+				<description>Use Hualien Station as a base and give the city, Qixingtan, and the north coast their own unhurried days.</description>
 			</item>
 			<item>
-				<title>花蓮：海岸、日出與慢行</title>
-				<link>http://localhost:1313/travel-portfolio/destinations/taiwan/e/hualien-basics/hualien-trip/</link>
+				<title>Jiaoxi: hot springs, waterfall, and Yilan food</title>
+				<link>https://saligiare-pwd.github.io/travel-portfolio/destinations/taiwan/n/jiaoxi-basics/jiaoxi-trip/</link>
 				<pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/travel-portfolio/destinations/taiwan/e/hualien-basics/hualien-trip/</guid>
-				<description>以花蓮車站為基地，分開安排市區、七星潭與北側海岸的四日行程。</description>
+				<guid>https://saligiare-pwd.github.io/travel-portfolio/destinations/taiwan/n/jiaoxi-basics/jiaoxi-trip/</guid>
+				<description>Travel from Taipei to Jiaoxi, linking Tangweigou, Wufengqi, and a shared meal of Yilan specialities.</description>
 			</item>
 	</channel>
 </rss>

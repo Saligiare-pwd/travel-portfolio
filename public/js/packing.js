@@ -107,6 +107,27 @@ const destinationPackingProfiles = {
     { id: 'qilai-permits', name: 'Permit and route copies', quantity: '1 set', grams: 35, category: 'essentials' },
     { id: 'qilai-poles', name: 'Trekking poles', quantity: '1 pair', grams: 480, category: 'essentials' },
     { id: 'qilai-warm-layer', name: 'Mountain insulation layer', quantity: '1', grams: 650, category: 'clothing' }
+  ]},
+  Wulai: { note: 'A humid valley day with possible rain, steps, and a private hot-spring stop.', items: [
+    { id: 'wulai-rain-layer', name: 'Compact rain layer', quantity: '1', grams: 260, category: 'clothing' },
+    { id: 'wulai-grip-shoes', name: 'Grippy walking shoes', quantity: '1 pair', grams: 0, category: 'clothing' }
+  ]},
+  Qixingshan: { note: 'The exposed volcanic ridge can turn windy, wet, or foggy quickly.', items: [
+    { id: 'qixing-wind-layer', name: 'Wind and rain shell', quantity: '1', grams: 360, category: 'clothing' },
+    { id: 'qixing-offline-map', name: 'Offline trail map', quantity: '1 download', grams: 0, category: 'essentials' }
+  ]},
+  Taipingshan: { note: 'A cool, wet forest overnight with long road transfers.', items: [
+    { id: 'taiping-warm-layer', name: 'Warm forest layer', quantity: '1', grams: 480, category: 'clothing' },
+    { id: 'taiping-motion-care', name: 'Motion-sickness medicine', quantity: 'as advised', grams: 25, category: 'health' }
+  ]},
+  Tainan: { note: 'Heat, walking, and frequent food stops favour a light city setup.', items: [
+    { id: 'tainan-sun-kit', name: 'Sun hat and sunscreen', quantity: '1 set', grams: 210, category: 'toiletries' },
+    { id: 'tainan-market-bag', name: 'Reusable food and market bag', quantity: '1', grams: 70, category: 'other' }
+  ]},
+  Xiaoliuqiu: { note: 'Keep valuables dry and follow the licensed operator’s water-safety list.', items: [
+    { id: 'liuqiu-dry-bag', name: 'Roll-top dry bag', quantity: '1', grams: 320, category: 'essentials' },
+    { id: 'liuqiu-reef-sun', name: 'Reef-conscious sun protection', quantity: '1 set', grams: 220, category: 'toiletries' },
+    { id: 'liuqiu-seasick', name: 'Motion-sickness medicine', quantity: 'as advised', grams: 25, category: 'health' }
   ]}
 };
 

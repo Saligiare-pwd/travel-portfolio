@@ -1,52 +1,43 @@
 ---
-title: "礁溪：溫泉、瀑布與宜蘭味"
+title: "Jiaoxi: hot springs, waterfall, and Yilan food"
 slug: "jiaoxi-trip"
 date: 2025-10-08
-updated: 2026-09-30
-country: "台灣"
+updated: 2026-11-05
+country: "Taiwan"
 area: "Taiwan"
 travelType: "food"
-city: "礁溪"
+city: "Jiaoxi"
 days: 1
-bestFor: "溫泉、散步與宜蘭小吃"
-pace: "輕鬆一日"
+bestFor: "Hot springs, an easy walk, and local dishes"
+pace: "Relaxed day trip"
 featured: false
 tags: ["itinerary", "jiaoxi", "taiwan"]
-official: "https://travel.yilan.gov.tw/zh-tw/district-fun/5/"
-summary: "從台北搭客運到礁溪，串連湯圍溝、五峰旗與糕渣、烤鴨、三星蔥料理。"
+official: "https://travel.yilan.gov.tw/en/attraction/details/54"
+summary: "Travel from Taipei to Jiaoxi, linking Tangweigou, Wufengqi, and a shared meal of Yilan specialities."
 cover:
   image: "images/food/jiaoxi-yilan-food.jpg"
-  alt: "宜蘭糕渣、烤鴨與三星蔥餅餐桌"
+  alt: "A table inspired by Yilan dishes including scallions and roast duck"
 ---
 
-## 行程輪廓
+## The shape of the day
 
-把原本跨越不同年份的時間表改成一條當天可執行的路線：上午散步、下午瀑布，晚餐再集中品嘗宜蘭料理。假日塞車時，直接縮短成市區與溫泉。
+Older notes from several years become one practical route: town and footbath in the morning, Wufengqi in the afternoon, and Yilan dishes at dinner. On a congested holiday, keep only town and the hot spring.
 
-{{< city-route title="礁溪一日移動" points="台北科技大樓|礁溪轉運站|湯圍溝公園|五峰旗瀑布" coords="25.0267,121.5438|24.8270,121.7750|24.8295,121.7720|24.8378,121.7486" times="60 分|8 分|20 分" modes="客運|步行|公車 / 計程車" images="images/food/taiwan-scallion-pancake.jpg|images/food/jiaoxi-yilan-food.jpg|images/jiaoxi/image.jpg|images/jiaoxi/image1.jpg" note="以平日非尖峰為假設；假日國道與礁溪市區容易塞車，五峰旗回程要先確認末班公車。" >}}
+{{< city-route title="Jiaoxi day trip" points="Taipei Technology Building|Jiaoxi Transfer Station|Tangweigou Park|Wufengqi Waterfall" coords="25.0267,121.5438|24.8270,121.7750|24.8295,121.7720|24.8378,121.7486" times="60 min|8 min|20 min" modes="Coach|Walk|Bus / taxi" images="images/food/taiwan-scallion-pancake.jpg|images/food/jiaoxi-yilan-food.jpg|images/jiaoxi/image.jpg|images/jiaoxi/image1.jpg" note="This assumes ordinary weekday traffic. Holiday congestion can be severe, and you should confirm the last local bus before walking at Wufengqi." >}}
 
-## 上午 — 抵達與湯圍溝
+## Morning — Town and Tangweigou
 
-- 從台北科技大樓一帶搭客運前往礁溪，先到轉運站確認回程班次。
-- 步行到湯圍溝公園與市區，安排早餐或早午餐。
-- 溫泉泡腳留在步行結束後，避免一開始就停留太久。
+- Check the return service when you arrive, then walk through the centre and Tangweigou Park.
+- Save the footbath or private hot spring for after the walk.
 
-## 下午 — 五峰旗瀑布
+## Afternoon — Wufengqi
 
-- 搭公車或計程車前往五峰旗；下雨、落石警戒或步道封閉時不要硬走。
-- 以開放範圍內的步道為主，預留回市區的候車時間。
-- 回礁溪後泡湯或休息，讓晚餐成為最後一站。
+- Use a local bus or taxi. Do not enter when heavy rain, rockfall warnings, or closures are posted.
+- Stay within the open section and preserve time for the return to town.
 
-## 傍晚 — 宜蘭味集中吃
+## Evening — Share Yilan flavours
 
-- 糕渣、烤鴨與三星蔥料理分量較大，兩人以上分享較適合。
-- 再選一項湯包、蔥油餅或甜點，不必把所有小吃都塞進同一天。
-- 用餐後搭客運或火車回台北，假日晚間至少預留一班緩衝。
+- Share richer dishes such as gaozha, roast duck, and scallion-based plates.
+- Add only one dumpling, pancake, or dessert stop rather than treating food as a checklist.
 
-## 住宿、飲食、移動
-
-- **住宿：** 過夜可住礁溪車站或湯圍溝周邊；一日遊則不必搬動行李。
-- **飲食：** 主軸放在糕渣、烤鴨與三星蔥，再依食量補一種小吃。
-- **移動：** 市中心用步行，五峰旗用公車或計程車；塞車嚴重時放棄遠點。
-
-> 客運時間會受雪山隧道車流影響。不要用地圖上的理想車程去銜接最後一班車。
+> Coach travel through the Hsuehshan Tunnel is sensitive to traffic. Do not use the ideal map time to connect to your last train or bus.

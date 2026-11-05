@@ -1,52 +1,43 @@
 ---
-title: "合歡山：清境轉乘與高山步道"
+title: "Hehuanshan: high mountains via Cingjing"
 slug: "hehuanshan-trip"
 date: 2025-10-08
-updated: 2026-09-30
-country: "台灣"
+updated: 2026-11-05
+country: "Taiwan"
 area: "Taiwan"
 travelType: "nature"
-city: "合歡山"
+city: "Hehuanshan"
 days: 3
-bestFor: "高山景觀與短程步道"
-pace: "慢走、預留適應"
+bestFor: "High-mountain views and short trails"
+pace: "Slow, with time to acclimatise"
 featured: false
 tags: ["itinerary", "hehuanshan", "taiwan"]
-official: "https://www.taroko.gov.tw/"
-summary: "從台中經清境進入合歡山，以接駁、天候與高度適應為核心的三日安排。"
+official: "https://www.taroko.gov.tw/en/"
+summary: "Travel from Taichung through Cingjing, then let altitude, weather, and the booked shuttle determine the mountain day."
 cover:
   image: "images/hehuanshan/image1.jpg"
-  alt: "合歡山高山稜線與步道"
+  alt: "A high-mountain ridge and trail at Hehuanshan"
 ---
 
-## 行程輪廓
+## The shape of the trip
 
-保留原本台中—清境—松雪樓的轉乘架構，但不再把多座山峰綁定到精確分鐘。高山行程應由天候、身體反應、道路管制與接駁時間共同決定。
+Keep the original Taichung–Cingjing–Songsyue Lodge structure, but do not bind several peaks to exact minutes. Weather, physical response, road controls, and the return shuttle decide what is realistic.
 
-{{< city-route title="合歡山轉乘概念" points="台中高鐵站|清境農場|松雪樓|合歡東峰" coords="24.1120,120.6160|24.0580,121.1590|24.1428,121.2840|24.1350,121.2810" times="140 分|50 分|50 分" modes="客運|預約接駁|步行" note="山區時間受天候、道路管制與接駁預約影響很大；這是行程配置假設，不應取代當日公告。" >}}
+{{< city-route title="Hehuanshan transfer plan" points="Taichung HSR Station|Cingjing Farm|Songsyue Lodge|Hehuan East Peak" coords="24.1120,120.6160|24.0580,121.1590|24.1428,121.2840|24.1350,121.2810" times="140 min|50 min|50 min" modes="Bus|Reserved shuttle|Walk" note="Mountain travel times vary greatly. Treat this as a planning assumption, not a replacement for same-day road and shuttle notices." >}}
 
-## 第一天 — 台中到清境
+## Day 1 — Taichung to Cingjing
 
-- 上午抵達台中高鐵站，轉乘客運前往清境。
-- 下午入住並在附近短走，確認隔日接駁集合點和早餐安排。
-- 不在抵達當天追加高強度步道，讓身體逐步適應高度。
+- Take the bus from Taichung HSR and check the next morning's meeting point.
+- Keep the afternoon gentle so your body can begin adapting to the altitude.
 
-## 第二天 — 松雪樓與一條主步道
+## Day 2 — One main trail
 
-- 搭預約接駁前往松雪樓，先觀察風、霧、體感溫度與身體狀況。
-- 東峰、石門山與合歡尖山不要全部視為必完成；選一條主線，再保留一條短線作備案。
-- 下午依固定接駁時間下山，不以趕最後一座山峰為理由壓縮回程。
+- At Songsyue Lodge, assess wind, fog, temperature, and how everyone feels.
+- Choose one main route—East Peak or Shimenshan, for example—and retain a shorter backup.
+- Descend for the fixed shuttle rather than squeezing in one more summit.
 
-## 第三天 — 清境與返程
+## Day 3 — Cingjing and return
 
-- 上午安排清境周邊散步或休息。
-- 午後搭客運回台中高鐵站，班距與山路車程都要保留緩衝。
-- 長途返家車票至少留一班以上的轉乘餘裕。
+- Use the morning for an easy walk or rest, then leave generous connection time in Taichung.
 
-## 住宿、飲食、移動
-
-- **住宿：** 清境選擇多、補給方便；松雪樓更接近步道，但餐食與房況有限。
-- **飲食：** 前一晚準備水、行動糧與簡單午餐，不依賴山區臨時購買。
-- **移動：** 不自行開車時要先預約合歡山接駁；所有步道都必須配合末班下山時間。
-
-> 若出現頭痛、噁心、步態不穩或呼吸異常，立即停止上升並下撤。雪季、豪雨和道路管制期間以官方公告為準。
+> Headache, nausea, poor balance, or unusual breathlessness means stop ascending and descend. Follow road and park closures during snow, storms, or heavy rain.

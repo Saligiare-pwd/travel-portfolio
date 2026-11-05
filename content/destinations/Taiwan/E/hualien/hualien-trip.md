@@ -1,58 +1,45 @@
 ---
-title: "花蓮：海岸、日出與慢行"
+title: "Hualien: coast, sunrise, and slow days"
 slug: "hualien-trip"
 date: 2025-10-08
-updated: 2026-09-30
-country: "台灣"
+updated: 2026-11-05
+country: "Taiwan"
 area: "Taiwan"
 travelType: "nature"
-city: "花蓮"
+city: "Hualien"
 days: 4
-bestFor: "海岸、日出與單車"
-pace: "早起、午後放慢"
+bestFor: "Coast, sunrise, cycling, and cafés"
+pace: "Early starts, easy afternoons"
 featured: false
 tags: ["itinerary", "hualien", "taiwan"]
-official: "https://tour-hualien.hl.gov.tw/"
-summary: "以花蓮車站為基地，分開安排市區、七星潭與北側海岸的四日行程。"
+official: "https://tour-hualien.hl.gov.tw/en/"
+summary: "Use Hualien Station as a base and give the city, Qixingtan, and the north coast their own unhurried days."
 cover:
   image: "images/food/taiwan-mochi.jpg"
-  alt: "台灣麻糬與茶"
+  alt: "Taiwanese mochi served with tea"
 ---
 
-## 行程輪廓
+## The shape of the trip
 
-保留原本想看的日出、海邊與市區飲食，但把重複移動拆開：第一天留在市區，第二天走七星潭，第三天再安排北側海岸；最後一天只處理回程與採買。
+The useful ideas from the original plan—sunrise, the coast, local food, Sakurayama Trail, and Saguer Waterfall—fit better when they are not stacked on the same day. This plan keeps the city first, Qixingtan second, and the north coast third.
 
-{{< city-route title="花蓮移動概念" points="花蓮車站|東大門夜市|七星潭|曼波海灘" coords="23.9929,121.6015|23.9752,121.6112|24.0306,121.6275|24.1250,121.6510" times="10 分|20 分|25 分" modes="公車 / 計程車|公車 / 單車|公車 / 計程車" images="images/hualien/image.jpeg|images/food/taiwan-mochi.jpg|images/hualien/image1.jpeg|images/hualien/image2.jpeg" note="以花蓮車站為住宿與轉乘起點，時間為一般路況估算；海岸公車班距較長，出發前應再查時刻。" >}}
+{{< city-route title="Hualien orientation" points="Hualien Station|Dongdamen Night Market|Qixingtan|Manbo Beach" coords="23.9929,121.6015|23.9752,121.6112|24.0306,121.6275|24.1250,121.6510" times="10 min|20 min|25 min" modes="Bus / taxi|Bus / bicycle|Bus / taxi" images="images/hualien/image.jpeg|images/food/taiwan-mochi.jpg|images/hualien/image1.jpeg|images/hualien/image2.jpeg" note="The station is the transport base. Coastal buses can be infrequent, and all times are ordinary-traffic estimates." >}}
 
-## 第一天 — 抵達與市區
+## Days 1–2 — City and Qixingtan
 
-- 抵達花蓮車站後先放行李，不把遠程景點塞進下午。
-- 傍晚前往東大門夜市與市區散步；若租單車，先確認夜間燈具與還車時間。
-- 晚上到海邊短暫聽浪即可，保留睡眠給隔天日出。
+- Arrive, leave luggage, and keep the first afternoon for the city, Dongdamen, Pacific Park, a library, or a café.
+- Visit Qixingtan early on day two. If sunrise weather is poor, sleep longer and walk the coast later.
+- Return to town for breakfast and a quiet afternoon rather than crossing to another distant stop.
 
-## 第二天 — 七星潭日出
+## Day 3 — Choose one outer excursion
 
-- 早起前往七星潭；天候不佳時不要為了日出勉強出發。
-- 日出後在四八高地或海岸慢走，再回市區吃脆皮蛋餅。
-- 下午可安排酒廠、咖啡店或休息，不再跨到另一個海岸區。
+- Choose the north coast and Manbo Beach, or check whether Sakurayama Trail and Saguer Waterfall are officially open.
+- Do not reuse old Taroko or cliff-trail plans without checking earthquake, rain, road, and permit notices.
+- Return before evening and eat in the city.
 
-## 第三天 — 曼波海灘與北側海岸
+## Day 4 — Local morning and departure
 
-- 依交通方式選曼波海灘或新城一帶，避免同日來回多個遠點。
-- 原訂砂卡礑與錐麓等步道必須先查開放、道路和入園規定；未確認就改走安全的海岸行程。
-- 傍晚回住宿休息，在市區吃晚餐。
+- Buy mochi, have a full lunch, and reach the station early.
+- If rail or road service changes because of weather, safe departure takes priority over the final stop.
 
-## 第四天 — 市區與回程
-
-- 上午睡晚一點，採買麻糬或伴手禮。
-- 回車站前吃一頓完整午餐，提早到月台等待。
-- 若鐵路或公路受天候影響，行程以安全返程為優先。
-
-## 住宿、飲食、移動
-
-- **住宿：** 花蓮車站周邊最適合沒有開車的行程；想住海邊則要先確認夜間交通。
-- **飲食：** 麻糬、蛋餅、扁食與夜市各選一到兩項，不必把所有名店排成清單。
-- **移動：** 市區可用單車、公車與計程車；海岸班距較長，回程時間要先決定。
-
-> 花蓮的道路、步道與鐵路容易受地震和豪雨影響。出發前重新查看官方開放資訊，不沿用舊行程表的日期與時間。
+> East-coast roads, railways, and trails can change after earthquakes or heavy rain. Recheck official notices immediately before travelling.

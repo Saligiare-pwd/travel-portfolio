@@ -1,51 +1,46 @@
 ---
-title: "綠島潛水：三天海島節奏"
+title: "Green Island: three days paced around the sea"
 slug: "green-island-diving"
 date: 2026-09-30
-country: "台灣"
+updated: 2026-11-05
+country: "Taiwan"
 area: "Taiwan"
 travelType: "nature"
-city: "綠島"
+city: "Green Island"
 days: 3
-bestFor: "潛水、珊瑚礁與海島"
-pace: "以海況為準"
+bestFor: "Diving, coral reefs, and island time"
+pace: "Led by sea conditions"
 featured: true
 tags: ["itinerary", "Taiwan", "diving"]
 official: "https://www.eastcoast-nsa.gov.tw/greenisland/en"
 cover:
   image: "images/green-island/reef-fish.jpg"
-  alt: "綠島珊瑚礁海域中的斑鼻魚"
-summary: "把抵達、岸潛與環島分開安排，讓潛水安全與海況決定每天的順序。"
+  alt: "A spotted unicornfish in the reef waters of Green Island"
+summary: "Keep arrival, diving, and the island loop on separate days so that safety and sea conditions set the schedule."
 ---
 
-## 行程輪廓
+## The shape of the trip
 
-綠島不適合把船班、潛水與環島硬塞在同一天。先完成裝備與能力確認，再由合格業者依浪況、流況和能見度選潛點；最後一天保留足夠的禁飛間隔。
+Do not force the ferry, a dive, and a full island loop into one day. Check equipment and ability first, let a licensed operator choose sites for the conditions, and preserve the required no-fly interval on the final day.
 
-{{< city-route title="綠島三日移動" points="南寮漁港|石朗潛水區|柴口潛水區|朝日溫泉|綠島燈塔" coords="22.6615,121.4740|22.6550,121.4750|22.6779,121.4802|22.6375,121.5040|22.6761,121.4660" times="8 分|12 分|25 分|25 分" modes="接駁 / 機車|機車|機車|機車" note="島上距離不長，但風、雨、夜間視線與旅客車流會改變時間。潛點不得依這條線自行下水，必須服從合格教練與當日海況。" >}}
+{{< city-route title="Green Island in three days" points="Nanliao Harbor|Shilang diving area|Chaikou diving area|Zhaori Hot Spring|Green Island Lighthouse" coords="22.6615,121.4740|22.6550,121.4750|22.6779,121.4802|22.6375,121.5040|22.6761,121.4660" times="8 min|12 min|25 min|25 min" modes="Transfer / scooter|Scooter|Scooter|Scooter" note="Distances are short, but wind, rain, night visibility, and traffic change travel time. This line is not permission to enter a dive site: follow your licensed guide and the day's sea conditions." >}}
 
-## 第一天 — 抵達與裝備確認
+## Day 1 — Arrival and equipment check
 
-- 抵達南寮漁港後先入住，避免把第一支潛水排在船班之後太緊的時段。
-- 到合法潛店完成證照、健康狀況、裝備尺寸與潛伴制度確認。
-- 若海況允許，可做岸邊適應或浮潛；否則改成燈塔與聚落散步。
+- Settle in after the ferry rather than rushing into the first dive.
+- Confirm certification, health, equipment fit, buddy procedures, and insurance with a licensed operator.
+- If conditions are poor, replace the water session with the lighthouse and village walk.
 
-## 第二天 — 主要潛水日
+## Day 2 — Main diving day
 
-- 由教練在石朗、柴口或其他開放潛點中選擇，不預先承諾特定水下景觀。
-- 每一潛之間充分補水、保暖並記錄深度與時間。
-- 晚上只安排輕鬆餐食與休息；飲酒不應放在潛水前後的安全判斷之前。
+- Let the instructor choose among Shilang, Chaikou, or another open site; no underwater sighting is guaranteed.
+- Hydrate, keep warm, and log depth and time between dives.
+- Keep the evening light and restful. Alcohol should never override a safe diving decision.
 
-## 第三天 — 環島與離島
+## Day 3 — Island loop and departure
 
-- 依最後一潛的時間保留足夠禁飛間隔；不要為趕飛機壓縮安全時間。
-- 沒有潛水時再安排朝日溫泉、牛頭山、燈塔或人權文化園區。
-- 船班受風浪影響，回本島後不要銜接過緊的長途交通。
+- Protect the no-fly interval after the last dive.
+- Add Zhaori Hot Spring, Niutoushan, the lighthouse, or the Human Rights Culture Park only when there is no diving conflict.
+- Ferries are weather-dependent, so avoid a tight onward connection on the main island.
 
-## 住宿、飲食、移動
-
-- **住宿：** 南寮補給和交通最方便；公館、柴口一帶較接近北岸潛點。
-- **飲食：** 潛水日以易消化、足量碳水與水分為主；海草冰可留在活動結束後。
-- **移動：** 優先使用潛店接駁；若租機車，戴妥安全帽並避免濕裝備影響操控。
-
-> 不單獨潛水、不超越證照與經驗深度。下水前確認浪、流、水溫、裝備和業者責任保險；任何一項不確定就取消。
+> Never dive alone or beyond your training. If the sea, equipment, guide, or your health feels uncertain, cancel the dive.

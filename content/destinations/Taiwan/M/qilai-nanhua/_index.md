@@ -1,4 +1,4 @@
 ---
-title: "奇萊南華"
-summary: "天池山莊、奇萊南峰與南華山的高山行程。"
+title: "Qilai Nanhua"
+summary: "A permit- and hut-dependent alpine route via Tianchi Lodge."
 ---
