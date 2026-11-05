@@ -22,7 +22,7 @@ cover:
 
 The ferry from Donggang is short, but weather, tides, and water safety should control the plan. A new public island shuttle offers a lower-traffic alternative to putting every visitor on a scooter.
 
-{{< city-route title="Xiaoliuqiu island loop" points="Baisha Harbor|Vase Rock|Beauty Cave|Geban Bay|Sunset Pavilion" coords="22.3508,120.3830|22.3554,120.3807|22.3541,120.3710|22.3300,120.3589|22.3256,120.3559" times="8 min|5 min|15 min|8 min" modes="Shuttle / walk|Shuttle / walk|Shuttle|Shuttle" images="images/taiwan-new/xiaoliuqiu.jpg|images/taiwan-new/xiaoliuqiu.jpg|images/taiwan-new/xiaoliuqiu.jpg|images/taiwan-new/xiaoliuqiu.jpg|images/taiwan-new/xiaoliuqiu.jpg" note="Route 601 began operating in 2026. Confirm its current schedule, the tide, and ferry conditions rather than relying on these approximate times." >}}
+{{< city-route title="Xiaoliuqiu island loop" points="Baisha Harbor|Vase Rock|Beauty Cave|Geban Bay|Sunset Pavilion" coords="22.3508,120.3830|22.3554,120.3807|22.3541,120.3710|22.3300,120.3589|22.3256,120.3559" times="8 min|5 min|15 min|8 min" modes="Shuttle / walk|Shuttle / walk|Shuttle|Shuttle" images="images/taiwan-new/xiaoliuqiu.jpg|images/taiwan-new/xiaoliuqiu.jpg|images/taiwan-planning/xiaoliuqiu-sea-turtle.webp|images/taiwan-planning/xiaoliuqiu-beach.webp|images/taiwan-planning/xiaoliuqiu-dessert.webp" note="Route 601 began operating in 2026. Confirm its current schedule, the tide, and ferry conditions rather than relying on these approximate times." >}}
 
 ## Day 1 — Harbor and island orientation
 

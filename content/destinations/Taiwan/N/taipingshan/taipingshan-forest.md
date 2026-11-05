@@ -22,7 +22,7 @@ cover:
 
 The old notes included Jianqing Trail, Taipingshan Villa, Cuifeng Lake, and Jiuzhize Hot Spring. They are too spread out for a relaxed public-transport day trip. Two days work when lodging and the internal transfer are booked first.
 
-{{< city-route title="Taipingshan forest circuit" points="Luodong Station|Jiuzhize Hot Spring|Taipingshan Villa|Jianqing Historic Trail|Cuifeng Lake" coords="24.6770,121.7747|24.5484,121.5054|24.4978,121.5362|24.5158,121.5044|24.5135,121.6058" times="130 min|45 min|25 min|45 min" modes="Bus 1750 / car|Bus / car|Shuttle / car|Shuttle / car" images="images/taiwan-new/taipingshan.jpg|images/taiwan-new/taipingshan.jpg|images/taiwan-new/taipingshan.jpg|images/taiwan-new/taipingshan.jpg|images/taiwan-new/taipingshan.jpg" note="The park is large and internal access is not continuous. Confirm buses, lodging, train maintenance, and any Cuifeng transfer before arrival." >}}
+{{< city-route title="Taipingshan forest circuit" points="Luodong Station|Jiuzhize Hot Spring|Taipingshan Villa|Jianqing Historic Trail|Cuifeng Lake" coords="24.6770,121.7747|24.5484,121.5054|24.4978,121.5362|24.5158,121.5044|24.5135,121.6058" times="130 min|45 min|25 min|45 min" modes="Bus 1750 / car|Bus / car|Shuttle / car|Shuttle / car" images="images/taiwan-new/taipingshan.jpg|images/taiwan-planning/taipingshan-hot-spring.webp|images/taiwan-new/taipingshan.jpg|images/taiwan-planning/taipingshan-rail-trail.webp|images/taiwan-planning/taipingshan-cuifeng-lake.webp" note="The park is large and internal access is not continuous. Confirm buses, lodging, train maintenance, and any Cuifeng transfer before arrival." >}}
 
 ## Day 1 — Arrival and forest history
 

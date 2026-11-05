@@ -23,7 +23,7 @@ cover:
 
 Keep the original Taichung–Cingjing–Songsyue Lodge structure, but do not bind several peaks to exact minutes. Weather, physical response, road controls, and the return shuttle decide what is realistic.
 
-{{< city-route title="Hehuanshan transfer plan" points="Taichung HSR Station|Cingjing Farm|Songsyue Lodge|Hehuan East Peak" coords="24.1120,120.6160|24.0580,121.1590|24.1428,121.2840|24.1350,121.2810" times="140 min|50 min|50 min" modes="Bus|Reserved shuttle|Walk" note="Mountain travel times vary greatly. Treat this as a planning assumption, not a replacement for same-day road and shuttle notices." >}}
+{{< city-route title="Hehuanshan transfer plan" points="Taichung HSR Station|Cingjing Farm|Songsyue Lodge|Hehuan East Peak" coords="24.1120,120.6160|24.0580,121.1590|24.1428,121.2840|24.1350,121.2810" times="140 min|50 min|50 min" modes="Bus|Reserved shuttle|Walk" images="images/taiwan-new/hehuanshan.jpg|images/taiwan-planning/hehuanshan-cingjing.webp|images/taiwan-planning/hehuanshan-night-sky.webp|images/taiwan-planning/hehuanshan-sunrise.webp" note="Mountain travel times vary greatly. Treat this as a planning assumption, not a replacement for same-day road and shuttle notices." >}}
 
 ## Day 1 — Taichung to Cingjing
 

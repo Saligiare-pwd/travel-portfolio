@@ -62,7 +62,7 @@ brew install hugo
 hugo server -D
 ```
 
-Open `http://localhost:1313`. The GitHub workflow uses Hugo `0.149.0`.
+Open `http://localhost:1313`. The GitHub workflow uses Hugo `0.167.0`.
 
 ## Publish
 

@@ -15,29 +15,6 @@ document.querySelectorAll('[data-card-rail]').forEach((rail) => {
   section?.querySelector('[data-rail-next]')?.addEventListener('click', () => rail.scrollBy({ left: rail.clientWidth * 0.82, behavior: 'smooth' }));
 });
 
-const languageButtons = [...document.querySelectorAll('[data-language-choice]')];
-const languagePanels = [...document.querySelectorAll('[data-lang-content]')];
-
-if (languageButtons.length && languagePanels.length) {
-  const setGuideLanguage = (language, remember = true) => {
-    const selected = languagePanels.some((panel) => panel.dataset.langContent === language) ? language : 'en';
-    languagePanels.forEach((panel) => { panel.hidden = panel.dataset.langContent !== selected; });
-    languageButtons.forEach((button) => {
-      const active = button.dataset.languageChoice === selected;
-      button.classList.toggle('active', active);
-      button.setAttribute('aria-pressed', String(active));
-    });
-    if (remember) {
-      try { localStorage.setItem('travel-guide-language', selected); } catch (_) {}
-    }
-    window.dispatchEvent(new Event('resize'));
-  };
-  let savedLanguage = 'en';
-  try { savedLanguage = localStorage.getItem('travel-guide-language') || 'en'; } catch (_) {}
-  setGuideLanguage(savedLanguage, false);
-  languageButtons.forEach((button) => button.addEventListener('click', () => setGuideLanguage(button.dataset.languageChoice)));
-}
-
 function addOpenStreetMapTiles(map) {
   return L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,

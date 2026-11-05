@@ -1,79 +1,41 @@
 ---
-title: "德國簽證申請攻略 (DAAD Sandwich Program)"
+title: "Germany research visa notes for DAAD fellows"
 date: 2025-02-14
+updated: 2026-11-05
 draft: false
-summary: "DAAD 三明治計畫博士生簽證申請清單、文件準備與注意事項 (2025更新)"
+summary: "A personal preparation checklist for DAAD Sandwich Programme researchers applying in Taiwan."
 tags: ["Visa", "Germany", "DAAD"]
 ---
 
-## 德國簽證申請 (DAAD Sandwich Program)
+## Before you apply
 
-**簽證類別**：長期簽證 (研究人員/客座學者)
-**適用對象**：DAAD 三明治計畫獎學金獲獎人 (博士生)
-**官方網站**：https://taipei.diplo.de/tw-zh-tw/service/visa-einreise/2453314-2453314
+This is a personal preparation note, not official immigration advice. Requirements can change. Confirm the current checklist, document format, fee, and appointment procedure with the [German Institute Taipei](https://taipei.diplo.de/tw-zh-tw/service/visa-einreise/2453314-2453314) before applying.
 
-根據德國在台協會規定，DAAD 三明治計畫參與者通常被視為博士班學生與研究人員。申請時請備妥以下文件，並依照順序排列（**請勿裝訂**）。
-網站上資訊其實編排、各種文件規定、格式都沒有講清楚，這會直接導致申請的難度與緊張感提升。以下如外派證明、最高學歷等為重複性文件。
+DAAD Sandwich Programme fellows may apply under the long-stay research route. The exact documents depend on the host arrangement and the instructions given for the appointment.
 
-### 1. 必備文件檢查表 (Checklist)
+## Practical checklist
 
-#### 基本證件與表格
-- [ ] **有效護照**
-  - 持照人須於簽名處親筆簽名。
-  - 至少須有兩頁以上的空白頁面。
-- [ ] **長期簽證申請表格**：完整填寫並簽名，一份。
-  - 三明治計劃獎學金無擔保人
-  - 聯絡人填研究機構的住址、信箱
-  - 簽結日期為申請當日
-- [ ] **護照影本**：一份。
-- [ ] **動機信 (Letter of Motivation)**：德文或英文，一份。
-- [ ] **證件照**：兩張 (須為三個月內拍攝之生物特徵規格照片)。
+Bring the originals and copies requested by the official checklist. Keep documents loose and ordered; do not staple them unless instructed.
 
-#### 德方研究機構/學校文件
-- [ ] **工作契約或外派證明**DAAD 三明治計畫博士生以下取代
-  - **英文版在學證明 (Certificate of Enrollment)**
-  - **英文版最高學歷畢業證書 (Diploma)** 正副各一，，**不可**使用學位證明書
-- [ ] **學校或是研究機構出具的同意函**
-  - 可以視為合併在研究人員合約與推薦信（日期不拘）。
-  - 若有提供，內容須以德文或英文為主，無特定格式。
-- [ ] **英文版最高學歷畢業證書 (Diploma)**
-- [ ] **德國大學入學許可** 或 **研究機構邀請函**
-  - DAAD 可改為提供下述研究人員合約
-  - 正本一份 + 影本一份。
-  - 須有教授簽名 (日期無規定)。
-- [ ] **研究人員合約 (Hosting Agreement / Aufnahmevereinbarung)**
-  - **重要**：這是申請研究人員簽證的關鍵文件。
-  - 須由德方提供，電子可。
-  - **簽署要求**：契約第二頁下方「雙方」皆須簽署姓名、簽約地點與日期。
-  - **蓋章要求**：須請德方單位加註**系所**或是**公司章**。
+- [ ] Valid, signed passport with sufficient blank pages
+- [ ] Completed and signed national-visa application form
+- [ ] Passport copy
+- [ ] Two recent biometric passport photographs
+- [ ] Motivation letter in English or German
+- [ ] Current English-language enrolment certificate
+- [ ] Highest academic diploma or graduation certificate in English
+- [ ] Invitation or admission letter from the German host institution
+- [ ] Signed hosting agreement, if required for the research route
+- [ ] DAAD scholarship award letter or other accepted proof of funding
+- [ ] Any employment, secondment, consent, or qualification documents requested for your individual case
+- [ ] Certified translations where the official instructions require them
 
+## Before the appointment
 
-#### 財力證明
-- [ ] **財力證明文件**：
-  - **DAAD 獎學金許可函** (Scholarship Award Letter)。
-  - 若有其他資金來源 (如大學提供的月薪證明、個人銀行存摺明細)，亦可一併附上。
+1. Check the official page again shortly before the appointment.
+2. Make sure names, dates, host address, and research period agree across all documents.
+3. Ask the host institution to correct missing signatures or institutional details early.
+4. Carry a digital backup, but do not assume electronic copies will replace requested originals.
+5. Allow extra time: the mission may request additional documents, and processing times can vary.
 
----
-
-### 2. 德國在台協會特別補充 Q&A
-
-針對 DAAD 三明治計畫申請者，協會特別釐清以下重點：
-
-> **Q: 研究人員合約 (Hosting Agreement) 有規定的格式嗎？**
->
-> **A:** 請德方提供研究人員契約。重點在於：
-> 1.  契約第二頁下方**雙方皆須簽屬姓名**、簽約地點與日期。
-> 2.  須請德方單位**加註系所或是公司章**。
-> 3.  若審件時簽證官有意見，會再聯繫德方單位或申請者本人。
-
-> **Q: 關於工作契約/外派證明與學歷文件？**
->
-> **A:** 因 DAAD 三明治計畫參與者皆為博士班學生，**不需**提供一般外派證明。請改為提供：
-> 1.  **當學期的英文版在學證明**。
-> 2.  **與最高學歷的英文版畢業證書** (學位證明書無法使用)。
->
-> 正本會在簽證申請查驗完畢後當場歸還。
-
-> **Q: 邀請函是否需要印章？日期是否要在三個月內？**
->
-> **A:** 只要有教授的親筆簽名即可，並無規定開立日期（但若太舊可能會被詢問）。重點請放在上述的「研究人員合約」務必要有蓋章。
+The [German Institute Taipei visa page](https://taipei.diplo.de/tw-zh-tw/service/visa-einreise/2453314-2453314) is the authoritative source for current requirements.

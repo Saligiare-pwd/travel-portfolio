@@ -22,7 +22,7 @@ cover:
 
 Tainan rewards short walks and frequent food stops. Share small portions—danzai noodles, beef soup, oyster fritters, spring rolls, fruit, or tofu pudding—so that eating supports the route instead of becoming a queueing contest.
 
-{{< city-route title="Tainan two-day orientation" points="Tainan Station|National Museum of Taiwan Literature|Chihkan Tower area|Anping Old Fort|Anping Harbor" coords="22.9971,120.2120|22.9908,120.2045|22.9977,120.2028|23.0016,120.1607|22.9999,120.1539" times="15 min|12 min|30 min|12 min" modes="Walk / bus|Walk|Bus / taxi|Walk" images="images/taiwan-new/tainan.jpg|images/taiwan-new/tainan.jpg|images/taiwan-new/tainan.jpg|images/taiwan-new/tainan.jpg|images/taiwan-new/tainan.jpg" note="Use walking for the central sights, then one bus or taxi transfer to Anping. Heat and meal queues are more important than the map’s ideal time." >}}
+{{< city-route title="Tainan two-day orientation" points="Tainan Station|National Museum of Taiwan Literature|Chihkan Tower area|Anping Old Fort|Anping Harbor" coords="22.9971,120.2120|22.9908,120.2045|22.9977,120.2028|23.0016,120.1607|22.9999,120.1539" times="15 min|12 min|30 min|12 min" modes="Walk / bus|Walk|Bus / taxi|Walk" images="images/taiwan-planning/tainan-city.webp|images/taiwan-new/tainan.jpg|images/taiwan-planning/tainan-danzai-noodles.webp|images/taiwan-new/tainan.jpg|images/taiwan-planning/tainan-salt-fields.webp" note="Use walking for the central sights, then one bus or taxi transfer to Anping. Heat and meal queues are more important than the map’s ideal time." >}}
 
 ## Day 1 — The historic centre
 

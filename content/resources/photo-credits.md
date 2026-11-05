@@ -41,11 +41,15 @@ The following images were resized for the website. Their original licences conti
 - **Enoshima Station:** [姫神, CC BY-SA 3.0](https://commons.wikimedia.org/wiki/File:Enoshima_station_concourse.JPG)
 - **Mount Fuji from Lake Kawaguchi:** [Alpsdake, CC BY-SA 4.0](https://commons.wikimedia.org/wiki/File:Mount_Fuji_from_Lake_Kawaguchi_s2.jpg)
 - **Spotted unicornfish at Green Island, Taiwan:** [Divervincent, CC BY-SA 3.0](https://commons.wikimedia.org/wiki/File:Spotted_unicornfish_green_island.jpg)
-- **Wulai Waterfall:** [Wikimedia Commons contributor, licensed on source page](https://commons.wikimedia.org/wiki/File:Wulai_Waterfall_01.jpg)
-- **Qixingshan Main Peak:** [Wikimedia Commons contributor, licensed on source page](https://commons.wikimedia.org/wiki/File:Mt._Qixing_Main_Peak_20151108.jpg)
+- **Wulai Waterfall:** [Matt Chang, CC BY 2.0](https://commons.wikimedia.org/wiki/File:Wulai_Waterfall_01.jpg)
+- **Qixingshan Main Peak:** [Wei-Te Wong, CC BY-SA 2.0](https://commons.wikimedia.org/wiki/File:Mt._Qixing_Main_Peak_20151108.jpg)
 - **Taipingshan National Forest Recreation Area:** [Joe Lo, CC BY-SA 2.0](https://commons.wikimedia.org/wiki/File:Taipingshan_National_Forest_Recreational_Area.jpg)
 - **Anping Old Fort, Tainan:** [Taiwantaffy, public domain](https://commons.wikimedia.org/wiki/File:Anping_Fort.jpg)
 - **Vase Rock, Xiaoliuqiu:** [Jun Jie Yam, CC BY 4.0](https://commons.wikimedia.org/wiki/File:Vase_Rock_on_Lambai_Island_(Xiaoliuqiu).jpg)
+
+### Taiwan planning archive
+
+Additional route-stop photographs for Hehuanshan, Qixingshan, Taipingshan, Tainan, Wulai, and Xiaoliuqiu were supplied by the site owner from their travel-planning archive. They are used here for trip-planning context and are not offered for third-party reuse; confirm the original ownership and licence before redistributing them.
 
 ### Jakobsweg stages
 

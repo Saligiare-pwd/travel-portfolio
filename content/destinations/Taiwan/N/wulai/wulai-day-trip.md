@@ -22,7 +22,7 @@ cover:
 
 Wulai works best as one valley journey, not a list of scattered attractions. Use public transport, walk the old street first, and decide between the historic log cart and the riverside walk according to energy and weather.
 
-{{< city-route title="Wulai valley day" points="Xindian MRT Station|Wulai Bus Station|Wulai Old Street|Log Cart Station|Wulai Waterfall" coords="24.9576,121.5377|24.8654,121.5511|24.8645,121.5515|24.8641,121.5498|24.8472,121.5510" times="40 min|6 min|5 min|10 min" modes="Bus 849|Walk|Walk|Log cart / walk" images="images/taiwan-new/wulai.jpg|images/taiwan-new/wulai.jpg|images/taiwan-new/wulai.jpg|images/taiwan-new/wulai.jpg|images/taiwan-new/wulai.jpg" note="Bus and attraction times change. Check the return service and log-cart status on the day, especially after heavy rain." >}}
+{{< city-route title="Wulai valley day" points="Xindian MRT Station|Wulai Bus Station|Wulai Old Street|Log Cart Station|Wulai Waterfall" coords="24.9576,121.5377|24.8654,121.5511|24.8645,121.5515|24.8641,121.5498|24.8472,121.5510" times="40 min|6 min|5 min|10 min" modes="Bus 849|Walk|Walk|Log cart / walk" images="images/taiwan-new/wulai.jpg|images/taiwan-planning/wulai-yun-hsien.webp|images/taiwan-planning/wulai-old-street-food.webp|images/taiwan-planning/wulai-forest-waterfall.webp|images/taiwan-new/wulai.jpg" note="Bus and attraction times change. Check the return service and log-cart status on the day, especially after heavy rain." >}}
 
 ## Morning — Old street and culture
 

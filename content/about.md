@@ -18,4 +18,4 @@ The plans are starting points: clear enough to use, flexible enough to change.
 
 [Visit my academic portfolio ↗](https://saligiare-pwd.github.io/wingchen/index.html)
 
-天文所地伏靈，自由自在但會在地上爬。旅行常從學術會議開始，也常在會議之外真正發生。
+Travel often begins with research, but the moments worth remembering usually happen beyond the conference schedule.
