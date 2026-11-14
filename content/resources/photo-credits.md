@@ -63,4 +63,19 @@ Additional route-stop photographs for Hehuanshan, Qixingshan, Taipingshan, Taina
 - **Rottenbuch monastery complex:** [Rufus46, CC BY-SA 3.0](https://commons.wikimedia.org/wiki/File:Klosterhof_16-18_Schloss_Rottenbuch-1.jpg)
 - **Füssen Old Town:** [C.Stadler/Bwag, CC BY-SA 4.0](https://commons.wikimedia.org/wiki/File:F%C3%BCssen_-_Altstadt.JPG)
 
+### Istanbul winter itinerary
+
+- **Hagia Sophia:** [Arild Vågen, CC BY-SA 3.0](https://commons.wikimedia.org/wiki/File:Hagia_Sophia_Mars_2013.jpg)
+- **Blue Mosque interior:** [RndmCrs, CC0](https://commons.wikimedia.org/wiki/File:Interior_of_Blue_Mosque_in_Istanbul.jpg)
+- **Topkapı Palace:** [A.Savin, Free Art License](https://commons.wikimedia.org/wiki/File:Istanbul_asv2020-02_img19_Topkap%C4%B1_Palace.jpg)
+- **Basilica Cistern:** [Diego Delso, CC BY-SA 4.0](https://commons.wikimedia.org/wiki/File:Cisterna_Bas%C3%ADlica,_Estambul,_Turqu%C3%ADa,_2024-09-28,_DD_58-60_HDR.jpg)
+- **Grand Bazaar:** [EWilson (Volunteer), CC BY-SA 4.0](https://commons.wikimedia.org/wiki/File:Grand_Bazaar_in_Istanbul_Turkey.jpg)
+- **Süleymaniye Mosque:** [Arild Vågen, CC BY-SA 3.0](https://commons.wikimedia.org/wiki/File:S%C3%BCleymaniye_Mosque_February_2013_01.jpg)
+- **Galata Tower:** [İlke Bahçeci, CC0](https://commons.wikimedia.org/wiki/File:Galata_Tower_-_Istanbul.jpg)
+- **Dolmabahçe Palace:** [Jorge Franganillo, CC BY 4.0](https://commons.wikimedia.org/wiki/File:Istanbul_-_Dolmabah%C3%A7e_Palace.jpg)
+- **Ortaköy Mosque:** [Eusebius, CC BY 3.0](https://commons.wikimedia.org/wiki/File:B%C3%BCy%C3%BCk_Mecidiye_Camii_-_Ortak%C3%B6y_Mosque.jpg)
+- **Kadıköy ferry:** [Yigitylnz, CC BY-SA 4.0](https://commons.wikimedia.org/wiki/File:An_istanbul_city_lines_ferry_in_10th_of_november_at_Kad%C4%B1k%C3%B6y_Pier.jpg)
+- **Balat wooden houses:** [Maurice Flesier, CC BY-SA 4.0](https://commons.wikimedia.org/wiki/File:Wooden_houses_in_Balat,_Fatih.jpg)
+- **Cağaloğlu Hamam:** [OrkutMuratYilmaz, CC BY-SA 4.0](https://commons.wikimedia.org/wiki/File:Ca%C4%9Falo%C4%9Flu_Hamam.jpg)
+
 Images already present in the original repository retain their existing ownership and attribution.

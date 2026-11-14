@@ -10,17 +10,18 @@
   <a href="#germany">Germany</a>
   <a href="#japan">Japan</a>
   <a href="#taiwan">Taiwan</a>
+  <a href="#turkey">Turkey</a>
 </nav>
 
 <div class="places-index">
-  {{ range slice "Germany" "Japan" "Taiwan" }}
+  {{ range slice "Germany" "Japan" "Taiwan" "Turkey" }}
     {{ $area := . }}
     {{ $trips := where $allTrips "Params.area" $area }}
     {{ if $trips }}
       <section id="{{ $area | anchorize }}" class="area-section area-section-scroll">
         <div class="area-heading">
-          <div><p class="eyebrow">{{ $area }}</p><h2>{{ if eq $area "Germany" }}Germany{{ else if eq $area "Japan" }}Japan{{ else }}Taiwan{{ end }}</h2></div>
-          <div class="area-heading-actions"><span>{{ len $trips }} city guides</span><button type="button" data-rail-previous aria-label="Scroll {{ $area }} guides left">←</button><button type="button" data-rail-next aria-label="Scroll {{ $area }} guides right">→</button></div>
+          <div><p class="eyebrow">{{ $area }}</p><h2>{{ $area }}</h2></div>
+          <div class="area-heading-actions"><span>{{ len $trips }} {{ if eq (len $trips) 1 }}city guide{{ else }}city guides{{ end }}</span><button type="button" data-rail-previous aria-label="Scroll {{ $area }} guides left">←</button><button type="button" data-rail-next aria-label="Scroll {{ $area }} guides right">→</button></div>
         </div>
         {{ if eq $area "Taiwan" }}
           <div class="taiwan-recommendation">

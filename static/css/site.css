@@ -168,7 +168,7 @@ button, input, select { font: inherit; }
 .prose li { margin: .45rem 0; }
 .prose blockquote { margin: 2rem 0; padding: 1rem 1.4rem; border-left: 3px solid var(--terracotta); background: var(--paper-deep); }
 .prose table { width: 100%; border-collapse: collapse; display: block; overflow-x: auto; }
-.prose th, .prose td { padding: .8rem; border-bottom: 1px solid var(--line); text-align: left; white-space: nowrap; }
+.prose th, .prose td { padding: .8rem; border-bottom: 1px solid var(--line); text-align: left; white-space: normal; }
 .prose a { border-bottom: 1px solid var(--moss); color: var(--moss-dark); }
 
 .site-footer { width: min(1180px, calc(100% - 40px)); margin: auto; padding: 3rem 0 4rem; display: flex; justify-content: space-between; gap: 2rem; border-top: 1px solid var(--line); color: var(--muted); }
