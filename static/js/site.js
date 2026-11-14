@@ -81,7 +81,7 @@ if (window.L) {
         activeImage.src = pointButtons[index].dataset.image;
         activeImage.alt = point.name;
       }
-      if (activeIndex) activeIndex.textContent = `Stop ${index + 1}`;
+      if (activeIndex) activeIndex.textContent = `${route.dataset.stopLabel || 'Stop'} ${index + 1}`;
       if (previousPoint) previousPoint.disabled = index === 0;
       if (nextPoint) nextPoint.disabled = index === points.length - 1;
       if (earlierStops) earlierStops.disabled = index === 0;

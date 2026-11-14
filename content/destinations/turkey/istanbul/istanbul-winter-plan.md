@@ -1,6 +1,6 @@
 ---
 title: "Istanbul: a precise winter week"
-slug: "istanbul-winter-plan"
+slug: "istanbul-winter-plan-en"
 date: 2026-11-14
 country: "Turkey"
 area: "Turkey"
@@ -9,33 +9,40 @@ city: "Istanbul"
 days: 7
 bestFor: "History, ferries & food"
 pace: "Full days, one district at a time"
-featured: true
+featured: false
 tags: ["itinerary", "Turkey", "culture", "food", "city-break"]
 official: "https://visit.istanbul/"
 cover:
   image: "images/istanbul/hagia-sophia.webp"
   alt: "Hagia Sophia and the Sultanahmet skyline in winter"
-summary: "A January 2027 plan from Heidelberg with exact flights, half-hour schedules, mapped daily routes, visa guidance, accommodation, and a realistic budget."
+summary: "The English edition of a January 2027 Istanbul plan coordinated with a companion's Frankfurt and Taipei flights."
+languageSwitch:
+  current: "en"
+  zhURL: "destinations/turkey/istanbul/istanbul-winter-plan/"
+  enURL: "destinations/turkey/istanbul/istanbul-winter-plan-en/"
+build:
+  list: never
 ---
 
 ## The flight this plan means
 
-This itinerary assumes **one adult with a Taiwanese ordinary passport**, travelling economy and staying in comfortable mid-range hotels. It interprets the requested window as **20:00 on 27 January 2027 until 17:00 on 2 February 2027, both in Heidelberg**.
+This itinerary assumes **one adult with a Taiwanese ordinary passport**, travelling economy and sharing part of the journey with a companion. The updated return reaches Frankfurt at 22:10 on 2 February, so arrival home in Heidelberg moves into the early hours of 3 February.
 
 | Direction | Flight | Local schedule | Why this one |
 | --- | --- | --- | --- |
-| Outbound | **Turkish Airlines TK1598** | Thu 28 Jan, **Frankfurt 06:50 → Istanbul 12:00** | The first practical nonstop after leaving Heidelberg at 20:00. |
-| Return | **Turkish Airlines TK1587** | Tue 2 Feb, **Istanbul 08:10 → Frankfurt 09:30** | Leaves enough recovery time to reach Heidelberg well before 17:00. |
+| Shared outbound | **Turkish Airlines TK1592** | Thu 28 Jan, **Frankfurt 14:50 → Istanbul 20:00** | Matches the companion's flight and allows a same-day train from Heidelberg. |
+| Companion's onward flight | **Turkish Airlines TK124** | Tue 2 Feb, **Istanbul 17:15 → Taipei 08:45+1** | You can travel to the airport and complete the shared departure process together. |
+| Your return | **Turkish Airlines TK1597** | Tue 2 Feb, **Istanbul 21:00 → Frankfurt 22:10** | Leaves enough time after the companion's departure, but the Heidelberg arrival is after midnight. |
 
-The fare seen on 14 November 2026 was **from €213 return**. Treat **€250–300** as the safer booking allowance after selecting a fare with the cabin baggage you need. Flight schedules and fares are not reservations: reconfirm the flight numbers, airports, baggage, and local times on [Turkish Airlines](https://www.turkishairlines.com/en-de/flights-from-frankfurt-to-istanbul) before paying.
+Use **€270** as the per-person planning allowance for your FRA–IST–FRA ticket with suitable cabin baggage. This is a budget value, not a fare quote. Reconfirm flight numbers, airports, baggage, and local times on [Turkish Airlines](https://www.turkishairlines.com/en-de/flights-from-frankfurt-to-istanbul) before paying.
 
 > **Why not Cappadocia?** Five Istanbul nights are already well used. Adding a domestic flight in late January would trade two half-days for airport time and add weather disruption risk.
 
 ## Booking order
 
 1. Check the passport and complete the official [Türkiye e-Visa](https://www.evisa.gov.tr/en/) eligibility questions.
-2. Reserve TK1598 and TK1587 directly with the airline, preferably on one return booking.
-3. Reserve one airport hotel night and five Istanbul nights with free cancellation.
+2. Confirm TK1592, TK124, and TK1597 are on the intended dates and all use Istanbul Airport (IST), then book each traveller's ticket.
+3. Reserve five Istanbul nights with free cancellation; no Frankfurt Airport hotel is needed.
 4. Reserve the airport transfers and the hammam; buy attraction tickets only from official operators.
 5. Buy the Heidelberg–Frankfurt Airport rail tickets after Deutsche Bahn publishes the final timetable.
 
@@ -46,10 +53,6 @@ Taiwanese ordinary-passport holders need a visa. For tourism, the current offici
 Useful official checks: [Türkiye Ministry of Foreign Affairs](https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa/default.en.mfa) · [Taiwan BOCA country guidance](https://www.boca.gov.tw/sp-foof-countrycp-03-49-60be6-02-1.html)
 
 ## Where to sleep
-
-### 27 January — Frankfurt Airport
-
-**[Hilton Garden Inn Frankfurt Airport](https://www.hilton.com/en-gb/hotels/fraapgi-hilton-garden-inn-frankfurt-airport/)** is inside The Squaire, above the long-distance rail station and connected to Terminal 1 by a covered walkway. That removes the risk of a pre-dawn local train or taxi. Planning allowance: **€150–190 for one night**.
 
 ### 28 January–2 February — Sultanahmet
 
@@ -65,34 +68,32 @@ Flight times remain at the airline's published minute. Every controllable activi
 
 | Time | Plan |
 | --- | --- |
-| 20:00–20:30 | Leave home and reach Heidelberg Hbf. |
-| 20:30–22:00 | ICE/regional connection to Frankfurt Flughafen Fernbahnhof. Use this as a booking window, not a promised train; check [Deutsche Bahn](https://www.bahn.de/reisen/view/verbindung/heidelberg/flughafen-frankfurt.shtml) when the timetable is final. |
-| 22:00–22:30 | Walk through The Squaire and check in. |
-| 22:30–23:00 | Airline check-in, liquids and documents check, alarms. |
-| 23:00 | Sleep. |
+| 20:00–21:00 | Pack, complete online check-in, and save passport, e-Visa, insurance, and hotel documents offline. |
+| 21:00–21:30 | Confirm the next day's train and agree on the Terminal 1 meeting point with the companion. |
+| 21:30–22:00 | Shower and final baggage check. |
+| 22:00 | Sleep at home in Heidelberg. |
 
 ### Thursday 28 January — arrival and Sultanahmet
 
 | Time | Plan |
 | --- | --- |
-| 04:00–04:30 | Wake, wash, check out. |
-| 04:30–05:00 | Covered walk to Frankfurt Terminal 1. |
-| 05:00–05:30 | Bag drop and security. |
-| 05:30–06:00 | Breakfast after security. |
-| 06:00–06:30 | Reach the gate; boarding buffer. |
-| **06:50–12:00** | **TK1598 Frankfurt → Istanbul.** |
-| 12:00–13:00 | Passport control, baggage, ATM only if cash is needed. |
-| 13:00–14:30 | Pre-booked private transfer to Hotel Amira; the long buffer covers traffic. |
-| 14:30–15:00 | Check in and reset. |
-| 15:00–15:30 | Light lunch near the hotel. |
-| 15:30–17:00 | Hippodrome and Blue Mosque; enter only outside prayer closures and follow dress rules. |
-| 17:00–18:00 | Sultanahmet square, tea, and blue-hour photographs. |
-| 18:00–19:30 | Dinner at [Sultanahmet Köftecisi](https://www.sultanahmetkoftesi.com/) or a nearby alternative. |
-| 19:30–20:00 | Walk to the hotel. |
-| 20:00–21:00 | Shower, weather check, prepare the next day. |
-| 21:30 | Sleep. |
+| 08:00–08:30 | Wake and get ready. |
+| 08:30–09:00 | Breakfast at home. |
+| 09:00–09:30 | Final passport and baggage check. |
+| 09:30–10:00 | Reach Heidelberg Hbf. |
+| 10:00–11:30 | ICE/regional connection to Frankfurt Airport; choose a train with recovery time and verify it on [Deutsche Bahn](https://www.bahn.de/reisen/view/verbindung/heidelberg/flughafen-frankfurt.shtml). |
+| 11:30–12:00 | Walk to Terminal 1 and meet the companion. |
+| 12:00–13:00 | Bag drop and security. |
+| 13:00–13:30 | Light lunch after security. |
+| 13:30–14:00 | Reach the gate; boarding buffer. |
+| **14:50–20:00** | **TK1592 Frankfurt → Istanbul.** |
+| 20:00–21:00 | Passport control, baggage, and buy/top up an Istanbulkart if the airport machine is convenient. |
+| 21:00–22:30 | Pre-booked private transfer to Hotel Amira. |
+| 22:30–23:00 | Check in. |
+| 23:00–23:30 | Light late supper: lentil soup and pide close to the hotel. |
+| 00:00 | Sleep. |
 
-{{< city-route title="Arrival walk in Sultanahmet" points="Hotel Amira|Hippodrome|Blue Mosque|Sultanahmet Square" coords="41.0037,28.9730|41.0063,28.9748|41.0054,28.9768|41.0068,28.9783" times="10 min|5 min|5 min" modes="walk|walk|walk" images="images/istanbul/cagaloglu-hamam.webp|images/istanbul/blue-mosque.webp|images/istanbul/blue-mosque.webp|images/istanbul/hagia-sophia.webp" note="A compact first afternoon. Walking times are approximate and do not include entrance or security queues." >}}
+{{< city-route title="Airport arrival" points="Istanbul Airport|Hotel Amira" coords="41.2753,28.7519|41.0037,28.9730" times="75–90 min" modes="private transfer" images="images/istanbul/kadikoy-ferry.webp|images/istanbul/hagia-sophia.webp" note="Traffic controls this transfer. The plotted line is an orientation link, not a turn-by-turn road route." >}}
 
 ### Friday 29 January — imperial Istanbul
 
@@ -100,19 +101,20 @@ Flight times remain at the airline's published minute. Every controllable activi
 | --- | --- |
 | 07:00–07:30 | Wake and get ready. |
 | 07:30–08:30 | Hotel breakfast. |
-| 08:30–09:00 | Walk to Topkapı Palace. |
-| 09:00–12:30 | Topkapı Palace and Harem; begin with the busiest interiors. |
-| 12:30–13:30 | Lunch near Gülhane/Sultanahmet. |
-| 13:30–15:00 | Hagia Sophia visitor area. Check same-day access and prayer arrangements. |
-| 15:00–16:00 | Basilica Cistern timed entry. |
-| 16:00–17:00 | Tea or dessert at [Hafız Mustafa](https://hafizmustafa.com/). |
+| 08:30–09:00 | Hippodrome and Blue Mosque; enter only outside prayer closures. |
+| 09:00–12:00 | Topkapı Palace and Harem; begin with the busiest interiors. |
+| 12:00–13:00 | Köfte, piyaz, and semolina helva at [Sultanahmet Köftecisi](https://www.sultanahmetkoftesi.com/). |
+| 13:00–14:30 | Hagia Sophia visitor area. Check same-day access and prayer arrangements. |
+| 14:30–15:30 | Basilica Cistern timed entry. |
+| 15:30–16:30 | Turkish coffee and one shared dessert at [Hafız Mustafa](https://hafizmustafa.com/). |
+| 16:30–17:00 | Walk toward Gülhane or Sirkeci. |
 | 17:00–18:30 | Gülhane or Sultanahmet blue-hour buffer. |
 | 18:30–20:00 | Dinner in Sirkeci. |
 | 20:00–20:30 | Tram or walk to the hotel. |
 | 20:30–21:30 | Rest and prepare. |
 | 22:00 | Sleep. |
 
-{{< city-route title="Imperial Istanbul" points="Hotel Amira|Topkapı Palace|Hagia Sophia|Basilica Cistern|Sirkeci" coords="41.0037,28.9730|41.0115,28.9833|41.0086,28.9802|41.0084,28.9779|41.0146,28.9744" times="20 min|10 min|5 min|15 min" modes="walk|walk|walk|walk / T1" images="images/istanbul/cagaloglu-hamam.webp|images/istanbul/topkapi.webp|images/istanbul/hagia-sophia.webp|images/istanbul/basilica-cistern.webp|images/istanbul/hagia-sophia.webp" note="The route is intentionally short. Security, timed tickets, and prayer access—not travel distance—control this day." >}}
+{{< city-route title="Imperial Istanbul" points="Hotel Amira|Blue Mosque|Topkapı Palace|Hagia Sophia|Basilica Cistern|Sirkeci" coords="41.0037,28.9730|41.0054,28.9768|41.0115,28.9833|41.0086,28.9802|41.0084,28.9779|41.0146,28.9744" times="10 min|15 min|10 min|5 min|15 min" modes="walk|walk|walk|walk|walk / T1" images="images/istanbul/cagaloglu-hamam.webp|images/istanbul/blue-mosque.webp|images/istanbul/topkapi.webp|images/istanbul/hagia-sophia.webp|images/istanbul/basilica-cistern.webp|images/istanbul/hagia-sophia.webp" note="The route is intentionally short. Security, timed tickets, and prayer access—not travel distance—control this day." >}}
 
 ### Saturday 30 January — bazaars, Süleymaniye and Galata
 
@@ -175,56 +177,67 @@ Flight times remain at the airline's published minute. Every controllable activi
 
 {{< city-route title="Balat morning and hammam afternoon" points="Fener|Balat wooden houses|Hotel Amira|Cağaloğlu Hamam" coords="41.0297,28.9512|41.0322,28.9497|41.0037,28.9730|41.0108,28.9752" times="10 min|30–45 min|15 min" modes="walk|tram / bus / taxi|walk" images="images/istanbul/balat.webp|images/istanbul/balat.webp|images/istanbul/hagia-sophia.webp|images/istanbul/cagaloglu-hamam.webp" note="Balat is steep and can be slippery in winter. The long middle leg is a transfer back to the old city, not a suggested continuous walk." >}}
 
-### Tuesday 2 February — return to Heidelberg
+### Tuesday 2 February — shared airport departure and return
 
 | Time | Plan |
 | --- | --- |
-| 03:30–04:00 | Wake, final check, and check out. |
-| 04:00–05:30 | Pre-booked private transfer to Istanbul Airport. |
-| 05:30–06:30 | Bag drop, passport control, security. |
-| 06:30–07:00 | Breakfast after security. |
-| 07:00–07:30 | Reach the gate; boarding buffer. |
-| **08:10–09:30** | **TK1587 Istanbul → Frankfurt.** |
-| 09:30–10:30 | Passport control and baggage. |
-| 10:30–12:00 | Frankfurt Airport to Heidelberg Hbf; choose the first sensible connection rather than a fragile advance itinerary. |
-| 12:00–12:30 | Local connection home. |
-| 12:30–17:00 | Recovery buffer. Even a substantial flight or rail delay can fit before the requested deadline. |
+| 08:00–08:30 | Wake and get ready. |
+| 08:30–09:30 | Final hotel breakfast. |
+| 09:30–10:00 | Check out; leave baggage with reception. |
+| 10:00–11:30 | Easy final walk and last purchases around Sultanahmet/Sirkeci. |
+| 11:30–12:30 | Early lunch: pide, döner, or a lokanta plate rather than a heavy airport meal. |
+| 12:30–14:00 | Pre-booked private transfer to Istanbul Airport for both travellers. |
+| 14:00–15:00 | Bag drop, passport control, and security. |
+| 15:00–16:00 | Shared coffee or meal airside. |
+| 16:00–16:30 | Walk with the companion toward the TK124 gate, then separate before boarding. |
+| **17:15** | **Companion: TK124 Istanbul → Taipei, arriving 08:45+1.** |
+| 17:30–18:30 | Rest, charge devices, and check the FRA–Heidelberg rail connection. |
+| 18:30–19:30 | Dinner airside. |
+| 19:30–20:00 | Reach the TK1597 gate. |
+| **21:00–22:10** | **Your flight: TK1597 Istanbul → Frankfurt.** |
+| 22:10–23:00 | Passport control and baggage. |
+| 23:00–00:30 | Take the first viable DB connection to Heidelberg; do not rely on a tight advance connection. |
+| 00:30–01:00 | Local transfer home on 3 February. If the last train is lost to disruption, use an airport hotel or pre-priced car only as an emergency fallback. |
 
 ## Tickets and local transport
 
-- **Airport transfer:** the private car is the reliable choice for the 04:00 return. For a cheaper arrival, compare [Havaist](https://hava.ist/) and the [M11 metro](https://www.metro.istanbul/) after checking the operating timetable.
-- **Within the city:** buy an Istanbulkart from an official machine for trams, metros, buses, and many ferries. See [Istanbulkart](https://www.istanbulkart.istanbul/).
+- **Airport transfer:** share a pre-booked private car in both directions. Hotel Amira currently publishes €75 per car per direction, so two travellers sharing two transfers budget €75 each for the whole trip. For a cheaper alternative, compare [Havaist](https://hava.ist/) and the [M11 metro](https://www.metro.istanbul/) on the day.
+- **Istanbulkart:** buy one anonymous physical card per traveller from an official Biletmatik machine or authorised kiosk. It works on metro, T1 tram, buses, funiculars, and many public ferries. Load a modest TRY balance, tap once at each gate or vehicle, and top up again rather than leaving a large unused balance. Some machines accept cards while others may require cash. Never hand the card or cash to an unsolicited “helper.” See the official [Istanbulkart information](https://visit.istanbul/en/istanbul-card).
 - **Ferries:** use [Şehir Hatları / City Lines](https://sehirhatlari.istanbul/en) for current routes and winter timetables.
 - **State museums:** use [Türkiye Museums](https://muze.gov.tr/) for Topkapı and Galata Tower information.
 - **Palaces:** use [National Palaces](https://www.millisaraylar.gov.tr/) for Dolmabahçe.
 
 The Museum Pass is not automatically good value here because several headline stops—Hagia Sophia, Basilica Cistern, Dolmabahçe, and the hammam—are outside it. Price the exact list before buying.
 
-## Working budget for one person
+## Exact planning budget per person
 
-| Item | Planning amount |
+This is an exact **planning ledger to the nearest euro**, not a promise of the eventual booking price. It assumes two people share one double room and both airport cars.
+
+| Item | Budget |
 | --- | ---: |
-| Return flight with suitable cabin baggage | €250–300 |
-| Heidelberg–Frankfurt Airport return rail | €25–60 |
-| Frankfurt Airport hotel, one night | €150–190 |
-| Istanbul hotel with breakfast, five nights | €600–750 |
-| Two private airport transfers | €150 |
-| Istanbul public transport | €20–30 |
-| e-Visa | €0; verify in the official portal |
-| Attractions | €170–220 |
-| Hammam | €90–130 |
-| Food and non-alcoholic drinks | €200–260 |
-| Travel insurance | €20–40 |
-| **Realistic total** | **€1,675–2,130** |
+| TK1592 + TK1597 with suitable cabin baggage | €270 |
+| Heidelberg–Frankfurt Airport rail, outward and return | €48 |
+| Half of a five-night double room with breakfast | €338 |
+| Half of two €75 private airport transfers | €75 |
+| Istanbulkart card and local transport | €27 |
+| e-Visa | €0 |
+| Topkapı €55 + Hagia Sophia €25 + Cistern €39 + Dolmabahçe €40 + Galata €30 | €189 |
+| Hammam experience | €110 |
+| Food and non-alcoholic drinks | €272 |
+| Travel insurance | €28 |
+| **Planned total per person** | **€1,357** |
 
-Use **about €1,900** as the working total, excluding shopping. Public airport transport, a simpler hotel, and fewer paid interiors can reduce the trip toward €1,400–1,500. Prices shown here are planning allowances, not quotes.
+A solo room raises the plan to **€1,694**. Shopping, alcohol, checked baggage, and an emergency Frankfurt hotel or car are excluded. Keep a separate **€170 disruption reserve** for the late return, but do not pre-book a Frankfurt hotel unless the final train schedule makes it necessary.
 
-## Food plan
+## Food experiences to prioritise
 
-- **Breakfast:** included at the Istanbul hotel; use the airport cafés only on flight days.
-- **Lunch:** lokanta food, soup, pide, fish sandwiches, or market plates; allow €12–18.
-- **Dinner:** allow €20–35, with one more deliberate meal in Kadıköy or Karaköy.
-- **Small experiences:** Turkish tea, salep, simit, baklava, and a full Turkish breakfast are more useful goals than collecting famous restaurants.
+- **A Turkish breakfast:** eggs or menemen, cheeses, olives, tomatoes, preserves, bread, and continuous tea. Do it once slowly rather than enlarging every hotel breakfast.
+- **A lokanta lunch:** choose home-style dishes from the steam trays—beans, stuffed vegetables, soup, rice, and seasonal olive-oil dishes.
+- **Köfte in Sultanahmet:** order grilled meatballs with piyaz and semolina helva, not an oversized mixed menu.
+- **Kadıköy and Çiya:** use the Asian-side evening for regional Anatolian cooking, lahmacun, kebab, and dishes unfamiliar from standard tourist menus.
+- **A meyhane-style dinner:** share cold meze, seasonal fish, and hot small plates. Rakı is optional; the meal format matters more than alcohol.
+- **Street and sweet stops:** simit, börek, roasted chestnuts, winter salep, Turkish coffee, pistachio baklava from Karaköy Güllüoğlu, and one künefe shared while hot.
+- **Use judgement:** eat stuffed mussels and kokoreç only at busy, reputable vendors; avoid seafood displayed without temperature control.
 
 Carry some Turkish lira for small vendors, but do not carry the whole budget in cash. Decline dynamic currency conversion and pay in TRY when the terminal offers a choice.
 

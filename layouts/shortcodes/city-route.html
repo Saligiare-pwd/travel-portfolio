@@ -4,11 +4,16 @@
 {{- $coords := split (.Get "coords") "|" -}}
 {{- $images := split (.Get "images" | default "") "|" -}}
 {{- $fallbackImage := .Page.Params.cover.image | default "images/freiburg-titisee/titisee.jpg" -}}
+{{- $eyebrow := .Get "eyebrow" | default "Route" -}}
+{{- $stopLabel := .Get "stoplabel" | default "Stop" -}}
+{{- $finalLabel := .Get "finallabel" | default "Final stop" -}}
+{{- $previousLabel := .Get "previouslabel" | default "Previous" -}}
+{{- $nextLabel := .Get "nextlabel" | default "Next" -}}
 {{- $initialImage := $fallbackImage -}}
 {{- if and (gt (len $images) 0) (ne (index $images 0) "") -}}{{- $initialImage = index $images 0 -}}{{- end -}}
-<section class="city-route" aria-label="{{ .Get "title" }}">
+<section id="{{ .Get "title" | anchorize }}" class="city-route" aria-label="{{ .Get "title" }}" data-stop-label="{{ $stopLabel }}">
   <header>
-    <div><p class="eyebrow">Route</p><h3>{{ .Get "title" }}</h3></div>
+    <div><p class="eyebrow">{{ $eyebrow }}</p><h3>{{ .Get "title" }}</h3></div>
     <p>{{ .Get "note" }}</p>
   </header>
   <div class="city-route-stage-shell">
@@ -21,7 +26,7 @@
       <button type="button" data-route-point data-lat="{{ index $coord 0 }}" data-lng="{{ index $coord 1 }}" data-name="{{ $point }}" data-image="{{ $pointImage | relURL }}"{{ if eq $i 0 }} class="active" aria-current="step"{{ end }}>
         <span>{{ add $i 1 }}</span>
         <strong>{{ $point }}</strong>
-        {{- if lt $i (sub (len $points) 1) -}}<small>{{ index $modes $i }} · {{ index $times $i }}</small>{{- else -}}<small>Final stop</small>{{- end -}}
+        {{- if lt $i (sub (len $points) 1) -}}<small>{{ index $modes $i }} · {{ index $times $i }}</small>{{- else -}}<small>{{ $finalLabel }}</small>{{- end -}}
       </button>
     {{- end -}}
     </div>
@@ -34,12 +39,12 @@
     <article class="city-route-detail" aria-live="polite">
       <figure><img data-route-active-image src="{{ $initialImage | relURL }}" alt="{{ index $points 0 }}"></figure>
       <div class="city-route-detail-copy">
-        <p class="eyebrow"><span data-route-active-index>Stop 1</span> of {{ len $points }}</p>
+        <p class="eyebrow"><span data-route-active-index>{{ $stopLabel }} 1</span> / {{ len $points }}</p>
         <h4 data-route-active-name>{{ index $points 0 }}</h4>
         <p data-route-active-detail>{{ index $modes 0 }} · {{ index $times 0 }} to next stop</p>
         <div class="city-route-actions">
-          <button type="button" class="button button-quiet" data-route-previous>← Previous</button>
-          <button type="button" class="button button-quiet" data-route-next>Next →</button>
+          <button type="button" class="button button-quiet" data-route-previous>← {{ $previousLabel }}</button>
+          <button type="button" class="button button-quiet" data-route-next>{{ $nextLabel }} →</button>
         </div>
       </div>
     </article>
